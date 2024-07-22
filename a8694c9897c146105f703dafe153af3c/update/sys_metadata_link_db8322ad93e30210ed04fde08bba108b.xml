@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>16b05854970546105f703dafe153af20</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_146833_genaico_0_watsonxaitoken">
+    <x_146833_genaico_0_watsonxaitoken action="INSERT_OR_UPDATE">
+        <import_set_run/>
+        <sys_class_name>x_146833_genaico_0_watsonxaitoken</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-07-15 16:05:01</sys_created_on>
+        <sys_id>16b05854970546105f703dafe153af20</sys_id>
+        <sys_import_row>0</sys_import_row>
+        <sys_import_set display_value="ISET0010001">c811502b93570610ed04fde08bba1061</sys_import_set>
+        <sys_import_state>pending</sys_import_state>
+        <sys_import_state_comment/>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_row_error/>
+        <sys_target_sys_id/>
+        <sys_target_table/>
+        <sys_transform_map/>
+        <sys_updated_by>watsonx</sys_updated_by>
+        <sys_updated_on>2024-07-19 10:27:49</sys_updated_on>
+        <template_import_log/>
+        <u_access_token>eyJraWQiOiIyMDI0MDcwNDA4NDAiLCJhbGciOiJSUzI1NiJ9.eyJpYW1faWQiOiJJQk1pZC02NjUwMDBQSlQ3IiwiaWQiOiJJQk1pZC02NjUwMDBQSlQ3IiwicmVhbG1pZCI6IklCTWlkIiwianRpIjoiM2RhYmI3NGYtMDZlOC00MThmLTgwMDgtMTBiNjJjMWUxOWViIiwiaWRlbnRpZmllciI6IjY2NTAwMFBKVDciLCJnaXZlbl9uYW1lIjoiU3Jpbml2YXMgQW5pbCBLdW1hciIsImZhbWlseV9uYW1lIjoiVmFyYW5hc2kiLCJuYW1lIjoiU3Jpbml2YXMgQW5pbCBLdW1hciBWYXJhbmFzaSIsImVtYWlsIjoiU3Jpbml2YXMuQW5pbC5LdW1hci5WYXJhbmFzaUBpYm0uY29tIiwic3ViIjoiU3Jpbml2YXMuQW5pbC5LdW1hci5WYXJhbmFzaUBpYm0uY29tIiwiYXV0aG4iOnsic3ViIjoiU3Jpbml2YXMuQW5pbC5LdW1hci5WYXJhbmFzaUBpYm0uY29tIiwiaWFtX2lkIjoiSUJNaWQtNjY1MDAwUEpUNyIsIm5hbWUiOiJTcmluaXZhcyBBbmlsIEt1bWFyIFZhcmFuYXNpIiwiZ2l2ZW5fbmFtZSI6IlNyaW5pdmFzIEFuaWwgS3VtYXIiLCJmYW1pbHlfbmFtZSI6IlZhcmFuYXNpIiwiZW1haWwiOiJTcmluaXZhcy5BbmlsLkt1bWFyLlZhcmFuYXNpQGlibS5jb20ifSwiYWNjb3VudCI6eyJ2YWxpZCI6dHJ1ZSwiYnNzIjoiMDNmYjMyNzM5ZjEzNGZkNmEyNmUzZDk1ZTcwOTRmNjkiLCJpbXNfdXNlcl9pZCI6IjEyMzg4NTAzIiwiZnJvemVuIjp0cnVlLCJpbXMiOiIyODQzNjA3In0sImlhdCI6MTcyMTM4NDg2NiwiZXhwIjoxNzIxMzg2MDYxLCJpc3MiOiJodHRwczovL2lhbS5jbG91ZC5pYm0uY29tL2lkZW50aXR5IiwiZ3JhbnRfdHlwZSI6InVybjppYm06cGFyYW1zOm9hdXRoOmdyYW50LXR5cGU6YXBpa2V5Iiwic2NvcGUiOiJpYm0gb3BlbmlkIiwiY2xpZW50X2lkIjoiZGVmYXVsdCIsImFjciI6MSwiYW1yIjpbInB3ZCJdfQ.mEKunvjvy8YpdVt0cZaTKCHlTwkKNvpqRQJzqxVz5IUz-G0kUeVb012I_d-0Ep8uY2uY5vt8fmu5GCMQlUa9Ms_IuS6RJtTXBZ_Vu8Oc6dyscDfeTRURlaAI7yLWxZvA5R_zIVgfhDwVpT6ZarMIQx73yZq-wMuo5iuzR8pWGs_BsdAAp0iNgpkqDN6qGdQ9508DXd4t6N-kM7sy-5b0fArsbYyFE3a5aC7OU8fGiIGJx59bzze_EnGOekoQ5j4l2ovN3lDryHW7TpRgb9wnSqqm_fm9oislnb9uHegWX-dEs62kJQr5iBrP9kZR01k1ecY8RAp2sGlEXP65qIbefQ</u_access_token>
+        <u_expiration>1721386061</u_expiration>
+        <u_expires_in>1195</u_expires_in>
+        <u_refresh_token>not_supported</u_refresh_token>
+        <u_scope>ibm openid</u_scope>
+        <u_token_type>Bearer</u_token_type>
+    </x_146833_genaico_0_watsonxaitoken>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-22 07:52:54</sys_created_on>
+        <sys_id>db8322ad93e30210ed04fde08bba108b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>0</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_metadata_link_db8322ad93e30210ed04fde08bba108b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-22 07:52:54</sys_updated_on>
+        <tablename>x_146833_genaico_0_watsonxaitoken</tablename>
+    </sys_metadata_link>
+</record_update>

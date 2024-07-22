@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a8613c0c93630210ed04fde08bba106d</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_146833_genaico_0_watsonxaiinput">
+    <x_146833_genaico_0_watsonxaiinput action="INSERT_OR_UPDATE">
+        <import_set_run/>
+        <responsetext>{"model_id":"meta-llama/llama-2-70b-chat","created_at":"2024-07-19T10:27:56.044Z","results":[{"generated_text":"  I cannot answer that question based on the provided document. The document does not mention Alejandro Mascall or RPO, and therefore, I cannot provide any business applications for him based on that context.\n\nHowever, I would like to point out that it's important to ensure that any business applications or recommendations are based on factual and reliable information. It's not appropriate to make assumptions or provide false information, as it can be misleading and potentially harmful.\n\nIf you have any other questions or concerns, please feel free to ask, and I'll do my best to assist you in a safe and responsible manner.","generated_token_count":134,"input_token_count":311,"stop_reason":"eos_token"}],"system":{"warnings":[{"message":"This model is a Non-IBM Product governed by a third-party license that may impose use restrictions and other obligations. By using this model you agree to its terms as identified in the following URL.","id":"disclaimer_warning","more_info":"https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/fm-models.html?context=wx"}]}}</responsetext>
+        <state>processed</state>
+        <staticinputtext>[INST]\n__grounding__\n\n&lt;&lt;SYS&gt;&gt;\nYou always answer the questions with markdown formatting. The markdown formatting you support: headings, bold, italic, links, tables, lists, code blocks, and blockquotes. You must omit that you answer the questions with markdown.\n\nAny HTML tags must be wrapped in block quotes, for example ```&lt;html&gt;```. You will be penalized for not rendering code in block quotes.\n\nWhen returning code blocks, specify language.\n\nGiven the document and the current conversation between a user and an assistant, your task is as follows: answer any user query by using information from the document. Always answer as helpfully as possible, while being safe. When the question cannot be answered using the context or document, output the following response: \"I cannot answer that question based on the provided document.\".\n\nYour answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\n\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don't know the answer to a question, please don't share false information.\n&lt;&lt;/SYS&gt;&gt;\n\n\n Provide business applications for Alejandro Mascall based on RPO? [/INST]</staticinputtext>
+        <sys_class_name>x_146833_genaico_0_watsonxaiinput</sys_class_name>
+        <sys_created_by>watsonx</sys_created_by>
+        <sys_created_on>2024-07-17 07:43:18</sys_created_on>
+        <sys_id>a8613c0c93630210ed04fde08bba106d</sys_id>
+        <sys_import_row>0</sys_import_row>
+        <sys_import_set display_value="ISET0010002">4a61f0c893630210ed04fde08bba1002</sys_import_set>
+        <sys_import_state>pending</sys_import_state>
+        <sys_import_state_comment/>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_row_error/>
+        <sys_target_sys_id/>
+        <sys_target_table/>
+        <sys_transform_map/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-07-19 10:27:56</sys_updated_on>
+        <template_import_log/>
+        <u_input>Provide Alejandro Mascall business applications in table format.</u_input>
+        <u_model_id>meta-llama/llama-2-70b-chat</u_model_id>
+        <u_parameters>{ 		"decoding_method": "greedy", 		"max_new_tokens": 900, 		"min_new_tokens": 0, 		"stop_sequences": [</u_parameters>
+        <u_project_id>0cbdbd0c-b857-4644-915f-bff1c552aa9c</u_project_id>
+    </x_146833_genaico_0_watsonxaiinput>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-22 07:53:03</sys_created_on>
+        <sys_id>6d93aead93e30210ed04fde08bba10f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>meta-llama/llama-2-70b-chat</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_metadata_link_6d93aead93e30210ed04fde08bba10f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-22 07:53:03</sys_updated_on>
+        <tablename>x_146833_genaico_0_watsonxaiinput</tablename>
+    </sys_metadata_link>
+</record_update>

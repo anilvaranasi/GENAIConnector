@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.66",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "f2ca6ac4b057447b8ee891b9042eb2ae": {
+          "id": "f2ca6ac4b057447b8ee891b9042eb2ae",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hi welcome to CSDM assistent."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "47ed255da5c84dd5847624b0cbdf2e22": {
+          "id": "47ed255da5c84dd5847624b0cbdf2e22",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thanks for using CSDM assistant. Powered by WatsonX."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "ec169b657b034e968fb0dceaebf01dd0": {
+          "id": "ec169b657b034e968fb0dceaebf01dd0",
+          "stepType": "TextPrompt",
+          "name": "Query",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Ask your CSDM assistant"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "bd94b862ee7c4b33ad82083716070f81",
+          "detailDescription": "",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          },
+          "requestFeedback": true
+        },
+        "fc5a7c1b0ba04b5a832e7430ba47e0ef": {
+          "id": "fc5a7c1b0ba04b5a832e7430ba47e0ef",
+          "name": "REST calls",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "global",
+          "actionSpokeAction": "6053ac4493230210ed04fde08bba10a8",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "actionInputs": {
+            "input-inputtext": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.query}}",
+                        "displayValue": "Input Variables➛Query"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string"
+            }
+          },
+          "actionOutputs": {
+            "output-assistantresponse": [
+              {
+                "id": "a1f5b2be975e40cc9202479a05516bad",
+                "mapping": "assistantResponse",
+                "disabled": false,
+                "type": "string",
+                "value": "assistantResponse",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "AssistantResponse",
+                "variableName": "assistantresponse"
+              }
+            ],
+            "output-__action_status__": [
+              {
+                "id": "0b81c0e55dc347cbaa31221ecc1dc66a",
+                "mapping": "Action Status",
+                "disabled": false,
+                "type": "object",
+                "value": "Action Status",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Action Status",
+                "variableName": "action_status"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "27214a6d5f7640aea369c5f0ac55c90f",
+                "mapping": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean",
+                "value": "Don't Treat as Error",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Don't Treat As Error",
+                "variableName": "don_t_treat_as_error"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "6053ac4493230210ed04fde08bba10a8",
+            "latest_snapshot_id": "6053ac4493230210ed04fde08bba10a8",
+            "parent_id": "6390a327931b4610ed04fde08bba105a",
+            "type": "action",
+            "name": "csdm_assistant_virtual_agent_rest_call_global",
+            "label": "CSDM assistant Virtual Agent REST call Global",
+            "scope_id": "global",
+            "description": "",
+            "category": "",
+            "parameters_have_loaded": true,
+            "input_parameters": [
+              {
+                "supported_input_modes": [
+                  "script",
+                  "data_pill",
+                  "data_entry"
+                ],
+                "name": "inputtext",
+                "label": "inputText",
+                "type": "string",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ],
+            "output_parameters": [
+              {
+                "name": "assistantresponse",
+                "label": "assistantResponse",
+                "type": "string",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 2,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 3,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "a1f5b2be975e40cc9202479a05516bad",
+            "0b81c0e55dc347cbaa31221ecc1dc66a",
+            "27214a6d5f7640aea369c5f0ac55c90f"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "7566e73c06b541af8b8684cef63def9a": {
+          "id": "7566e73c06b541af8b8684cef63def9a",
+          "stepType": "TextOutput",
+          "name": "Assistent response",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.assistantresponse}}",
+                        "displayValue": "Input Variables➛AssistantResponse"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "787846d93cec42e286b630f39185b32c"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "ff82ca37545740c0a6e381866ffd4c4e": {
+          "id": "ff82ca37545740c0a6e381866ffd4c4e",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "d6ee0e8fa89f40bb9d9d8d64ab49117b": {
+          "id": "d6ee0e8fa89f40bb9d9d8d64ab49117b",
+          "name": "Generate token",
+          "invocationType": "action",
+          "stepType": "FlowAction",
+          "actionSpoke": "a8694c9897c146105f703dafe153af3c",
+          "actionSpokeAction": "4f346c10978546105f703dafe153af75",
+          "actionWaitType": "sync",
+          "actionRunAs": "session_user",
+          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
+          "actionSecureField": false,
+          "actionSelectSecureField": "",
+          "actionPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "actionInputs": {},
+          "actionOutputs": {
+            "output-__action_status__": [
+              {
+                "id": "933b9dc0d7c04ab8891f499be33313da",
+                "mapping": "Action Status",
+                "disabled": false,
+                "type": "object",
+                "value": "Action Status",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Action Status (2)",
+                "variableName": "action_status_2"
+              }
+            ],
+            "output-__dont_treat_as_error__": [
+              {
+                "id": "bc58ff276e8148eba1c9b533c11925f3",
+                "mapping": "Don't Treat as Error",
+                "disabled": false,
+                "type": "boolean",
+                "value": "Don't Treat as Error",
+                "description": "",
+                "is_list_data_entry": false,
+                "variable": "Don't Treat As Error (2)",
+                "variableName": "don_t_treat_as_error_2"
+              }
+            ]
+          },
+          "actionDefinition": {
+            "id": "4f346c10978546105f703dafe153af75",
+            "latest_snapshot_id": "4f346c10978546105f703dafe153af75",
+            "parent_id": "5b5d0c10970546105f703dafe153af20",
+            "type": "action",
+            "name": "watsonaigeneratetoken",
+            "label": "WatsonAIGenerateToken",
+            "scope_id": "a8694c9897c146105f703dafe153af3c",
+            "description": "Connects to WatsonAI",
+            "category": "",
+            "parameters_have_loaded": true,
+            "input_parameters": [],
+            "output_parameters": [
+              {
+                "name": "__action_status__",
+                "label": "Action Status",
+                "type": "object",
+                "order": 1,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              },
+              {
+                "name": "__dont_treat_as_error__",
+                "label": "Don't Treat as Error",
+                "type": "boolean",
+                "order": 2,
+                "required": false,
+                "value": [],
+                "description": "",
+                "is_list_data_entry": false
+              }
+            ]
+          },
+          "subflowSecureField": false,
+          "subflowSelectSecureField": "",
+          "subflowPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowConfirmPromptSecureField": {
+            "mode": "simple",
+            "value": ""
+          },
+          "subflowNonSecureChannelMessage": {
+            "mode": "simple",
+            "value": "This action is not supported on this channel."
+          },
+          "variableIds": [
+            "933b9dc0d7c04ab8891f499be33313da",
+            "bc58ff276e8148eba1c9b533c11925f3"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "24d428c610b546cfb10e0553fe5d655b",
+          "edgeType": "Edge",
+          "source": "7566e73c06b541af8b8684cef63def9a",
+          "target": "ec169b657b034e968fb0dceaebf01dd0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8f7ffe537b414855823d41c9ff86f578",
+          "edgeType": "Edge",
+          "source": "f2ca6ac4b057447b8ee891b9042eb2ae",
+          "target": "ec169b657b034e968fb0dceaebf01dd0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "aa8c8c952dea4e82b63dc8adccd91d94",
+          "edgeType": "Edge",
+          "source": "fc5a7c1b0ba04b5a832e7430ba47e0ef",
+          "target": "7566e73c06b541af8b8684cef63def9a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b2c3d8437caa4b1cb31dd3f7352a80d6",
+          "edgeType": "Edge",
+          "source": "ec169b657b034e968fb0dceaebf01dd0",
+          "target": "ff82ca37545740c0a6e381866ffd4c4e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "d258a3de4510441193115c7459ba6e66",
+          "edgeType": "Branch",
+          "source": "ff82ca37545740c0a6e381866ffd4c4e",
+          "target": "47ed255da5c84dd5847624b0cbdf2e22",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.queryCONTAINSEnd chat",
+            "mode": "query"
+          },
+          "label": "If Query is End chat"
+        },
+        {
+          "id": "c72d0e9ef4e34e6296c725f84148f45d",
+          "edgeType": "Branch",
+          "source": "ff82ca37545740c0a6e381866ffd4c4e",
+          "target": "d6ee0e8fa89f40bb9d9d8d64ab49117b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.queryANYTHING",
+            "mode": "query"
+          },
+          "label": "Always"
+        },
+        {
+          "id": "f9e19e9a4ecf4fce9e4afadf9a314213",
+          "edgeType": "Edge",
+          "source": "d6ee0e8fa89f40bb9d9d8d64ab49117b",
+          "target": "fc5a7c1b0ba04b5a832e7430ba47e0ef",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "bd94b862ee7c4b33ad82083716070f81": {
+      "id": "bd94b862ee7c4b33ad82083716070f81",
+      "name": "query",
+      "label": "Query",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcyMDc4ODExNDc0NSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "ec169b657b034e968fb0dceaebf01dd0",
+      "isHidden": false
+    },
+    "a1f5b2be975e40cc9202479a05516bad": {
+      "id": "a1f5b2be975e40cc9202479a05516bad",
+      "name": "assistantresponse",
+      "label": "AssistantResponse",
+      "defaultValue": "assistantResponse",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "fc5a7c1b0ba04b5a832e7430ba47e0ef",
+      "isHidden": false
+    },
+    "0b81c0e55dc347cbaa31221ecc1dc66a": {
+      "id": "0b81c0e55dc347cbaa31221ecc1dc66a",
+      "name": "action_status",
+      "label": "Action Status",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "variable": "Action Status",
+      "variableName": "action_status",
+      "nodeId": "fc5a7c1b0ba04b5a832e7430ba47e0ef",
+      "isHidden": false
+    },
+    "27214a6d5f7640aea369c5f0ac55c90f": {
+      "id": "27214a6d5f7640aea369c5f0ac55c90f",
+      "name": "don_t_treat_as_error",
+      "label": "Don't Treat As Error",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "variable": "Don't Treat As Error",
+      "variableName": "don_t_treat_as_error",
+      "nodeId": "fc5a7c1b0ba04b5a832e7430ba47e0ef",
+      "isHidden": false
+    },
+    "933b9dc0d7c04ab8891f499be33313da": {
+      "id": "933b9dc0d7c04ab8891f499be33313da",
+      "name": "action_status_2",
+      "label": "Action Status (2)",
+      "defaultValue": "Action Status",
+      "varType": "object",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "d6ee0e8fa89f40bb9d9d8d64ab49117b",
+      "isHidden": false
+    },
+    "bc58ff276e8148eba1c9b533c11925f3": {
+      "id": "bc58ff276e8148eba1c9b533c11925f3",
+      "name": "don_t_treat_as_error_2",
+      "label": "Don't Treat As Error (2)",
+      "defaultValue": "Don't Treat as Error",
+      "varType": "boolean",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "description": "",
+      "is_list_data_entry": false,
+      "nodeId": "d6ee0e8fa89f40bb9d9d8d64ab49117b",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>CSDM Assistant</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>CSDM Assistant</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>watsonx</sys_created_by>
+        <sys_created_on>2024-07-12 12:41:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5bb5002293df4610ed04fde08bba10c1</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>CSDM Assistant</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_cb_topic_5bb5002293df4610ed04fde08bba10c1</sys_update_name>
+        <sys_updated_by>watsonx</sys_updated_by>
+        <sys_updated_on>2024-07-18 07:25:15</sys_updated_on>
+        <title>Watson CSDM Assistant</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=5bb5002293df4610ed04fde08bba10c1"/>
+</record_update>
