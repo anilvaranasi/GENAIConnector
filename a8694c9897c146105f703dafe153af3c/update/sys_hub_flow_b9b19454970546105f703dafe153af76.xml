@@ -11,6 +11,7 @@
         <copied_from/>
         <copied_from_name/>
         <description>This flow will run as soon as token expires and refreshes it</description>
+        <display_name_after_preview/>
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>watsonxaiautorefreshtoken</internal_name>
@@ -27,13 +28,14 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-15 17:26:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9b19454970546105f703dafe153af76</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>WatsonxAIAutoRefreshToken</sys_name>
         <sys_overrides/>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
@@ -41,7 +43,7 @@
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sys_hub_flow_b9b19454970546105f703dafe153af76</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-16 10:31:03</sys_updated_on>
+        <sys_updated_on>2024-07-22 12:44:44</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b9b19454970546105f703dafe153af76"/>
@@ -345,12 +347,12 @@
         <sys_domain_path/>
         <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
         <sys_mod_count>101</sys_mod_count>
-        <sys_name>FDCollection</sys_name>
+        <sys_name/>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">3bbab03d7df1311076daf29f52070dd8</sys_package>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">7dbaf38ce4d2021008dda4ccc400801f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
-        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
         <type>complex_object_collection</type>
@@ -644,11 +646,11 @@
         <sys_created_on>2024-03-15 18:48:22</sys_created_on>
         <sys_id>87742450978546105f703dafe153af56</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_b9b19454970546105f703dafe153af76_changed_fields_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-15 18:48:22</sys_updated_on>
         <url/>
@@ -667,11 +669,11 @@
         <sys_created_on>2024-03-15 18:48:22</sys_created_on>
         <sys_id>8b742450978546105f703dafe153af59</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_b9b19454970546105f703dafe153af76_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-15 18:48:22</sys_updated_on>
         <url/>
@@ -690,11 +692,11 @@
         <sys_created_on>2024-03-15 18:48:22</sys_created_on>
         <sys_id>c3742050978546105f703dafe153af25</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_b9b19454970546105f703dafe153af76_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-15 18:48:22</sys_updated_on>
         <url/>
@@ -922,12 +924,12 @@
         <sys_domain_path/>
         <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
         <sys_mod_count>101</sys_mod_count>
-        <sys_name>FDCollection</sys_name>
+        <sys_name/>
         <sys_overrides/>
-        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">3bbab03d7df1311076daf29f52070dd8</sys_package>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">7dbaf38ce4d2021008dda4ccc400801f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
-        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
         <type>complex_object_collection</type>
@@ -1305,11 +1307,11 @@
         <sys_created_on>2024-03-15 18:54:11</sys_created_on>
         <sys_id>20d564d0978546105f703dafe153af07</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9cd524d0978546105f703dafe153affb_current_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-15 18:54:11</sys_updated_on>
         <url/>
@@ -1328,11 +1330,11 @@
         <sys_created_on>2024-03-15 18:54:12</sys_created_on>
         <sys_id>24d564d0978546105f703dafe153af17</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9cd524d0978546105f703dafe153affb_table_name_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-15 18:54:12</sys_updated_on>
         <url/>
@@ -1351,11 +1353,11 @@
         <sys_created_on>2024-03-15 18:54:11</sys_created_on>
         <sys_id>e0d564d0978546105f703dafe153af0f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_9cd524d0978546105f703dafe153affb_changed_fields_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2024-03-15 18:54:11</sys_updated_on>
         <url/>
