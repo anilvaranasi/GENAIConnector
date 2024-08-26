@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic_library_usage">
+    <sys_cb_topic_library_usage action="DELETE">
+        <calling_cb_topic_id display_value="IBM ServiceNow Career Carnival">55bb8832c308d25049521d12b40131e2</calling_cb_topic_id>
+        <library_cb_topic_id display_value="Pause">86d5980f534e2010c232ddeeff7b1238</library_cb_topic_id>
+        <sys_class_name>sys_cb_topic_library_usage</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 14:29:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1c749943c3c4565049521d12b4013173</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_cb_topic_library_usage_1c749943c3c4565049521d12b4013173</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 14:29:32</sys_updated_on>
+    </sys_cb_topic_library_usage>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sys_cb_topic_library_usage_1c749943c3c4565049521d12b4013173</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic_library_usage"><sys_cb_topic_library_usage action="INSERT_OR_UPDATE"><calling_cb_topic_id display_value="IBM ServiceNow Career Carnival">55bb8832c308d25049521d12b40131e2</calling_cb_topic_id><library_cb_topic_id display_value="Pause">86d5980f534e2010c232ddeeff7b1238</library_cb_topic_id><sys_class_name>sys_cb_topic_library_usage</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-20 14:29:32</sys_created_on><sys_domain>global</sys_domain><sys_id>1c749943c3c4565049521d12b4013173</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package><sys_policy/><sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope><sys_update_name>sys_cb_topic_library_usage_1c749943c3c4565049521d12b4013173</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-20 14:29:32</sys_updated_on></sys_cb_topic_library_usage></record_update>]]></payload>
+        <payload_hash>1106510303</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b006efedc327021049521d12b40131a8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 14:29:32</sys_created_on>
+        <sys_id>d4749943c3c4565049521d12b4013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19170316bdb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 14:29:32</sys_updated_on>
+        <type>Topic Library Usage</type>
+        <update_guid>987499431dc456504242d90b44d21a75</update_guid>
+        <update_guid_history>987499431dc456504242d90b44d21a75:1106510303</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 14:31:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic_library_usage">sys_cb_topic_library_usage</sys_db_object>
+        <sys_id>4ce60043685d45339fe01df489aa0159</sys_id>
+        <sys_metadata>1c749943c3c4565049521d12b4013173</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_library_usage_1c749943c3c4565049521d12b4013173</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_library_usage_1c749943c3c4565049521d12b4013173">d4749943c3c4565049521d12b4013176</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 14:31:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
