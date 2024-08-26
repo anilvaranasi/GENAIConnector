@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="DELETE">
+        <cs_topic_id display_value="_PRVW__6ecb0c368c08d250b901354719e0fbc9">8bcb4c36c308d25049521d12b4013159</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[{"variable_name":"query","nlu_entity":"userToAdd","nlu_entity_label":"userToAdd"}]</nlu_entities>
+        <nlu_intent>CheckITTicketStatus</nlu_intent>
+        <nlu_intent_label>CheckITTicketStatus</nlu_intent_label>
+        <nlu_model>sn_itsm_nlu_ITSM_NLU_for_VA</nlu_model>
+        <nlu_model_label>ITSM NLU for Virtual Agent</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-19 14:33:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>07cb4c36c308d25049521d12b401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_cs_topic_language_07cb4c36c308d25049521d12b401316b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-19 14:33:41</sys_updated_on>
+    </sys_cs_topic_language>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sys_cs_topic_language_07cb4c36c308d25049521d12b401316b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language"><sys_cs_topic_language action="INSERT_OR_UPDATE"><cs_topic_id display_value="_PRVW__6ecb0c368c08d250b901354719e0fbc9">8bcb4c36c308d25049521d12b4013159</cs_topic_id><language_code>en</language_code><nlu_entities>[{"variable_name":"query","nlu_entity":"userToAdd","nlu_entity_label":"userToAdd"}]</nlu_entities><nlu_intent>CheckITTicketStatus</nlu_intent><nlu_intent_label>CheckITTicketStatus</nlu_intent_label><nlu_model>sn_itsm_nlu_ITSM_NLU_for_VA</nlu_model><nlu_model_label>ITSM NLU for Virtual Agent</nlu_model_label><nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider><sys_class_name>sys_cs_topic_language</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-19 14:33:41</sys_created_on><sys_domain>global</sys_domain><sys_id>07cb4c36c308d25049521d12b401316b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package><sys_policy/><sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope><sys_update_name>sys_cs_topic_language_07cb4c36c308d25049521d12b401316b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-19 14:33:41</sys_updated_on></sys_cs_topic_language></record_update>]]></payload>
+        <payload_hash>792983267</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>b006efedc327021049521d12b40131a8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-19 14:33:41</sys_created_on>
+        <sys_id>03cb4c36c308d25049521d12b401316d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1916b0eda520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-19 14:33:41</sys_updated_on>
+        <type>CS Topic Language</type>
+        <update_guid>07cb4c365e08d250cba59b0b5757756c</update_guid>
+        <update_guid_history>07cb4c365e08d250cba59b0b5757756c:792983267</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-20 03:23:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_language">sys_cs_topic_language</sys_db_object>
+        <sys_id>97645d006f7543008578954211c76100</sys_id>
+        <sys_metadata>07cb4c36c308d25049521d12b401316b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_language_07cb4c36c308d25049521d12b401316b</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_language_07cb4c36c308d25049521d12b401316b">03cb4c36c308d25049521d12b401316d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-20 03:23:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

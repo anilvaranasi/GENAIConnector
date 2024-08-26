@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="staticinputtext" table="x_146833_genaico_0_watsonxaiinput">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="lookupnumber" table="x_146833_genaico_0_watsonxaiinput">
         <active>true</active>
         <array>false</array>
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice/>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>StaticInputText</column_label>
+        <column_label>Lookupnumber</column_label>
         <comments/>
         <create_roles/>
-        <default_value>&lt;|system|&gt;\nYou are Granite Chat, an AI language model developed by IBM. You are a cautious assistant. You carefully follow instructions. You are helpful and harmless and you follow ethical guidelines and promote positive behavior. You always respond to greetings (for example, hi, hello, good day, morning, afternoon, evening, night, what's up, nice to meet you, sup, etc) with \"Hello! I am Granite Chat, created by IBM. How can I help you today?\". Please do not say anything else and do not start a conversation.\n&lt;|user|&gt;\nREPLACETEXT</default_value>
+        <default_value/>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -21,7 +21,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>staticinputtext</element>
+        <element>lookupnumber</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -29,7 +29,7 @@
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>4000</max_length>
+        <max_length>40</max_length>
         <name>x_146833_genaico_0_watsonxaiinput</name>
         <next_element/>
         <primary>false</primary>
@@ -46,14 +46,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-07-19 06:07:47</sys_created_on>
-        <sys_name>StaticInputText</sys_name>
+        <sys_created_on>2024-08-20 13:40:15</sys_created_on>
+        <sys_name>Lookupnumber</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_update_name>sys_dictionary_x_146833_genaico_0_watsonxaiinput_staticinputtext</sys_update_name>
+        <sys_update_name>sys_dictionary_x_146833_genaico_0_watsonxaiinput_lookupnumber</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-20 13:34:18</sys_updated_on>
+        <sys_updated_on>2024-08-20 13:40:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
