@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>search</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Co-create with other community members</short_description>
+        <size>md</size>
+        <sp_column display_value="1">5948e74dc39c521049521d12b4013115</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 15:30:26</sys_created_on>
+        <sys_id>aaebd405c31c121049521d12b40131a0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>ServiceNow Community</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_instance_link_aaebd405c31c121049521d12b40131a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:23:18</sys_updated_on>
+        <title>ServiceNow Community</title>
+        <type>url</type>
+        <url>https://www.servicenow.com/community/forums/searchpage/tab/message?filter=includeTkbs,authorId&amp;q=how&amp;include_tkbs=true&amp;author_id=379588&amp;collapse_discussion=true</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=aaebd405c31c121049521d12b40131a0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sp_instance_link_aaebd405c31c121049521d12b40131a0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;search&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description&gt;Co-create with other community members&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;5948e74dc39c521049521d12b4013115&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-26 15:30:26&lt;/sys_created_on&gt;&lt;sys_id&gt;aaebd405c31c121049521d12b40131a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;ServiceNow Community&lt;/sys_name&gt;&lt;sys_package display_value="GENAIConnector" source="x_146833_genaico_0"&gt;a8694c9897c146105f703dafe153af3c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GENAIConnector"&gt;a8694c9897c146105f703dafe153af3c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_aaebd405c31c121049521d12b40131a0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-27 06:23:18&lt;/sys_updated_on&gt;&lt;title&gt;ServiceNow Community&lt;/title&gt;&lt;type&gt;url&lt;/type&gt;&lt;url&gt;https://www.servicenow.com/community/forums/searchpage/tab/message?filter=includeTkbs,authorId&amp;amp;q=how&amp;amp;include_tkbs=true&amp;amp;author_id=379588&amp;amp;collapse_discussion=true&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=aaebd405c31c121049521d12b40131a0"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1703034036</payload_hash>
+        <record_name>ServiceNow Community</record_name>
+        <reverted_from/>
+        <source>e768ba34c3d0121049521d12b401312b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:23:18</sys_created_on>
+        <sys_id>7548ab4dc39c521049521d12b4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1919280c5f00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:23:18</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>f948ab4daa9c5210d3e3f85705a35217</update_guid>
+        <update_guid_history>f948ab4daa9c5210d3e3f85705a35217:-1703034036,8466a3c9c69c5210435bc197c7001669:113434589,4d46a349259c5210be225dcd259e24d3:-1148331613,faebd405b31c121054b218c5df2567a2:-1523560081</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ServiceNow Community">6fd86f8dc39c521049521d12b4013107</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:25:52</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>94e21491d8104265a6dada220172d029</sys_id>
+        <sys_metadata>aaebd405c31c121049521d12b40131a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceNow Community</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sp_instance_link_aaebd405c31c121049521d12b40131a0</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_aaebd405c31c121049521d12b40131a0">7548ab4dc39c521049521d12b4013118</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:25:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

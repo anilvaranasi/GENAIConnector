@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>ServiceNow GENAI Assistant - Container 2</name>
+        <order>2</order>
+        <semantic_tag/>
+        <sp_page display_value="sga_index">4eeb9405c31c121049521d12b401319c</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 07:06:05</sys_created_on>
+        <sys_id>60123bc9c3dc521049521d12b40131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceNow GENAI Assistant - Container 2</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_container_60123bc9c3dc521049521d12b40131d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 07:06:05</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

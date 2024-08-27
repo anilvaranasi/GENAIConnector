@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>road</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item display_value="Create case for a product">de45c412c312310015519f2974d3ae1b</sc_cat_item>
+        <sc_category display_value="Support">1b8611d5c3921200b0449f2974d3ae12</sc_category>
+        <short_description>Kick start your ServiceNow GENAI  journey by using this gitrepo ServiceNow App</short_description>
+        <size>md</size>
+        <sp_column display_value="3">d548af4dc39c521049521d12b4013119</sp_column>
+        <sp_page display_value="sc_category">07261a2147132100ba13a5554ee49092</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 15:30:26</sys_created_on>
+        <sys_id>baebd405c31c121049521d12b40131ab</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Free Code on GitHub</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_instance_link_baebd405c31c121049521d12b40131ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:23:24</sys_updated_on>
+        <title>Free Code on GitHub</title>
+        <type>url</type>
+        <url>https://github.com/anilvaranasi/GENAIConnector</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=baebd405c31c121049521d12b40131ab"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sp_instance_link_baebd405c31c121049521d12b40131ab</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;road&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item display_value="Create case for a product"&gt;de45c412c312310015519f2974d3ae1b&lt;/sc_cat_item&gt;&lt;sc_category display_value="Support"&gt;1b8611d5c3921200b0449f2974d3ae12&lt;/sc_category&gt;&lt;short_description&gt;Kick start your ServiceNow GENAI  journey by using this gitrepo ServiceNow App&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="3"&gt;d548af4dc39c521049521d12b4013119&lt;/sp_column&gt;&lt;sp_page display_value="sc_category"&gt;07261a2147132100ba13a5554ee49092&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-26 15:30:26&lt;/sys_created_on&gt;&lt;sys_id&gt;baebd405c31c121049521d12b40131ab&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Free Code on GitHub&lt;/sys_name&gt;&lt;sys_package display_value="GENAIConnector" source="x_146833_genaico_0"&gt;a8694c9897c146105f703dafe153af3c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GENAIConnector"&gt;a8694c9897c146105f703dafe153af3c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_baebd405c31c121049521d12b40131ab&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-27 06:23:24&lt;/sys_updated_on&gt;&lt;title&gt;Free Code on GitHub&lt;/title&gt;&lt;type&gt;url&lt;/type&gt;&lt;url&gt;https://github.com/anilvaranasi/GENAIConnector&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=baebd405c31c121049521d12b40131ab"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-926952162</payload_hash>
+        <record_name>Free Code on GitHub</record_name>
+        <reverted_from/>
+        <source>e768ba34c3d0121049521d12b401312b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:23:24</sys_created_on>
+        <sys_id>d748af4dc39c521049521d12b40131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1919280dd430000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:23:24</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>5f48af4dd99c5210e2b2520555c6a0eb</update_guid>
+        <update_guid_history>5f48af4dd99c5210e2b2520555c6a0eb:-926952162,9748af4d5d9c52105bf6f02dd82958d2:-957531713,3648af4dd39c5210c7109d4808ba02a9:-926952162,c5672bc5b29c52105c035d2fa4f8eaab:-957531713,f6ebd405881c121037bcac770cf6bdc6:1522044547</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Free Code on GitHub">67d86f8dc39c521049521d12b4013113</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:25:52</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>5c1c07983bdb41208e4224b7f83bd3e9</sys_id>
+        <sys_metadata>baebd405c31c121049521d12b40131ab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Free Code on GitHub</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sp_instance_link_baebd405c31c121049521d12b40131ab</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_baebd405c31c121049521d12b40131ab">d748af4dc39c521049521d12b40131ec</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:25:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

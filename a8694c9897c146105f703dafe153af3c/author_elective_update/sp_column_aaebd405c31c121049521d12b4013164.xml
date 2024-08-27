@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <semantic_tag/>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">66ebd405c31c121049521d12b4013149</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 15:30:25</sys_created_on>
+        <sys_id>aaebd405c31c121049521d12b4013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_column_aaebd405c31c121049521d12b4013164</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 15:30:25</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sp_column_aaebd405c31c121049521d12b4013164</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><semantic_tag/><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">66ebd405c31c121049521d12b4013149</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 15:30:25</sys_created_on><sys_id>aaebd405c31c121049521d12b4013164</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package><sys_policy/><sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope><sys_update_name>sp_column_aaebd405c31c121049521d12b4013164</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 15:30:25</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>811480732</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>e768ba34c3d0121049521d12b401312b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 15:30:25</sys_created_on>
+        <sys_id>aaebd405c31c121049521d12b4013166</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1918f4f50d80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 15:30:25</sys_updated_on>
+        <type>Column</type>
+        <update_guid>aeebd405b81c121000019b401eb10a65</update_guid>
+        <update_guid_history>aeebd405b81c121000019b401eb10a65:811480732</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">7a704345c3d8521049521d12b40131d2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 03:29:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>051ae09669b5412a8b27311dc9d0c244</sys_id>
+        <sys_metadata>aaebd405c31c121049521d12b4013164</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sp_column_aaebd405c31c121049521d12b4013164</sys_update_name>
+        <sys_update_version display_value="sp_column_aaebd405c31c121049521d12b4013164">aaebd405c31c121049521d12b4013166</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 03:29:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_agent_chat_config">
+    <sp_agent_chat_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>ServiceNow GENAI Assistant</name>
+        <order>100</order>
+        <portal>50cb5005c31c121049521d12b4013176</portal>
+        <public>true</public>
+        <roles/>
+        <server_script><![CDATA[// (function($sp) {
+// 	return {
+// 		live_agent_queue: $sp.getDisplayValue('sp_chat_queue')
+// 		};
+// })($sp);
+
+(function($sp) {
+    var isVAActive = GlidePluginManager.isActive('com.glide.cs.chatbot');
+    var configObj = {};
+    configObj.portal = $sp.getValue('url_suffix');
+    configObj.live_agent_only = !isVAActive;
+    return configObj;
+})($sp);]]></server_script>
+        <sys_class_name>sp_agent_chat_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-26 15:35:00</sys_created_on>
+        <sys_id>a1fc9809c31c121049521d12b40131e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceNow GENAI Assistant</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_agent_chat_config_a1fc9809c31c121049521d12b40131e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-26 15:35:00</sys_updated_on>
+    </sp_agent_chat_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=a1fc9809c31c121049521d12b40131e9"/>
+</record_update>
