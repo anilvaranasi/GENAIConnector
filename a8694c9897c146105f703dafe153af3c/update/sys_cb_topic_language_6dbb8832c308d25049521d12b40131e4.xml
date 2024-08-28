@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic_language">
     <sys_cb_topic_language action="INSERT_OR_UPDATE">
-        <cb_topic_id display_value="IBM ServiceNow Career Carnival">55bb8832c308d25049521d12b40131e2</cb_topic_id>
+        <cb_topic_id display_value="ServiceNow GENAI">55bb8832c308d25049521d12b40131e2</cb_topic_id>
         <language_code>en</language_code>
-        <nlu_entities>[{"node_id":"f5c58fd1b7f3477ba977a97880ecf868","variable_name":"query","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_entities>[{"node_id":"f5c58fd1b7f3477ba977a97880ecf868","variable_name":"query","nlu_entity":"","nlu_entity_label":""},{"node_id":"12328b8a541d440189d4c532cd2affa9","variable_name":"select_gen_ai_usecase","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
         <nlu_intent/>
         <nlu_intent_label/>
         <nlu_model/>
@@ -13,13 +13,13 @@
         <sys_created_on>2024-08-19 14:33:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>6dbb8832c308d25049521d12b40131e4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sys_cb_topic_language_6dbb8832c308d25049521d12b40131e4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-19 14:38:04</sys_updated_on>
+        <sys_updated_on>2024-08-28 17:00:08</sys_updated_on>
     </sys_cb_topic_language>
 </record_update>

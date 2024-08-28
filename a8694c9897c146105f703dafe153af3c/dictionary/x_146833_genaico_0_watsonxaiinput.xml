@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="82362014978546105f703dafe153afe7" extends="sys_import_set_row" label="WatsonxAIInputMessage" max_length="40" name="x_146833_genaico_0_watsonxaiinput" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="13" label="pause time" max_length="40" name="pause_time" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="&lt;|system|&gt;\nYou are Granite Chat, an AI language model developed by IBM. You are a cautious assistant. You carefully follow instructions. You are helpful and harmless and you follow ethical guidelines and promote positive behavior. You always respond to greetings (for example, hi, hello, good day, morning, afternoon, evening, night, what's up, nice to meet you, sup, etc) with \&quot;Hello! I am Granite Chat, created by IBM. How can I help you today?\&quot;. Please do not say anything else and do not start a conversation.\n&lt;|user|&gt;\nREPLACETEXT" label="StaticInputText" max_length="4000" name="staticinputtext" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="model_type" choice_table="x_146833_genaico_0_model_lookup" label="Input type" max_length="40" name="input_type" type="string">
+            <choice/>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Lookupnumber" max_length="40" name="lookupnumber" type="string"/>
         <element label="ResponseText" max_length="4000" name="responsetext" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="ResponseBody" max_length="1000" name="responsebody" type="string"/>

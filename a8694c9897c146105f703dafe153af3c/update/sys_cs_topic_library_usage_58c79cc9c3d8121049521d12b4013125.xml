@@ -2,20 +2,20 @@
     <sys_cs_topic_library_usage action="INSERT_OR_UPDATE">
         <calling_cs_topic_id display_value="ServiceNow GENAI">68cbc836c308d25049521d12b401314b</calling_cs_topic_id>
         <library_cs_topic_id display_value="Pause">da36dc0f534e2010c232ddeeff7b12d4</library_cs_topic_id>
-        <library_usage>{"type":"LibraryCall","library_topic_name":"Pause","library_topic_id":"da36dc0f534e2010c232ddeeff7b12d4","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"seconds","value":{"type":"String","mode":"string","value":"13"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[],"id":"7e2a5aa043784f42b03aee4f749f22f3","name":"Pause until LLM responds to input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}</library_usage>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"Pause","library_topic_id":"da36dc0f534e2010c232ddeeff7b12d4","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"seconds","value":{"type":"String","mode":"string","value":"{{vaInputs.create_watsonx_input_record.pause_time}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[],"id":"7e2a5aa043784f42b03aee4f749f22f3","name":"Pause until LLM responds to input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false}</library_usage>
         <node_id>7e2a5aa043784f42b03aee4f749f22f3</node_id>
         <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-08-26 15:12:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>58c79cc9c3d8121049521d12b4013125</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sys_cs_topic_library_usage_58c79cc9c3d8121049521d12b4013125</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-26 15:21:29</sys_updated_on>
+        <sys_updated_on>2024-08-28 09:33:37</sys_updated_on>
     </sys_cs_topic_library_usage>
 </record_update>

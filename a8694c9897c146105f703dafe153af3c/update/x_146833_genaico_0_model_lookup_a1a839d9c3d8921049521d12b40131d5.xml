@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="x_146833_genaico_0_model_lookup">
     <x_146833_genaico_0_model_lookup action="INSERT_OR_UPDATE">
         <active>true</active>
+        <images>f4c183e1c358161049521d12b401313f</images>
         <model_name>ibm/granite-13b-chat-v2</model_name>
-        <model_static_text>&lt;|system|&gt;\nYou are Granite Chat, an AI language model developed by IBM. You are a cautious assistant. You carefully follow instructions. You are helpful and harmless and you follow ethical guidelines and promote positive behavior. You always respond to greetings (for example, hi, hello, good day, morning, afternoon, evening, night, what's up, nice to meet you, sup, etc) with \"Hello! I am Granite Chat, created by IBM. How can I help you today?\". Please do not say anything else and do not start a conversation.\n&lt;|user|&gt;\nREPLACETEXT</model_static_text>
+        <model_static_text>&lt;|system|&gt;\nYou are Granite Chat, an AI language model developed by IBM. You are a cautious assistant. You carefully follow instructions. You are helpful and harmless and you follow ethical guidelines and promote positive behavior. You always respond to greetings (for example, hi, hello, good day, morning, afternoon, evening, night, what's up, nice to meet you, sup, etc) with \"Hello! I am Granite Chat, created by IBM. How may I help you today?\". Please do not say anything else and do not start a conversation.\n&lt;|user|&gt;\nREPLACETEXT</model_static_text>
+        <model_type>chat</model_type>
         <order>100</order>
+        <pause_time>13</pause_time>
         <sys_class_name>x_146833_genaico_0_model_lookup</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-08-27 16:54:38</sys_created_on>
         <sys_id>a1a839d9c3d8921049521d12b40131d5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>100</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>x_146833_genaico_0_model_lookup_a1a839d9c3d8921049521d12b40131d5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-27 16:55:03</sys_updated_on>
+        <sys_updated_on>2024-08-28 17:26:32</sys_updated_on>
     </x_146833_genaico_0_model_lookup>
 </record_update>
