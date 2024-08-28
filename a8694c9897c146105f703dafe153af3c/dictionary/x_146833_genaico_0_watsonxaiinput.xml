@@ -7,7 +7,7 @@
         <element attributes="edge_encryption_enabled=true,import_attribute_name=parameters" default="{&#10;&#9;&#9;&quot;decoding_method&quot;: &quot;greedy&quot;,&#10;&#9;&#9;&quot;max_new_tokens&quot;: 900,&#10;&#9;&#9;&quot;min_new_tokens&quot;: 0,&#10;&#9;&#9;&quot;stop_sequences&quot;: [" label="parameters" mandatory="true" max_length="102" name="u_parameters" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=input" default="IBM ServiceNow career carnival" display="true" label="input" mandatory="true" max_length="2000" name="u_input" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="FinalInputText" max_length="4000" name="finalinputtext" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=model_id" default="meta-llama/llama-2-70b-chat" label="model_id" mandatory="true" max_length="40" name="u_model_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=model_id" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;&#13;&#10;&#9;return &quot;&quot;;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.getProperty(&quot;x_146833_genaico_0.modelid&quot;);" dynamic_default_value="901dbd11c31c921049521d12b401317f" label="model_id" mandatory="true" max_length="40" name="u_model_id" type="string" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="ready" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Loading" sequence="1" value="Loading"/>
@@ -16,6 +16,6 @@
                 <element inactive_on_update="false" label="ready" sequence="0" value="ready"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=project_id" default="javascript:gs.getProperty(&quot;x_146833_genaico_0.watsonxai.projectId&quot;);" dynamic_default_value="e40aff14970986105f703dafe153afbf" label="project_id" mandatory="true" max_length="40" name="u_project_id" type="string" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=project_id" default="javascript:gs.getProperty(&quot;x_146833_genaico_0.projectid&quot;);" dynamic_default_value="e40aff14970986105f703dafe153afbf" label="project_id" mandatory="true" max_length="40" name="u_project_id" type="string" use_dynamic_default="true"/>
     </element>
 </database>

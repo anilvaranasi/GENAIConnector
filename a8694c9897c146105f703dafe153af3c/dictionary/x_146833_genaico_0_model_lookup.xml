@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" db_object_id="c536b9d5c3d8921049521d12b401312a" extends="dl_matcher" label="Model Lookup" max_length="40" name="x_146833_genaico_0_model_lookup" type="collection">
+        <element label="Model Name" max_length="40" name="model_name" type="string"/>
+        <element default="&lt;|system|&gt;\nYou are Granite Chat, an AI language model developed by IBM. You are a cautious assistant. You carefully follow instructions. You are helpful and harmless and you follow ethical guidelines and promote positive behavior. You always respond to greetings (for example, hi, hello, good day, morning, afternoon, evening, night, what's up, nice to meet you, sup, etc) with \&quot;Hello! I am Granite Chat, created by IBM. How can I help you today?\&quot;. Please do not say anything else and do not start a conversation.\n&lt;|user|&gt;\nREPLACETEXT" label="Model Static Text" max_length="4000" name="model_static_text" type="string"/>
+    </element>
+</database>
