@@ -384,7 +384,7 @@
             ],
             "mode": "simple"
           },
-          "carouselItemExpression": "(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n\n       var options = [];\n       options.push(\n            {\n                'name': 'name1',\n                'value': 'value_1',\n                'description': 'a description of value_1 item',\n                'body': 'https://somehost/somepath/somepic1.jpg'\n            }\n       );\n       options.push(\n            {\n                'name': 'name2',\n                'value': 'value_2',\n                'description': 'a description of value_2 item',\n                'body': 'https://somehost/somepath/somepic2.jpg'\n            }\n       );\n       return options;\n    */\n\n    var options = []; // add options here...\n    options.push(\n            {\n                'name': 'chat',\n                'value': 'chat',\n                'description': 'Ask a question for LLM to answer',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Chat.png'\n            },\n                        {\n                'name': 'code',\n                'value': 'code',\n                'description': 'Input code for LLM to explain',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Code.png'\n            }\n       );\n    return options;\n})()\n",
+          "carouselItemExpression": "(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n\n       var options = [];\n       options.push(\n            {\n                'name': 'name1',\n                'value': 'value_1',\n                'description': 'a description of value_1 item',\n                'body': 'https://somehost/somepath/somepic1.jpg'\n            }\n       );\n       options.push(\n            {\n                'name': 'name2',\n                'value': 'value_2',\n                'description': 'a description of value_2 item',\n                'body': 'https://somehost/somepath/somepic2.jpg'\n            }\n       );\n       return options;\n    */\n\n    var options = []; // add options here...\n    options.push(\n            {\n                'name': 'chat',\n                'value': 'chat',\n                'description': 'Ask a question for LLM to answer',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Chat.png'\n            },\n                        {\n                'name': 'code',\n                'value': 'code',\n                'description': 'Input code for LLM to explain',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Code.png'\n            }\n            ,\n                        {\n                'name': 'translate',\n                'value': 'translate',\n                'description': 'Input text for LLM to translate',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20translate.png'\n            }\n       );\n    return options;\n})()\n",
           "noRecordsResponseMsg": {
             "value": [
               {
@@ -576,14 +576,14 @@
         <sys_created_on>2024-08-19 14:33:17</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>55bb8832c308d25049521d12b40131e2</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>ServiceNow GENAI</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sys_cb_topic_55bb8832c308d25049521d12b40131e2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-28 17:19:38</sys_updated_on>
+        <sys_updated_on>2024-08-28 18:21:12</sys_updated_on>
         <title>ServiceNow GENAI chat assistant</title>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>

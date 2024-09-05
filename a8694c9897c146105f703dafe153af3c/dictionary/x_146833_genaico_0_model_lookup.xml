@@ -7,7 +7,7 @@
                 <element inactive_on_update="false" label="instruct" sequence="1" value="instruct"/>
                 <element inactive_on_update="false" label="chat" sequence="0" value="chat"/>
                 <element inactive_on_update="false" label="multilang" sequence="3" value="multilang"/>
-                <element inactive_on_update="false" label="large" sequence="4" value="large"/>
+                <element inactive_on_update="false" label="translate" sequence="4" value="translate"/>
             </choice>
         </element>
         <element label="Model Name" max_length="40" name="model_name" type="string"/>
