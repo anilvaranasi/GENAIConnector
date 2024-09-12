@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_public">
+    <sys_public action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <page>x_146833_genaico_0.Cat%20Image.jpg</page>
+        <sys_class_name>sys_public</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-06 13:33:46</sys_created_on>
+        <sys_id>ebaa64a8c3a0161049521d12b4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_146833_genaico_0.Cat%20Image.jpg</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_public_ebaa64a8c3a0161049521d12b4013197</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-06 13:33:46</sys_updated_on>
+    </sys_public>
+</record_update>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
+        <alternate_portal/>
         <css_variables>$brand-primary:#161616;&#13;
 $body-bg:#ffffff;&#13;
 $state-success-text:#181A1F;&#13;
@@ -27,8 +28,9 @@ $navbar-inverse-link-active-color: #ffffff;</css_variables>
         <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
         <enable_favorites>false</enable_favorites>
         <hide_portal_name>false</hide_portal_name>
-        <homepage display_value="isc_index">7d1bdccac3c0de1049521d12b401316b</homepage>
+        <homepage display_value="sga_index">4eeb9405c31c121049521d12b401319c</homepage>
         <icon>0132c3c5c3d8521049521d12b4013123</icon>
+        <inactive>false</inactive>
         <kb_knowledge_base display_value="Customer Service">05ff44289f011200550bf7b6077fcfa3</kb_knowledge_base>
         <kb_knowledge_page display_value="kb_home">e1c919e4dbd3220099f93691f0b8f535</kb_knowledge_page>
         <login_page/>
@@ -60,14 +62,14 @@ $navbar-inverse-link-active-color: #ffffff;</css_variables>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-08-26 15:29:43</sys_created_on>
         <sys_id>50cb5005c31c121049521d12b4013176</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>ServiceNow GENAI Assistant</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sp_portal_50cb5005c31c121049521d12b4013176</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-27 03:37:02</sys_updated_on>
+        <sys_updated_on>2024-09-08 16:18:09</sys_updated_on>
         <theme display_value="Portal Next Experience Theme">f548bd34845a1110f87767389929c667</theme>
         <title>ServiceNow GENAI Assistant</title>
         <ts_index_group/>
