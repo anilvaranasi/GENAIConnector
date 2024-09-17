@@ -18,6 +18,7 @@
         <internal_name>watsonaigeneratetoken</internal_name>
         <label_cache>[{"name":"{{action.accesstoken}}","label":"action➛accesstoken","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.tablename}}","label":"action➛tableName","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.update_record_field_values}}","label":"action➛update_record_field_values","type":"action","ref":"","reference_display":"","base_type":"template_value","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.templatename}}","label":"action➛templateName","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.lookup_table_name}}","label":"action➛lookup_table_name","type":"action","ref":"","reference_display":"","base_type":"table_name","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6f84826b-daaa-4b62-a5dc-a22390af0a00].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root.access_token}}","label":"step➛JSON Parser step➛root➛access_token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root.token_type}}","label":"step➛JSON Parser step➛root➛token_type","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root.expires_in}}","label":"step➛JSON Parser step➛root➛expires_in","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root.expiration}}","label":"step➛JSON Parser step➛root➛expiration","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FD1a629cd473054610b0e0c38446cecb22","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"22ef37c5-f1b2-45aa-9e12-5ff3a1937d10"}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root.scope}}","label":"step➛JSON Parser step➛root➛scope","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[32e87409-b569-423c-810f-fad742f9e1b4].root.refresh_token}}","label":"step➛JSON Parser step➛root➛refresh_token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>4f346c10978546105f703dafe153af75</master_snapshot>
+        <master_snapshot_digest/>
         <name>WatsonAIGenerateToken</name>
         <natlang/>
         <outputs/>
@@ -1603,7 +1604,7 @@ grToken.get('16b05854970546105f703dafe153af20');&#13;
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="WatsonAIGenerateToken">5b5d0c10970546105f703dafe153af20</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a334ac10978546105f703dafe153af5a","name":"plan","plan_signature":null}}</plan>
-        <snapshot>d74f2b26c380d25049521d12b4013117</snapshot>
+        <snapshot>eeaf4f49c368521049521d12b40131ea</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-15 18:47:18</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -3178,6 +3179,6 @@ grToken.get('16b05854970546105f703dafe153af20');&#13;
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>5b5d0c10970546105f703dafe153af20</sys_id>
         <latest_snapshot>4f346c10978546105f703dafe153af75</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1-06-10-2024_06-17-2024_2231.zip</compiler_build>
+        <compiler_build>glide-xanadu-07-02-2024__patch0-07-16-2024_07-27-2024_1019.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

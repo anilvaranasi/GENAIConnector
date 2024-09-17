@@ -49,6 +49,7 @@
         <chunk_size_bytes>700000</chunk_size_bytes>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>channels4_profile2.png</file_name>
         <hash>d9d9ae6234dc51e32171b203af1833621f6d6585445575d6fd14c5af0fe8469b</hash>
         <image_height>176</image_height>

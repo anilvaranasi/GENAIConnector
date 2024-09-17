@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Data Lookup and Record Matching Support" source="com.glide.data_lookup">c5397704e4d2021008dda4ccc40080f3</dependency>
+        <min_version>1.0.6</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 16:45:38</sys_created_on>
+        <sys_id>86b6b519c3d8921049521d12b40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 16:45:38</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
