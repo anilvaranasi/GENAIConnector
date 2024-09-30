@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_baseline=true" db_object_id="933e7f36c370521049521d12b4013171" extends="cmdb_qb_result_base" label="Insight - Cloud Service Accounts-Query Results" max_length="40" name="u_cmdb_qb_result_b48191d91c1290a139becd6e25116a1c17f62859" type="collection">
+        <element attributes="encode_utf8=false" label="Cloud Service Account 1" max_length="32" name="x_146833_genaico_0_u_cloud_service_account_1" reference="cmdb_ci_cloud_service_account" reference_cascade_rule="none" type="reference"/>
+    </element>
+</database>
