@@ -20,6 +20,7 @@
         <label_cache>[{"name":"{{action.inputtext}}","label":"action➛inputText","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[b8129505-ff45-45c5-a661-835854df02c2].accesstoken}}","label":"step➛Script step➛accesstoken","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"80c5299a-ae01-4fc2-b73c-3e42c068ac41"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
+        <master_snapshot_digest/>
         <name>CSDM assistant Virtual Agent REST call</name>
         <natlang/>
         <outputs/>

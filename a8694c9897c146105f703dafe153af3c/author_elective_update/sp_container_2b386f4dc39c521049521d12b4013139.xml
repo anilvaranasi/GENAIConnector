@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>ServiceNow GENAI Assistant - Container 3</name>
+        <order>3</order>
+        <semantic_tag/>
+        <sp_page display_value="sga_index">4eeb9405c31c121049521d12b401319c</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:23:08</sys_created_on>
+        <sys_id>2b386f4dc39c521049521d12b4013139</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ServiceNow GENAI Assistant - Container 3</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_container_2b386f4dc39c521049521d12b4013139</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:24:00</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sp_container_2b386f4dc39c521049521d12b4013139</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>ServiceNow GENAI Assistant - Container 3</name><order>3</order><semantic_tag/><sp_page display_value="sga_index">4eeb9405c31c121049521d12b401319c</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-27 06:23:08</sys_created_on><sys_id>2b386f4dc39c521049521d12b4013139</sys_id><sys_mod_count>2</sys_mod_count><sys_name>ServiceNow GENAI Assistant - Container 3</sys_name><sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package><sys_policy/><sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope><sys_update_name>sp_container_2b386f4dc39c521049521d12b4013139</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-27 06:24:00</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-2058509287</payload_hash>
+        <record_name>ServiceNow GENAI Assistant - Container 3</record_name>
+        <reverted_from/>
+        <source>e768ba34c3d0121049521d12b401312b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:24:00</sys_created_on>
+        <sys_id>0078a38dc39c521049521d12b40131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19192816a7c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:24:00</sys_updated_on>
+        <type>Container</type>
+        <update_guid>8478a38d639c5210a7b8e4ebab9bc3e6</update_guid>
+        <update_guid_history>8478a38d639c5210a7b8e4ebab9bc3e6:-2058509287,9e58238dcb9c5210cdac53cade4dafe2:-218826598,6b386f4dc69c521077ebe868950c2d3b:-2058509287</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ServiceNow GENAI Assistant - Container 3">c7d82f8dc39c521049521d12b40131d0</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-27 06:25:53</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>13bc104687124698a4d2ec822f071a40</sys_id>
+        <sys_metadata>2b386f4dc39c521049521d12b4013139</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ServiceNow GENAI Assistant - Container 3</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sp_container_2b386f4dc39c521049521d12b4013139</sys_update_name>
+        <sys_update_version display_value="sp_container_2b386f4dc39c521049521d12b4013139">0078a38dc39c521049521d12b40131e7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-27 06:25:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

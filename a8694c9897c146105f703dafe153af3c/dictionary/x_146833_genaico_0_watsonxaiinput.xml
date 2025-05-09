@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="82362014978546105f703dafe153afe7" extends="sys_import_set_row" label="WatsonxAIInputMessage" max_length="40" name="x_146833_genaico_0_watsonxaiinput" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="13" label="pause time" max_length="40" name="pause_time" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="&lt;|system|&gt;\nYou are Granite Chat, an AI language model developed by IBM. You are a cautious assistant. You carefully follow instructions. You are helpful and harmless and you follow ethical guidelines and promote positive behavior. You always respond to greetings (for example, hi, hello, good day, morning, afternoon, evening, night, what's up, nice to meet you, sup, etc) with \&quot;Hello! I am Granite Chat, created by IBM. How can I help you today?\&quot;. Please do not say anything else and do not start a conversation.\n&lt;|user|&gt;\nREPLACETEXT" label="StaticInputText" max_length="4000" name="staticinputtext" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="model_type" choice_table="x_146833_genaico_0_model_lookup" label="Input type" max_length="40" name="input_type" type="string">
+            <choice/>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Lookupnumber" max_length="40" name="lookupnumber" type="string"/>
         <element label="ResponseText" max_length="4000" name="responsetext" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="ResponseBody" max_length="1000" name="responsebody" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=parameters" default="{&#10;&#9;&#9;&quot;decoding_method&quot;: &quot;greedy&quot;,&#10;&#9;&#9;&quot;max_new_tokens&quot;: 900,&#10;&#9;&#9;&quot;min_new_tokens&quot;: 0,&#10;&#9;&#9;&quot;stop_sequences&quot;: [" label="parameters" mandatory="true" max_length="102" name="u_parameters" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=input" default="IBM ServiceNow career carnival" display="true" label="input" mandatory="true" max_length="2000" name="u_input" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="FinalInputText" max_length="4000" name="finalinputtext" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=model_id" default="meta-llama/llama-2-70b-chat" label="model_id" mandatory="true" max_length="40" name="u_model_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=model_id" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;&#13;&#10;&#9;return &quot;&quot;;  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.getProperty(&quot;x_146833_genaico_0.modelid&quot;);" dynamic_default_value="901dbd11c31c921049521d12b401317f" label="model_id" mandatory="true" max_length="40" name="u_model_id" type="string" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="ready" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Loading" sequence="1" value="Loading"/>
@@ -16,6 +20,6 @@
                 <element inactive_on_update="false" label="ready" sequence="0" value="ready"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=project_id" default="javascript:gs.getProperty(&quot;x_146833_genaico_0.watsonxai.projectId&quot;);" dynamic_default_value="e40aff14970986105f703dafe153afbf" label="project_id" mandatory="true" max_length="40" name="u_project_id" type="string" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=project_id" default="javascript:gs.getProperty(&quot;x_146833_genaico_0.projectid&quot;);" dynamic_default_value="e40aff14970986105f703dafe153afbf" label="project_id" mandatory="true" max_length="40" name="u_project_id" type="string" use_dynamic_default="true"/>
     </element>
 </database>

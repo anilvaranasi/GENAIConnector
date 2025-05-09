@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>2</order>
+        <semantic_tag/>
+        <sp_column/>
+        <sp_container display_value="ServiceNow GENAI Assistant - Container 1">ce503b01c3dc521049521d12b4013182</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-08 16:33:31</sys_created_on>
+        <sys_id>e10767c9c3e8521049521d12b40131e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sp_row_e10767c9c3e8521049521d12b40131e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-08 16:33:31</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</application>
+        <file_path/>
+        <instance_id>b9248aa71bb102d878c7cb7b234bcbb5</instance_id>
+        <instance_name>dev263135</instance_name>
+        <name>sp_row_e10767c9c3e8521049521d12b40131e1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>2</order><semantic_tag/><sp_column/><sp_container display_value="ServiceNow GENAI Assistant - Container 1">ce503b01c3dc521049521d12b4013182</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-08 16:33:31</sys_created_on><sys_id>e10767c9c3e8521049521d12b40131e1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package><sys_policy/><sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope><sys_update_name>sp_row_e10767c9c3e8521049521d12b40131e1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-08 16:33:31</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>581544852</payload_hash>
+        <record_name>2</record_name>
+        <reverted_from/>
+        <source>e768ba34c3d0121049521d12b401312b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-08 16:33:31</sys_created_on>
+        <sys_id>e10767c9c3e8521049521d12b40131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191d27bc07b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-08 16:33:31</sys_updated_on>
+        <type>Row</type>
+        <update_guid>e50767c9fae85210e96d46053c96bee2</update_guid>
+        <update_guid_history>e50767c9fae85210e96d46053c96bee2:581544852</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="2">aa0863c9c3e8521049521d12b40131c7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-08 16:37:58</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>0de6b6efcfe94400af75eab3f8944000</sys_id>
+        <sys_metadata>e10767c9c3e8521049521d12b40131e1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_scope_delete display_value="">2e6b4189ca584eeeb87e0ff4517cfec4</sys_scope_delete>
+        <sys_update_name>sp_row_e10767c9c3e8521049521d12b40131e1</sys_update_name>
+        <sys_update_version display_value="sp_row_e10767c9c3e8521049521d12b40131e1">e10767c9c3e8521049521d12b40131e3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-08 16:37:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

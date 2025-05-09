@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
     <sys_cb_design_topic action="INSERT_OR_UPDATE">
-        <compiled_topic display_value="IBM ServiceNow Career Carnival">68cbc836c308d25049521d12b401314b</compiled_topic>
-        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"dd1a3cb2881f4614b4c8a443378ddcb6","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"dd1a3cb2881f4614b4c8a443378ddcb6"}],"goals":[{"name":"primary","trigger_id":"dd1a3cb2881f4614b4c8a443378ddcb6","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hi welcome to IBM ServiceNow career carnival assistant.\", vaContext.getRequesterLang())"},"id":"8d32606fb83048c3823a5c1d6375c584","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for using CSDM assistant. Powered by WatsonX.\", vaContext.getRequesterLang())"},"id":"a7efbd271caa4c989860cad5aff72e0b","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"008bdff774e8491c92810de6b2e29b08","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Ask your IBM ServiceNow carnival assistant\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"f5c58fd1b7f3477ba977a97880ecf868","name":"Query","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"{{vaInputs.get_response_text.responsetext}}"}],"request_feedback":true,"id":"a7a35243bda846e1ae861d87b8763f1a","name":"Assistant response","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"If Query is End chat","expression":{"type":"Applicability","mode":"query","value":"queryCONTAINSEnd chat"},"id":"70fb895c87c648dbacac9b1b540776b7","name":"If Query is End chat","expert_mode":false},{"type":"Branch","label":"Always","expression":{"type":"Applicability","mode":"query","value":"queryANYTHING"},"id":"a06e9925c9224709a611921f9d89d8cf","name":"Always","expert_mode":false}],"id":"3be67d89725b45afb1905b9b51f8ba6d","goal_id":"primary","expert_mode":false},{"type":"FDIHInvocation","name":"Generate token","kind":"action","mode":"sync","inputs":[],"outputs":[{"name":"__action_status__","order":0,"value":[],"is_list_data_entry":false,"topicVariableName":"action_status_2"},{"name":"__dont_treat_as_error__","order":0,"value":[],"is_list_data_entry":false,"topicVariableName":"don_t_treat_as_error_2"}],"metadata":{"runAs":"system_user"},"id":"42a3f48ba5f445a8a0f0818928063e3c","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"sys_id":"4f346c10978546105f703dafe153af75","scope":"a8694c9897c146105f703dafe153af3c"},{"type":"CRUDAction","mode":"read","read_mode":"variable","query":"sys_id={{vaInputs.create_watsonx_input_record.sys_id}}","variable_id":"b3bfa55b04c04006b856b2c79cf27449","id":"480f026c1e4a4b8b95696af04a5761e2","name":"Get Response Text","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":"sys_id={{vaInputs.create_watsonx_input_record.sys_id}}"}},{"type":"CRUDAction","mode":"create","query":"u_input={{vaInputs.query}}^lookupnumber={{vaVars.random_number}}","variable_id":"2440b21e9e5f4b57be271f5366c8fe6b","id":"1683b7ef19cf4a2daa080fe124602b4d","name":"Create watsonx input record","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"FDIHInvocation","name":"REST calls","kind":"action","mode":"sync","inputs":[{"supported_input_modes":[],"name":"inputsysid","type":"string","order":0,"required":false,"value":[{"type":"String","mode":"string","value":"{{vaInputs.create_watsonx_input_record.sys_id}}"}],"is_list_data_entry":false}],"outputs":[{"name":"__action_status__","order":0,"value":[],"is_list_data_entry":false,"topicVariableName":"action_status"},{"name":"__dont_treat_as_error__","order":0,"value":[],"is_list_data_entry":false,"topicVariableName":"don_t_treat_as_error"}],"metadata":{"runAs":"system_user"},"id":"8f0b7f4bd39241ac8a2c901ea24c4fdd","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"sys_id":"6f2dc410970546105f703dafe153af3b","scope":"a8694c9897c146105f703dafe153af3c"}],"edges":[{"type":"Edge","source_node_id":"8f0b7f4bd39241ac8a2c901ea24c4fdd","target_node_id":"480f026c1e4a4b8b95696af04a5761e2","id":"65501d5ab3b540619185f1b1c06b96a0"},{"type":"Edge","source_node_id":"42a3f48ba5f445a8a0f0818928063e3c","target_node_id":"1683b7ef19cf4a2daa080fe124602b4d","id":"ecfc8ec22cb047b99e19287a5399a026"},{"type":"Edge","source_node_id":"a7a35243bda846e1ae861d87b8763f1a","target_node_id":"f5c58fd1b7f3477ba977a97880ecf868","id":"40046308dbc34550a0ed4a355f8aa8d4"},{"type":"Edge","source_node_id":"8d32606fb83048c3823a5c1d6375c584","target_node_id":"f5c58fd1b7f3477ba977a97880ecf868","id":"eab73d4fbe504b7e8090932641bea359"},{"type":"Edge","source_node_id":"f5c58fd1b7f3477ba977a97880ecf868","target_node_id":"3be67d89725b45afb1905b9b51f8ba6d","id":"535faf6c8c59489788f6c1e7f2da0fb0"},{"type":"Edge","source_node_id":"3be67d89725b45afb1905b9b51f8ba6d","target_node_id":"a7efbd271caa4c989860cad5aff72e0b","branch_id":"70fb895c87c648dbacac9b1b540776b7","id":"da434db1c4fd4810a133b89032182be6","name":"70fb895c87c648dbacac9b1b540776b7"},{"type":"Edge","source_node_id":"3be67d89725b45afb1905b9b51f8ba6d","target_node_id":"42a3f48ba5f445a8a0f0818928063e3c","branch_id":"a06e9925c9224709a611921f9d89d8cf","id":"a79d1877e3f24726a3ff5418d8b288cf","name":"a06e9925c9224709a611921f9d89d8cf"},{"type":"Edge","source_node_id":"480f026c1e4a4b8b95696af04a5761e2","target_node_id":"a7a35243bda846e1ae861d87b8763f1a","id":"5535668bdb524fbfae7eb03fd03a9881"},{"type":"Edge","source_node_id":"1683b7ef19cf4a2daa080fe124602b4d","target_node_id":"8f0b7f4bd39241ac8a2c901ea24c4fdd","id":"4571f17759d74079b303357566344ba9"}],"id":"primary"}],"script_variables":[{"type":"String","name":"random_number","value":{"type":"String","mode":"script","value":"(function execute() {\n    /* return 'a default value'; */\n    var number = Math.random() * 100000;\n    return number;\n})()\n"},"list":false,"id":"8528fe52c0ff4de3aa753547ab8b38ec","formatType":"text","secure":false,"sensitive":false,"aiInput":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"1ce285f31c0747b69d00762ce6c024ca","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"query","list":false,"id":"008bdff774e8491c92810de6b2e29b08","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"String","name":"action_status_2","description":"","list":false,"id":"60f50f22d6f34579801fc6b40b828dbc","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"True/False","id":"2ff553ab08aa466c8f083393d5fd5506","name":"don_t_treat_as_error_2","description":"","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"x_146833_genaico_0_watsonxaiinput","id":"b3bfa55b04c04006b856b2c79cf27449","name":"get_response_text","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"x_146833_genaico_0_watsonxaiinput","id":"2440b21e9e5f4b57be271f5366c8fe6b","name":"create_watsonx_input_record","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"action_status","description":"","list":false,"id":"90a07e9a017646e7ad2534ec76a92e80","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false},{"type":"True/False","id":"6bc4cb2097764804bacd54a32fac78ea","name":"don_t_treat_as_error","description":"","formatType":"text","metadata":{"libraryMappingType":"output"},"secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":["public"],"scope":"a8694c9897c146105f703dafe153af3c","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"55bb8832c308d25049521d12b40131e2","name":"IBM ServiceNow Career Carnival","key_phrases":["IBM ServiceNow Career Carnival","IBM ServiceNow Career Carnival"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"IBM ServiceNow Career Carnival career advisor","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"IBM ServiceNow Career Carnival","library":false,"csTopicId":"68cbc836c308d25049521d12b401314b","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <compiled_topic display_value="ServiceNow GENAI">68cbc836c308d25049521d12b401314b</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"5426f6cc4117474a89991edc5fd17f96","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"5426f6cc4117474a89991edc5fd17f96"}],"goals":[{"name":"primary","trigger_id":"5426f6cc4117474a89991edc5fd17f96","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Hi welcome to ServiceNow GENAI assistant.\", vaContext.getRequesterLang())"},"id":"8d32606fb83048c3823a5c1d6375c584","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Thanks for using ServiceNow GEN AI assistant.\", vaContext.getRequesterLang())"},"id":"a7efbd271caa4c989860cad5aff72e0b","name":"End","expert_mode":false},{"type":"InputPrompt","variable_id":"008bdff774e8491c92810de6b2e29b08","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"{0} with ServiceNow GEN AI\", vaContext.getRequesterLang(), [vaInputs.select_gen_ai_usecase])"},"acknowledgement":{"type":"String","mode":"string","value":""},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"request_feedback":true,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"id":"f5c58fd1b7f3477ba977a97880ecf868","name":"Query","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"formatType":"Text","validationScript":"","description":""},{"type":"TextOutputPrompt","value":[{"type":"String","mode":"string","value":"{{vaInputs.get_response_text.responsetext}}"}],"request_feedback":true,"id":"a7a35243bda846e1ae861d87b8763f1a","name":"Assistant response","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"secure":false},{"type":"Decision","name":"Decision","branches":[{"type":"Branch","label":"Query is not end chat","expression":{"type":"Applicability","mode":"query","value":"queryISNOTEMPTY^query!=End chat"},"id":"970a3c1e3d97440783cfaf27ea56a273","name":"Query is not end chat","expert_mode":false},{"type":"Branch","label":"If Query is End chat","expression":{"type":"Applicability","mode":"query","value":"queryCONTAINSEnd chat"},"id":"c34480856342496395ae55e7151960ca","name":"If Query is End chat","expert_mode":false}],"id":"3be67d89725b45afb1905b9b51f8ba6d","goal_id":"primary","expert_mode":false},{"type":"CRUDAction","mode":"read","read_mode":"variable","query":"sys_id={{vaInputs.create_watsonx_input_record.sys_id}}","variable_id":"b3bfa55b04c04006b856b2c79cf27449","id":"480f026c1e4a4b8b95696af04a5761e2","name":"Get Response Text","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"condition":{"type":"Condition","mode":"glide_query","value":"sys_id={{vaInputs.create_watsonx_input_record.sys_id}}"}},{"type":"CRUDAction","mode":"create","query":"u_input={{vaInputs.query}}^lookupnumber={{vaVars.random_number}}^input_type={{vaInputs.select_gen_ai_usecase}}","variable_id":"2440b21e9e5f4b57be271f5366c8fe6b","id":"1683b7ef19cf4a2daa080fe124602b4d","name":"Create watsonx input record","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"attachments":[{"type":"String","mode":"string","value":""}]},{"type":"LibraryCall","library_topic_name":"Pause","library_topic_id":"da36dc0f534e2010c232ddeeff7b12d4","library_topic_is_template":false,"parameter-mappings":[{"parameter-name":"seconds","value":{"type":"String","mode":"string","value":"{{vaInputs.create_watsonx_input_record.pause_time}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[],"id":"7e2a5aa043784f42b03aee4f749f22f3","name":"Pause until LLM responds to input","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false},{"type":"CarouselInputPrompt","carousel_options_script":"(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n\n       var options = [];\n       options.push(\n            {\n                'name': 'name1',\n                'value': 'value_1',\n                'description': 'a description of value_1 item',\n                'body': 'https://somehost/somepath/somepic1.jpg'\n            }\n       );\n       options.push(\n            {\n                'name': 'name2',\n                'value': 'value_2',\n                'description': 'a description of value_2 item',\n                'body': 'https://somehost/somepath/somepic2.jpg'\n            }\n       );\n       return options;\n    */\n\n    var options = []; // add options here...\n    options.push(\n            {\n                'name': 'chat',\n                'value': 'chat',\n                'description': 'Ask a question for LLM to answer',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Chat.png'\n            },\n                        {\n                'name': 'code',\n                'value': 'code',\n                'description': 'Input code for LLM to explain',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Code.png'\n            }\n            ,\n                        {\n                'name': 'translate',\n                'value': 'translate',\n                'description': 'Input text for LLM to translate',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20translate.png'\n            }\n       );\n    return options;\n})()\n","no_options_found_message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"No records found\", vaContext.getRequesterLang())"},"id":"12328b8a541d440189d4c532cd2affa9","name":"Select GEN AI usecase","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"5ddcdbf63fe5409f9dff96c972f1725a","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Select GEN AI use case\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""}],"edges":[{"type":"Edge","source_node_id":"f5c58fd1b7f3477ba977a97880ecf868","target_node_id":"3be67d89725b45afb1905b9b51f8ba6d","id":"535faf6c8c59489788f6c1e7f2da0fb0"},{"type":"Edge","source_node_id":"480f026c1e4a4b8b95696af04a5761e2","target_node_id":"a7a35243bda846e1ae861d87b8763f1a","id":"5535668bdb524fbfae7eb03fd03a9881"},{"type":"Edge","source_node_id":"3be67d89725b45afb1905b9b51f8ba6d","target_node_id":"1683b7ef19cf4a2daa080fe124602b4d","branch_id":"970a3c1e3d97440783cfaf27ea56a273","id":"a79d1877e3f24726a3ff5418d8b288cf","name":"970a3c1e3d97440783cfaf27ea56a273"},{"type":"Edge","source_node_id":"a7a35243bda846e1ae861d87b8763f1a","target_node_id":"f5c58fd1b7f3477ba977a97880ecf868","id":"40046308dbc34550a0ed4a355f8aa8d4"},{"type":"Edge","source_node_id":"3be67d89725b45afb1905b9b51f8ba6d","target_node_id":"a7efbd271caa4c989860cad5aff72e0b","branch_id":"c34480856342496395ae55e7151960ca","id":"da434db1c4fd4810a133b89032182be6","name":"c34480856342496395ae55e7151960ca"},{"type":"Edge","source_node_id":"1683b7ef19cf4a2daa080fe124602b4d","target_node_id":"7e2a5aa043784f42b03aee4f749f22f3","id":"4571f17759d74079b303357566344ba9"},{"type":"Edge","source_node_id":"7e2a5aa043784f42b03aee4f749f22f3","target_node_id":"480f026c1e4a4b8b95696af04a5761e2","id":"4145121ca56042128c98e4e4c2543b0d"},{"type":"Edge","source_node_id":"8d32606fb83048c3823a5c1d6375c584","target_node_id":"12328b8a541d440189d4c532cd2affa9","id":"eab73d4fbe504b7e8090932641bea359"},{"type":"Edge","source_node_id":"12328b8a541d440189d4c532cd2affa9","target_node_id":"f5c58fd1b7f3477ba977a97880ecf868","id":"fcf66cf655254ec7b4b26287901f66bf"}],"id":"primary"}],"script_variables":[{"type":"String","name":"random_number","value":{"type":"String","mode":"script","value":"(function execute() {\n    /* return 'a default value'; */\n    var number = Math.random() * 100000;\n    return number;\n})()\n"},"list":false,"id":"8528fe52c0ff4de3aa753547ab8b38ec","formatType":"text","secure":false,"sensitive":false,"aiInput":false}],"glide_variables":[{"type":"Reference","table":"sys_user","id":"1ce285f31c0747b69d00762ce6c024ca","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"String","name":"query","list":false,"id":"008bdff774e8491c92810de6b2e29b08","formatType":"Text","validationScript":"","secure":false,"sensitive":false,"aiInput":false},{"type":"Reference","table":"x_146833_genaico_0_watsonxaiinput","id":"b3bfa55b04c04006b856b2c79cf27449","name":"get_response_text","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Reference","table":"x_146833_genaico_0_watsonxaiinput","id":"2440b21e9e5f4b57be271f5366c8fe6b","name":"create_watsonx_input_record","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"CarouselImage","id":"5ddcdbf63fe5409f9dff96c972f1725a","name":"select_gen_ai_usecase","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":["public"],"scope":"a8694c9897c146105f703dafe153af3c","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"55bb8832c308d25049521d12b40131e2","name":"ServiceNow GENAI","key_phrases":["ServiceNow GENAI"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"ServiceNow GENAI chat assistant","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"ServiceNow GENAI chat assistant","library":false,"csTopicId":"68cbc836c308d25049521d12b401314b","readOnly":false,"nluMapping":"[]"}</design_definition>
         <design_topic_id>55bb8832c308d25049521d12b40131e2</design_topic_id>
         <graph>{
   "graph_api_version": "1.0.66",
@@ -25,7 +25,7 @@
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "Hi welcome to IBM ServiceNow career carnival assistant."
+                    "text": "Hi welcome to ServiceNow GENAI assistant."
                   }
                 ]
               }
@@ -43,7 +43,7 @@
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "Thanks for using CSDM assistant. Powered by WatsonX."
+                    "text": "Thanks for using ServiceNow GEN AI assistant."
                   }
                 ]
               }
@@ -61,7 +61,22 @@
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "Ask your IBM ServiceNow carnival assistant"
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.select_gen_ai_usecase}}",
+                      "displayValue": "Input Variables➛Select GEN AI Usecase"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": " with ServiceNow GEN AI"
                   }
                 ]
               }
@@ -73,7 +88,16 @@
             "mode": "simple"
           },
           "acknowledgeMsg": {
-            "value": "",
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
             "mode": "simple"
           },
           "applicability": {
@@ -148,117 +172,6 @@
           "id": "3be67d89725b45afb1905b9b51f8ba6d",
           "stepType": "Decision",
           "name": "Decision"
-        },
-        "42a3f48ba5f445a8a0f0818928063e3c": {
-          "id": "42a3f48ba5f445a8a0f0818928063e3c",
-          "name": "Generate token",
-          "invocationType": "action",
-          "stepType": "FlowAction",
-          "actionSpoke": "a8694c9897c146105f703dafe153af3c",
-          "actionSpokeAction": "4f346c10978546105f703dafe153af75",
-          "actionWaitType": "sync",
-          "actionRunAs": "system_user",
-          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
-          "actionSecureField": false,
-          "actionSelectSecureField": "",
-          "actionPromptSecureField": {
-            "mode": "simple",
-            "value": ""
-          },
-          "actionConfirmPromptSecureField": {
-            "mode": "simple",
-            "value": ""
-          },
-          "actionNonSecureChannelMessage": {
-            "mode": "simple",
-            "value": ""
-          },
-          "actionInputs": {},
-          "actionOutputs": {
-            "output-__action_status__": [
-              {
-                "id": "60f50f22d6f34579801fc6b40b828dbc",
-                "mapping": "Action Status",
-                "disabled": false,
-                "type": "object",
-                "value": "Action Status",
-                "description": "",
-                "is_list_data_entry": false,
-                "variable": "Action Status (2)",
-                "variableName": "action_status_2"
-              }
-            ],
-            "output-__dont_treat_as_error__": [
-              {
-                "id": "2ff553ab08aa466c8f083393d5fd5506",
-                "mapping": "Don't Treat as Error",
-                "disabled": false,
-                "type": "boolean",
-                "value": "Don't Treat as Error",
-                "description": "",
-                "is_list_data_entry": false,
-                "variable": "Don't Treat As Error (2)",
-                "variableName": "don_t_treat_as_error_2"
-              }
-            ]
-          },
-          "actionDefinition": {
-            "id": "4f346c10978546105f703dafe153af75",
-            "latest_snapshot_id": "4f346c10978546105f703dafe153af75",
-            "parent_id": "5b5d0c10970546105f703dafe153af20",
-            "type": "action",
-            "name": "watsonaigeneratetoken",
-            "label": "WatsonAIGenerateToken",
-            "scope_id": "a8694c9897c146105f703dafe153af3c",
-            "description": "Connects to WatsonAI",
-            "category": "",
-            "parameters_have_loaded": true,
-            "input_parameters": [],
-            "output_parameters": [
-              {
-                "name": "__action_status__",
-                "label": "Action Status",
-                "type": "object",
-                "order": 1,
-                "required": false,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false
-              },
-              {
-                "name": "__dont_treat_as_error__",
-                "label": "Don't Treat as Error",
-                "type": "boolean",
-                "order": 2,
-                "required": false,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false
-              }
-            ]
-          },
-          "subflowSecureField": false,
-          "subflowSelectSecureField": "",
-          "subflowPromptSecureField": {
-            "mode": "simple",
-            "value": ""
-          },
-          "subflowConfirmPromptSecureField": {
-            "mode": "simple",
-            "value": ""
-          },
-          "subflowNonSecureChannelMessage": {
-            "mode": "simple",
-            "value": "This action is not supported on this channel."
-          },
-          "variableIds": [
-            "60f50f22d6f34579801fc6b40b828dbc",
-            "2ff553ab08aa466c8f083393d5fd5506"
-          ],
-          "applicability": {
-            "value": "",
-            "mode": "query"
-          }
         },
         "480f026c1e4a4b8b95696af04a5761e2": {
           "id": "480f026c1e4a4b8b95696af04a5761e2",
@@ -342,10 +255,16 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "prefix": "",
+                  "operator": "=",
+                  "operand": "input_type",
+                  "expression": "{{vaInputs.select_gen_ai_usecase}}"
                 }
               ]
             },
-            "queryString": "u_input={{vaInputs.query}}^lookupnumber={{vaVars.random_number}}"
+            "queryString": "u_input={{vaInputs.query}}^lookupnumber={{vaVars.random_number}}^input_type={{vaInputs.select_gen_ai_usecase}}"
           },
           "mode": "create",
           "record": "",
@@ -361,32 +280,21 @@
           ],
           "variableId": "2440b21e9e5f4b57be271f5366c8fe6b"
         },
-        "8f0b7f4bd39241ac8a2c901ea24c4fdd": {
-          "id": "8f0b7f4bd39241ac8a2c901ea24c4fdd",
-          "name": "REST calls",
-          "invocationType": "action",
-          "stepType": "FlowAction",
-          "actionSpoke": "a8694c9897c146105f703dafe153af3c",
-          "actionSpokeAction": "6f2dc410970546105f703dafe153af3b",
-          "actionWaitType": "sync",
-          "actionRunAs": "system_user",
-          "permissionsNote": "By default, the Action executes based on the permissions of the user who initiated the conversation. For elevated privileges, you can set to System User.",
-          "actionSecureField": false,
-          "actionSelectSecureField": "",
-          "actionPromptSecureField": {
-            "mode": "simple",
-            "value": ""
+        "7e2a5aa043784f42b03aee4f749f22f3": {
+          "id": "7e2a5aa043784f42b03aee4f749f22f3",
+          "stepType": "Component",
+          "name": "Pause until LLM responds to input",
+          "fields": [],
+          "reusableTopicId": "da36dc0f534e2010c232ddeeff7b12d4",
+          "reusableTopicChoice": "Pause",
+          "sourceType": "TOPIC_BLOCK",
+          "loading": false,
+          "applicability": {
+            "value": "",
+            "mode": "query"
           },
-          "actionConfirmPromptSecureField": {
-            "mode": "simple",
-            "value": ""
-          },
-          "actionNonSecureChannelMessage": {
-            "mode": "simple",
-            "value": ""
-          },
-          "actionInputs": {
-            "input-inputsysid": {
+          "inputs": {
+            "seconds": {
               "value": [
                 {
                   "type": "paragraph",
@@ -397,8 +305,8 @@
                     {
                       "type": "datapill",
                       "dataPill": {
-                        "value": "{{vaInputs.create_watsonx_input_record.sys_id}}",
-                        "displayValue": "Input Variables➛Create Watsonx Input Record➛Sys ID"
+                        "value": "{{vaInputs.create_watsonx_input_record.pause_time}}",
+                        "displayValue": "Input Variables➛Create Watsonx Input Record➛pause time"
                       },
                       "children": [
                         {
@@ -412,150 +320,114 @@
                   ]
                 }
               ],
-              "mode": "string"
+              "mode": "string",
+              "type": "String"
             }
           },
-          "actionOutputs": {
-            "output-__action_status__": [
-              {
-                "id": "90a07e9a017646e7ad2534ec76a92e80",
-                "mapping": "Action Status",
-                "disabled": false,
-                "type": "object",
-                "value": "Action Status",
-                "description": "",
-                "is_list_data_entry": false,
-                "variable": "Action Status",
-                "variableName": "action_status"
-              }
-            ],
-            "output-__dont_treat_as_error__": [
-              {
-                "id": "6bc4cb2097764804bacd54a32fac78ea",
-                "mapping": "Don't Treat as Error",
-                "disabled": false,
-                "type": "boolean",
-                "value": "Don't Treat as Error",
-                "description": "",
-                "is_list_data_entry": false,
-                "variable": "Don't Treat As Error",
-                "variableName": "don_t_treat_as_error"
-              }
-            ]
+          "outputs": [],
+          "outdatedNote": false,
+          "variableIds": []
+        },
+        "12328b8a541d440189d4c532cd2affa9": {
+          "name": "Select GEN AI usecase",
+          "prompt": {
+            "value": "",
+            "mode": "simple"
           },
-          "actionDefinition": {
-            "id": "6f2dc410970546105f703dafe153af3b",
-            "latest_snapshot_id": "6f2dc410970546105f703dafe153af3b",
-            "parent_id": "cfba8c9897c146105f703dafe153af7d",
-            "type": "action",
-            "name": "watsonaiconnector",
-            "label": "WatsonAIConnector",
-            "scope_id": "a8694c9897c146105f703dafe153af3c",
-            "description": "Connects to WatsonAI",
-            "category": "",
-            "parameters_have_loaded": true,
-            "input_parameters": [
-              {
-                "supported_input_modes": [
-                  "script",
-                  "data_pill",
-                  "data_entry"
-                ],
-                "name": "inputsysid",
-                "label": "inputsysid",
-                "type": "string",
-                "order": 1,
-                "required": false,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false
-              }
-            ],
-            "output_parameters": [
-              {
-                "name": "__action_status__",
-                "label": "Action Status",
-                "type": "object",
-                "order": 1,
-                "required": false,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false
-              },
-              {
-                "name": "__dont_treat_as_error__",
-                "label": "Don't Treat as Error",
-                "type": "boolean",
-                "order": 2,
-                "required": false,
-                "value": [],
-                "description": "",
-                "is_list_data_entry": false
-              }
-            ]
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
           },
-          "subflowSecureField": false,
-          "subflowSelectSecureField": "",
-          "subflowPromptSecureField": {
-            "mode": "simple",
-            "value": ""
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
           },
-          "subflowConfirmPromptSecureField": {
-            "mode": "simple",
-            "value": ""
-          },
-          "subflowNonSecureChannelMessage": {
-            "mode": "simple",
-            "value": "This action is not supported on this channel."
-          },
-          "variableIds": [
-            "90a07e9a017646e7ad2534ec76a92e80",
-            "6bc4cb2097764804bacd54a32fac78ea"
-          ],
           "applicability": {
             "value": "",
             "mode": "query"
-          }
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "5ddcdbf63fe5409f9dff96c972f1725a",
+          "detailDescription": "",
+          "id": "12328b8a541d440189d4c532cd2affa9",
+          "stepType": "CarouselPrompt",
+          "carouselLabel": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Select GEN AI use case"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "carouselItemExpression": "(function execute() {\n    /* Code your script logic here.  When defining your enumeration list in javascript\n       ensure that you assign keys of Name, Description, Value, and Body. For example:\n\n       var options = [];\n       options.push(\n            {\n                'name': 'name1',\n                'value': 'value_1',\n                'description': 'a description of value_1 item',\n                'body': 'https://somehost/somepath/somepic1.jpg'\n            }\n       );\n       options.push(\n            {\n                'name': 'name2',\n                'value': 'value_2',\n                'description': 'a description of value_2 item',\n                'body': 'https://somehost/somepath/somepic2.jpg'\n            }\n       );\n       return options;\n    */\n\n    var options = []; // add options here...\n    options.push(\n            {\n                'name': 'chat',\n                'value': 'chat',\n                'description': 'Ask a question for LLM to answer',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Chat.png'\n            },\n                        {\n                'name': 'code',\n                'value': 'code',\n                'description': 'Input code for LLM to explain',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20Code.png'\n            }\n            ,\n                        {\n                'name': 'translate',\n                'value': 'translate',\n                'description': 'Input text for LLM to translate',\n                'body': 'https://dev263135.service-now.com/x_146833_genaico_0.ServiceNow%20GENAI%20Assistant%20-%20translate.png'\n            }\n       );\n    return options;\n})()\n",
+          "noRecordsResponseMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "No records found"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
         }
       },
       "edges": [
         {
-          "id": "65501d5ab3b540619185f1b1c06b96a0",
+          "id": "535faf6c8c59489788f6c1e7f2da0fb0",
           "edgeType": "Edge",
-          "source": "8f0b7f4bd39241ac8a2c901ea24c4fdd",
-          "target": "480f026c1e4a4b8b95696af04a5761e2",
+          "source": "f5c58fd1b7f3477ba977a97880ecf868",
+          "target": "3be67d89725b45afb1905b9b51f8ba6d",
           "sourcePort": "",
           "targetPort": ""
         },
         {
-          "id": "ecfc8ec22cb047b99e19287a5399a026",
+          "id": "5535668bdb524fbfae7eb03fd03a9881",
           "edgeType": "Edge",
-          "source": "42a3f48ba5f445a8a0f0818928063e3c",
-          "target": "1683b7ef19cf4a2daa080fe124602b4d",
+          "source": "480f026c1e4a4b8b95696af04a5761e2",
+          "target": "a7a35243bda846e1ae861d87b8763f1a",
           "sourcePort": "",
           "targetPort": ""
+        },
+        {
+          "id": "a79d1877e3f24726a3ff5418d8b288cf",
+          "edgeType": "Branch",
+          "source": "3be67d89725b45afb1905b9b51f8ba6d",
+          "target": "1683b7ef19cf4a2daa080fe124602b4d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.queryISNOTEMPTY^vaInputs.query!=End chat",
+            "mode": "query"
+          },
+          "label": "Query is not end chat"
         },
         {
           "id": "40046308dbc34550a0ed4a355f8aa8d4",
           "edgeType": "Edge",
           "source": "a7a35243bda846e1ae861d87b8763f1a",
           "target": "f5c58fd1b7f3477ba977a97880ecf868",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "eab73d4fbe504b7e8090932641bea359",
-          "edgeType": "Edge",
-          "source": "8d32606fb83048c3823a5c1d6375c584",
-          "target": "f5c58fd1b7f3477ba977a97880ecf868",
-          "sourcePort": "",
-          "targetPort": ""
-        },
-        {
-          "id": "535faf6c8c59489788f6c1e7f2da0fb0",
-          "edgeType": "Edge",
-          "source": "f5c58fd1b7f3477ba977a97880ecf868",
-          "target": "3be67d89725b45afb1905b9b51f8ba6d",
           "sourcePort": "",
           "targetPort": ""
         },
@@ -573,31 +445,34 @@
           "label": "If Query is End chat"
         },
         {
-          "id": "a79d1877e3f24726a3ff5418d8b288cf",
-          "edgeType": "Branch",
-          "source": "3be67d89725b45afb1905b9b51f8ba6d",
-          "target": "42a3f48ba5f445a8a0f0818928063e3c",
-          "sourcePort": "",
-          "targetPort": "",
-          "expression": {
-            "value": "vaInputs.queryANYTHING",
-            "mode": "query"
-          },
-          "label": "Always"
-        },
-        {
-          "id": "5535668bdb524fbfae7eb03fd03a9881",
+          "id": "4571f17759d74079b303357566344ba9",
           "edgeType": "Edge",
-          "source": "480f026c1e4a4b8b95696af04a5761e2",
-          "target": "a7a35243bda846e1ae861d87b8763f1a",
+          "source": "1683b7ef19cf4a2daa080fe124602b4d",
+          "target": "7e2a5aa043784f42b03aee4f749f22f3",
           "sourcePort": "",
           "targetPort": ""
         },
         {
-          "id": "4571f17759d74079b303357566344ba9",
+          "id": "4145121ca56042128c98e4e4c2543b0d",
           "edgeType": "Edge",
-          "source": "1683b7ef19cf4a2daa080fe124602b4d",
-          "target": "8f0b7f4bd39241ac8a2c901ea24c4fdd",
+          "source": "7e2a5aa043784f42b03aee4f749f22f3",
+          "target": "480f026c1e4a4b8b95696af04a5761e2",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "eab73d4fbe504b7e8090932641bea359",
+          "edgeType": "Edge",
+          "source": "8d32606fb83048c3823a5c1d6375c584",
+          "target": "12328b8a541d440189d4c532cd2affa9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fcf66cf655254ec7b4b26287901f66bf",
+          "edgeType": "Edge",
+          "source": "12328b8a541d440189d4c532cd2affa9",
+          "target": "f5c58fd1b7f3477ba977a97880ecf868",
           "sourcePort": "",
           "targetPort": ""
         }
@@ -626,36 +501,6 @@
         "mode": "simple"
       },
       "nodeId": "f5c58fd1b7f3477ba977a97880ecf868",
-      "isHidden": false
-    },
-    "60f50f22d6f34579801fc6b40b828dbc": {
-      "id": "60f50f22d6f34579801fc6b40b828dbc",
-      "name": "action_status_2",
-      "label": "Action Status (2)",
-      "defaultValue": "Action Status",
-      "varType": "object",
-      "category": "vaInputs",
-      "metadata": {
-        "libraryMappingType": "output"
-      },
-      "description": "",
-      "is_list_data_entry": false,
-      "nodeId": "42a3f48ba5f445a8a0f0818928063e3c",
-      "isHidden": false
-    },
-    "2ff553ab08aa466c8f083393d5fd5506": {
-      "id": "2ff553ab08aa466c8f083393d5fd5506",
-      "name": "don_t_treat_as_error_2",
-      "label": "Don't Treat As Error (2)",
-      "defaultValue": "Don't Treat as Error",
-      "varType": "boolean",
-      "category": "vaInputs",
-      "metadata": {
-        "libraryMappingType": "output"
-      },
-      "description": "",
-      "is_list_data_entry": false,
-      "nodeId": "42a3f48ba5f445a8a0f0818928063e3c",
       "isHidden": false
     },
     "b3bfa55b04c04006b856b2c79cf27449": {
@@ -690,56 +535,31 @@
       "varType": "script",
       "category": "vaVars"
     },
-    "90a07e9a017646e7ad2534ec76a92e80": {
-      "id": "90a07e9a017646e7ad2534ec76a92e80",
-      "name": "action_status",
-      "label": "Action Status",
-      "defaultValue": "Action Status",
-      "varType": "object",
+    "5ddcdbf63fe5409f9dff96c972f1725a": {
+      "id": "5ddcdbf63fe5409f9dff96c972f1725a",
+      "name": "select_gen_ai_usecase",
+      "label": "Select GEN AI Usecase",
+      "varType": "carousel-image",
       "category": "vaInputs",
-      "metadata": {
-        "libraryMappingType": "output"
-      },
-      "description": "",
-      "is_list_data_entry": false,
-      "variable": "Action Status",
-      "variableName": "action_status",
-      "nodeId": "8f0b7f4bd39241ac8a2c901ea24c4fdd",
-      "isHidden": false
-    },
-    "6bc4cb2097764804bacd54a32fac78ea": {
-      "id": "6bc4cb2097764804bacd54a32fac78ea",
-      "name": "don_t_treat_as_error",
-      "label": "Don't Treat As Error",
-      "defaultValue": "Don't Treat as Error",
-      "varType": "boolean",
-      "category": "vaInputs",
-      "metadata": {
-        "libraryMappingType": "output"
-      },
-      "description": "",
-      "is_list_data_entry": false,
-      "variable": "Don't Treat As Error",
-      "variableName": "don_t_treat_as_error",
-      "nodeId": "8f0b7f4bd39241ac8a2c901ea24c4fdd",
+      "nodeId": "12328b8a541d440189d4c532cd2affa9",
       "isHidden": false
     }
   }
 }</graph>
-        <name>IBM ServiceNow Career Carnival</name>
+        <name>ServiceNow GENAI</name>
         <sys_class_name>sys_cb_design_topic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-08-19 14:33:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>34cbc836c308d25049521d12b401314f</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>FlowTopic</sys_name>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sys_cb_design_topic_34cbc836c308d25049521d12b401314f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-20 14:38:59</sys_updated_on>
+        <sys_updated_on>2024-08-28 18:21:14</sys_updated_on>
         <type>FlowTopic</type>
     </sys_cb_design_topic>
 </record_update>
