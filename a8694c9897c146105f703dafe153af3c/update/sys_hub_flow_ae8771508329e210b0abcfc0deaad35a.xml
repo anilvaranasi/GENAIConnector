@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2907000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>b20de1d883a5e210b0abcfc0deaad39c</copied_from>
+        <copied_from_name>GENAI Vulerability Item Summariz</copied_from_name>
+        <description>Summarize a given task</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>genai_vulerability_item_summarizer</internal_name>
+        <label_cache>[{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Table","label":"4 - Look Up Record➛Vulnerable Item Table","reference":"sn_vul_vulnerable_item","reference_display":"Vulnerable Item","type":"table_name","base_type":"table_name","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["table_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"c47f9db1-530f-4cf5-8bed-b8e419fe4b71.scriptnotes","label":"1 - Get Vulnerable Item info➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task","label":"Input➛task","reference":"sn_vul_vulnerable_item","reference_display":"Vulnerable Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"d99a444e-248c-4782-8598-7cf76957776c":["task"],"e5040fde-384a-4bb0-bf5e-bad22e0c11b2":["task"],"78a6a9d1-ad10-4f35-8ef3-3318d8d586e1":["record"],"539928d1-2b0b-4e74-803f-30204590f76d":["task"],"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"],"c47f9db1-530f-4cf5-8bed-b8e419fe4b71":["task"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fbe9281-5869-44ba-bdb2-772e47b5c15d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d99a444e-248c-4782-8598-7cf76957776c.scriptnotes","label":"1 - Fetch Task activity➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"e5040fde-384a-4bb0-bf5e-bad22e0c11b2.scriptnotes","label":"1 - Fetch Task details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"],"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"]}},{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Record","label":"4 - Look Up Record➛Vulnerable Item Record","reference":"sn_vul_vulnerable_item","reference_display":"Vulnerable Item","type":"reference","base_type":"reference","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record","label":"2 - Create Record➛WatsonxAIInputMessage Record","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"reference","base_type":"reference","usedInstances":{"d93fdd1b-e9dc-4bf4-8547-46532133cab0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record.sys_id","label":"2 - Create Record➛WatsonxAIInputMessage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"sys_id","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["conditions"]}},{"name":"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89.Record.responsetext","label":"5 - Look Up Record➛WatsonxAIInputMessage Record➛ResponseText","reference":"","reference_display":"ResponseText","type":"string","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"responsetext","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["close_notes","work_notes"]}},{"name":"afab152c-a0b5-427d-a46b-7838c3bec07d.scriptnotes","label":"1 - Fetch Vulnerability Details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.table_name","label":"2 - Create Record➛WatsonxAIInputMessage Table","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"table_name","base_type":"table_name","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["table"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"539928d1-2b0b-4e74-803f-30204590f76d.__action_status__","label":"1 - Get Vulnerable Item Detail➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD5088f1d09629e2108da7c93c12e8b08a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"230503ba-ba99-4bc8-8c19-2d7c18767b59"}},{"name":"539928d1-2b0b-4e74-803f-30204590f76d.scriptnotes","label":"1 - Get Vulnerable Item Detail➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}}]</label_cache>
+        <master_snapshot>b378f1d08329e210b0abcfc0deaad33d</master_snapshot>
+        <master_snapshot_digest/>
+        <name>GENAI Vulerable Item Summarizer</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae8771508329e210b0abcfc0deaad35a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>GENAI Vulerable Item Summarizer</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>sys_hub_flow_ae8771508329e210b0abcfc0deaad35a</sys_update_name>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:28</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ae8771508329e210b0abcfc0deaad35a^sys_idNOT IN2e8771508329e210b0abcfc0deaad35b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ae8771508329e210b0abcfc0deaad35a</id>
+        <name>GENAI Vulerability Item Summarizer</name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:56</sys_created_on>
+        <sys_id>2e8771508329e210b0abcfc0deaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:44:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2e8771508329e210b0abcfc0deaad35b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ae8771508329e210b0abcfc0deaad35a^sys_idNOT INfa8771508329e210b0abcfc0deaad37b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=6fbe9281-5869-44ba-bdb2-772e47b5c15d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_vul_vulnerable_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</model>
+        <model_id>ae8771508329e210b0abcfc0deaad35a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ae8771508329e210b0abcfc0deaad35a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_vul_vulnerable_item">sn_vul_vulnerable_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:56</sys_created_on>
+        <sys_id>fa8771508329e210b0abcfc0deaad37b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:44:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fa8771508329e210b0abcfc0deaad37b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ae8771508329e210b0abcfc0deaad35a^sys_idNOT IN038771508329e210b0abcfc0deaad3b0,0b8771508329e210b0abcfc0deaad3af,6f418ed08369e210b0abcfc0deaad35e,838771508329e210b0abcfc0deaad3b1,c38771508329e210b0abcfc0deaad3ae,cf8771508329e210b0abcfc0deaad3ac"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>038771508329e210b0abcfc0deaad3b0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:36:02</sys_updated_on>
+        <ui_id>4771a3ae-348a-42cf-9ceb-a00cb2a2dd89</ui_id>
+        <values>H4sIAAAAAAAA/+VYUW+jOBD+K4jnJAeBBNK3U6tIK+1tpW1vX3ZXlsGmsc4xrDHttlH++42xSVBCk6CjUqt7ZDxjfzPzfWMn3zcuI+6VSxbeIlssZnHkeUHgefN5kGI/SYJ5mngJDt2RK/CagqfCCafw+Yh5pb83GxqHaUgifzybxYtxGC28cRLGdBz5aRhOg2mSZmRShyG9x3YL0YSVBcfP3+wmYElXjBNJhXv1/efILbAEV0Wle7U5WLoUL8cJ5eB6bwEf4FfPxe6zxmVtn9thzhezkEuioXgjl/5WVBAKGDLMSzpy11gQrHL5vLNIismt4HvDigllklzj3yV7gXNjT/tlFLJKbQF2n8gWx5izG6zwnZJVqiq5q1XOUlqaehCa4Yqr67bNONwWiuXChJi0TXTOq7X4Ysrh7jZo9aIqAQQtdKIauU0ju1vlT18blEsm6prYRZ6nmO++sFKSJZXSeDYu5XQNG6E1LgomHlAh80dWBwOW9eSBw8ck4/kTHFqyBzHBqQY+gbriyRLsN7X5G5ZMZ/EXbAPBAIhxYAgyLSzzStalfEQpr8p6QWJRmr3c7cgtn8trjstynzmUHP2qNG5TB5sxMkXTIalkhfoTtnikNrntqJHM7CQFF3vKpbkgTKMoW7oBNIiRHxUEkws1JGkKRJyYyC4ZDbJnTyGer0IjxOt2GbpKYyV5ZPvctYGVpD+YJEPP+0iihMPfnyb7q8yU4IzUfHKSZGTPpzKXCplatrQ2wIVzAYSG57eamU7y/BoqS/OMUU66bp6lXji4eab/z5vnXZIcABFkuscEZ6J+RgDQt2L/7CT1Ev+AZzW9WveMtuEyPdYAdlTuvPRWwgVwGiXcwdnOvcHTAbGZ9zVlDmd9Y7QCCAYTQDAdRgCbXZq7QnbUvHk56m42/i/aHx/6AwVbAf62S2C9zvT7njndHgs46KXgNtnMys0rnBv4ifmKIkdvOQJWEGrPQ0a/6ImRB6r2pzdeJFdPmP/TtW4Zh5pG1em9wXPVP/mLKWk9V1mG1tA5VsCr2jwPS4QlRVleCYLse3pPJN3JjMlSWefjQfOVgn6Ek4MwHbWiTu3t7Lx7XsTn82hK+SlzmkTsaaUDiTh1Is4ukX5p9xla4YCP06GH1hIzXncDfioVrXZSKXP5yuA608gTjLhwql0Iyh8U1H8fe10S6Bx/Z7B+iN/dw4+mlOIknOJ5FPi+5/keibw4ivx4nmRzHIXZXqMIlSKFaQo7Z0AV2B411Gj67B3PHzNS+w6aC1A1FLzJhf7RPY2Uo2FBf50G1nngdqAkec4pFgcT5R7uiT+WFr/l6+zdTZUP8S9Uxe4PK21MnbV+q3dDxf4W7FdFP2mKxdSbxj5Jx3HkR+MwI/PxguDZGC+SWRQQmobZkE+Bn/8CCs6bHe4VAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>0b8771508329e210b0abcfc0deaad3af</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:36:02</sys_updated_on>
+        <ui_id>13849663-6507-4c3d-b1d2-fa56ff3b5dfd</ui_id>
+        <values>H4sIAAAAAAAA/+VY0W7iOhD9lSjPlE0IEOjbVSukSrtbadvbl92V5dhOsdY4WduhSxH/fsdxEhBQIFoqUd0HHjwee86MzxmbfF/6mBieyTupDZaEPSz0HfWvfdKPQ8IYHsfRYNALg2EcjpNkMEyDQYRTHPsdn1s/Og7G6Xg8GMVBEEVBMBxGBIdJEg1JEiS4D34Szxh4GpwIBsM5FoUda4nmhbA/yZSdQ9ywGThQrnOBF0+V31Pj4N05BzLlgiom/evvPzt+jhUEMEz518utqVMRCpwwAa6PFcQtxGaRN0NUzjnb581l3lc3kSlqoQQdn/0xTFIGGFIsNOv4MywpNplaNBbFML2XYm2YcmlgR986/9H8FeKOAuuXMsiKMDfXDFFVK2dOb7HBD0YVxBSqciXTjBOmXT0oS3EhzM2mzTnc55YEbolL263ORDGTX105/GaD+mjAUmgAwXKbqEVepZE+TLOXbzXKCZdlTapJkREsmhE2RvGkMBbP0meCzWAjNMN5zuUzylU25+ViwDLrPgsYdFORvUBQzZ9l17G3C3XF3QnYb0vzE1bcZvEFtoHFAIgLYAhyR6izQpWlnCMiCl1OKCy128tfdXy90DcCa73OHEqOfhcWt6tDlTFyRbNLiOK5+Qe2mLMquVXnr9U1OMjd8ZqrJJOU21B6U2ILjTj9UcBiulzqIrGV6xqsf61Wu0I74t1SdceR16q72YS+L51Kfzu2z/s2qPQXnk1//SD4SAqE4JcnwPaSciV4L12F9CA76ZqIOlMGuUPYENaueFoL5AQItUDuLaW9ZPEWqkofKWeC7rufJnZi637q/T/vp4tUBwCiyJ0el4LL8rEBQC9ONoODnE3CLYKWvNy4jawNa7IrHuyZzHttLaET4NQSeoDY3qPDswdifcOUXNu+XWpjpZzobMqJeudRzrJJsynknprXD1NLg9r/1frjbX/g7saCcLVPma1ihm1j9la7yo9aSX+TbG7m9g3OnfkF+4aUO+/ZO6awtIqHnPDRC6fPzKyj1140My9Y/No3XzEO1QdVpndJr+Hw4D+5ZOM1zFM0gyPnObz2FSPAKo2wYijNCklR9c5fM9BSIOVKm8p5t0N9YyA86WWgaM9MmVd6e413y6v/eB71GdylXp1IFU17kIhXJuI1ibRLu02365/xHX3ubjfBXJSnAX/h8o3jZEpl6o2Od+QgDzDixHZ4IqjwrKD+vl/uk8DevnkE64f4HnBBPY0wnPR7eBhHYRgEYUDjYBTH4WiYpEMc99O1uBHSkkD/BkgpcAxwoZpTNUHC3cZVtfd2DeoEUDV1bzNpvxj0YuNZVMALr0Z1HHfViJIsEwzLrU70CMg/Tco7qOH54OK60Yf4qlbwx+1KO9PeWr/XQ6Xg/0r+u2ClPkYs6I1CSq5GcRhf9VM6vBpTPLjC42QQR5SRfnrOt8fP/wAgT33Q6RYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Vulnerable Item info">6cb08a908369e210b0abcfc0deaad3b4</action_type>
+        <action_type_parent display_value="Get Vulnerable Item info">e68006908369e210b0abcfc0deaad394</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>6cb08a908369e210b0abcfc0deaad3b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 14:27:36</sys_created_on>
+        <sys_id>6f418ed08369e210b0abcfc0deaad35e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:36:02</sys_updated_on>
+        <ui_id>c47f9db1-530f-4cf5-8bed-b8e419fe4b71</ui_id>
+        <values>H4sIAAAAAAAA/42STW+bQBCG/0q1Z4ywnRibW5XIUqS2kZrWlyhCw+5gr7osZD+cUOT/3llAhLRV1QOHmXl35p1neOyYFCxjG14kW9gl2/Vmh6tlUiRQ8JInAgHEukhZxDRUSEoH9gdFZ1A+hF1nfVGq+iUOhcuFSkLaRkF7GBWU4SephEHNsseniDVgqJVDw7Lut9L/elFQoHoz896aa5sQGSyRGnMcU5/GN19n+dqIYGMZMXx1qAXS/BKUxYhVoAW42rQsc8ZTwiCIe63aSXGS2g37VfBq5U8aul5Fs7kZszo/exU+jQYKhbl0WLGZKB9pkfgwqT7cDaryFhw80HjuvJlY1pKjHXgJLMErdzPPDYL7xslaD09c6PkvN7xWvtJfBopsaju7oLfkFJuAKCw9EigfTvXLxHMvdU9zLKqag5pJEQw/7SWqcGPtq4K0EQPnjCy8C+475uW3P483JP92PlRYkZ+8gqaR+pg3pj7L3gOtVMVHRUEcfk7ybuVRx8ADlZgOC/Ge8rd9+gBGBhyfqU1vysvvWj57vOt/x3K1SVMUi2vYbBdXabJcbJEnC77alXidrhO4AnaJmG3tjQJr3zDSEvmzDxAGqCO+fLhLeMKNbNxHMnXGkdTl6RdnVqUPkwMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>838771508329e210b0abcfc0deaad3b1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:36:02</sys_updated_on>
+        <ui_id>45c7028b-780a-4e0e-808d-c5a511b28931</ui_id>
+        <values>H4sIAAAAAAAA/+VV207jMBD9lSrPTeVcml7eEBVSJRYkWPWFRdHEnoC1jpO1nUK36r/v5NJSAUKgZR/QVuqDZ+aMz5zOqW+2HnAnS73U1oHmeL2xS+HNvSmbBBwRZpNoPA4DlkyCWZaNk5yNI8gz5g092dTFKFgwCxIeBVEUMhZO4yBLoiwIRQSIAdVpKJAqDfLSCDqvQdVNYLsNomk8S5LIT8Zs4sc8En4WiNDPgS7Ko2wscjG6anG7HSGFtJWCzapvQBF+L5UwqL35ze3Qq8DQXQ6NN98+S72XrIIMFZVe7dk+Z+82VXMWJa8L1C6V++B5j1z0mcFyQRkCNXQCNvTw0aEWSERyUBaHXgFagCvNxps7U1PAIIhLrTaHinupXTdoAY9W/qabY9bU5UiT8V6EwzHtBerC+QIcXFNn7mpz0KuUHG2nicAcauVOj2NdwWXV7EQHcZCpPbpUdaEvOkW8Q4Oj36O2RAKrZs6GeTdWfn1fPlztSZ5J3UrSj6hKDupwAueMzGrX0Nl6qLDVuICqkvourUy5li2YqBSjO0WHUa7KB7rTyjs96nZ5RKrC6Iziiza8AiObIb5RGwLvhp7d2FMF1j6NQhqmv+qGSTdYP0LaqtBKkLab0IC5kZU7oavW2BPfDf/WR7Trb6wmnz1t4hGZJy9Zna5r1Xw1mrZAOixeWmZ1KBgsu4KPOegdNPcO+t7uzeu0exO9iJ0fYwcXXaK30PjTLDT9Shbqx/jyHvpnzmHhm3/qRyvYmsUeueahND9TXZJSP2rGIrHdxpNJAATzo3gKfhzy3J9xzHxgjGchhEJMZ/2LNDJoq1Jbcsuje+15+uTuHzPqO1TZG/VMohL2FZn2LsWCxnKYdrI9c2qfHKz65OHB+zS7BglrP1/ItP/Nu3f7B365LLZBCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>c38771508329e210b0abcfc0deaad3ae</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:36:02</sys_updated_on>
+        <ui_id>d93fdd1b-e9dc-4bf4-8547-46532133cab0</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW+jOBSG/8qI6ziLwYDpXZW02kqdqZR2Zy5mR8jYx4klAhk+2mar/vc14BQS0ky7k1aqtJcc+zjveX2eHPj+YClhnVgk5EAZwTTAjm1j2/ddznAcuz6P7RiINbJStgS9Mwee5UI/37KkqgMPD0AJJyLAyPNoiEgQ2igmFFCAOSGO68RcinGb9/ioM4UqVglbfzUH6AhfqETkkFon33+MrBXL9W+VkFsnDztLLxWbsBgSvXW2Uburvlyv6meR8WoJaRmpTfDSZE7NyqeLqV7RSbUcPLLgvoRUgNYhWVLAyFqyVLAyy9fWSZlXOpADE1dpsn7asVBp2da5ZPeF+kf/sOvU+yTowrjx4OkxMv60YTllJbvWJ/Oyyp/syhSHorVEgGRVUk76sXbD1apUWdqmlCxONtlZUi3TL60h1tMBveuoCi0CVnWdtfK2LHm9yO5mG5HnKm0cMSUmGWfJ0xMry1zFVVnLebAqdbPP7Da8326pEn39USM6KrIqb0yanU2uZtPo2+nN5M+zWTQ7u76ZXUxuzuoMSKA5eslWK5XOo1We3apGoa53OZ4n+mEsk+xOF1aoeTpmvDZnrK+Ojc91fNqEv7Jc1T/6WR+jk2uVf6XqZwUXTeNJiV3s+whj20UExz4KKXjIBo8RzyG+5zvW48gq1sUkYUXReawvN/pZ1Ra1jhtvo+Z62jKbDq2Tea5W5amWdwvG0cfRBlPvYOezrtF7Z3ao3keY+NR1ozmkTPEssqM7VhZZes+USldVOYTzW7t+enFRr3+GomBzeD2xv9a9IfamadT9dRhoB7HLfu6nL+2CQdY5jKyJdMy2zb4HWWp/IGRNWb/P7JbX28huua2KqG1cI7o59b24dDANKYld5MbEQySUElGbEkSA2dxzREAw/w9c/pLGw3NIdl3Ms1Souq6iR2NRshL+rmzbFdoV3QgFiCGAz+w66sSUPf4mfan75BsIB7HLfQcYCN1jzU1i2x8Jw2NNzi2ztyncsvtdaANB/dizKQJJKSJuQFGIHQf5PhMYEy6k/bZT0BaHuln2XlZLtYSsKiOZsHmPPHuI2eb/6nVcvUDJhquztPm7NIqelWjoirMsAZbuzjfdTn+cG6UGLfLK+XaIrQ9E1tEGXOf0znTre/0uXHHOqB5XDIUuB0T8mCMquUQuxJ50vZjGgf0GU4wf7uFw2Kqiyllzix1RR/iqe4GODUvTTsDz0gxJzd3sxi+HBxmcvP9x+i2cBnbvfOZ1C2/F1ELnTdm6qLtCMzykDDALvLj+cmOIOCFGLCQOCn0IgEjquyx8A8ooPtjdctjKBV+AqBI4LmUv0LGh7LoT8Lw0Q1nX6NuAzXpxQ5h/NMLo4GWQL9O+uH289ar6kNzJa2A5X5wrSOr7NF9mz9DYv5ZtEPsX8z7TzXGwK4AjLPSrI3F8B1GXBCgIaWwT3XqxC0fk7se/LmVNn9oUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>cf8771508329e210b0abcfc0deaad3ac</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:36:02</sys_updated_on>
+        <ui_id>e84c4d71-5589-4790-b48e-71c44232bcfd</ui_id>
+        <values>H4sIAAAAAAAA/9VUXWvbMBT9K0XPjrFiJ03yVloChbWFdXQPXRHX1nUikGVPkvOxkP8+yXLS0DVsg740b/f7nGOdPO+I4GRGxhST0ZSOi5Sm6TBJhpOM5uM0p0OeAmJGIqKgQtdpIZfIuiAiK5CtT24YzcaTNGULVCCKmiVsDdbUagNCqKa1rpcL00jYPvUj30P96vbW1+/QGFj4lcVSSK5RkdnzS0Qa0O6SRU1muzelf8UtIUfpWr954Gd42G3zbu7L6ezFfSjUmns8SURwY1FxdEBKkAYjUoHiYGu9JTOrW5fQCPxBye2xYymUdQuJ790Y8cudnSS+r0THrMBQO4asVy2kyxuw8Og2F7bVfWuxrEWBJmjCsYRW2uvTXGh4aKyoVRjpaPbTtWwrdR8kIccFh4/kMq1xILDxPD3ynkb5uKzXXw8o50J1kvRFWRcgjxFYq0XeWo9nR1Bi5RaxCppGqAVrdL0S3bDDUsUL6YK4lPXaHTVioWIoPPDYyQrx3OVvuvQTaOFZ3Lk1bngfEbM11xKMeeXiRGQ/W48kMOs5sCCDHym0aOyVO7DCHu4+OhiCYzI9+7Bo/vqQOg+YEzO0rHvyP9okSfluV2SX5ZTndDBKk3KQFeVoMMmRD/IJZnRaYpZf0jhAUbVTab//0ywfsfI/jfV3/gdjzQVKbt4R5OAqrBwXiywI9MZZffHiqS/27qIf5S46TrrfJ/JYIPfpLXbyb3rGbC+/Aan8jYV/BgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ae8771508329e210b0abcfc0deaad35a^sys_idNOT IN8b8771508329e210b0abcfc0deaad3a9,c78771508329e210b0abcfc0deaad3a8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">414fc35783156210b0abcfc0deaad3f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>8b8771508329e210b0abcfc0deaad3a9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:22</sys_updated_on>
+        <ui_id>4e0895f2-d1a0-471a-94b6-c39c5758a56f</ui_id>
+        <values>H4sIAAAAAAAA/+1YUU/jOBD+K6eIR+ilbUqhbwi2EqcDpGuXlyuKHNttvefG2cQpsGj/+83YjpuksLuwXV62UhUlM5Px+JtvZpw+BarUWamLqTorCrFIg9G/d4eBSFEG909BSlY8GAVxXGiiyyKOg8NgTWSJwqdZsOZ5IVQ6C0azoNsJZ8HhLKBqlUn+cJN84lRP6JKvCOjBeCzV/QXHZXg+Gl+cnU8vb64n07Ppx4k1oIpx4+oy1XzBc+eO8c7BXHDJ4jmhXBfWeCJwmSuSjVFoXnuazWZBKaaPGf+bJFzi4wgvlb8ZeoRLzgmLVSofvcWcyIJ7/VKk2qu81Hr2ctFyyviclFLHBp7tt2UjonPcaqUiVAOIMc9zlcc2I95Q5+XGcEVSRrTKX4pb5cwGZHTd2nsPseTpQi+9Mgrx+hV+gPGKFwVZWOwnOhfpwkDvxD+LvvO4U/CLps9XYX/ldvuL4e99G/7QJwAz8I3a6Bxo2PkPof8qGM7Mtv+YmMLePRil+JiKzyW/ZN5geBoltB/1jk7pKTuKoig5Iv1574ixKDkmAxJ2h/1WwptMsj3Fm1AVG2iwSXmbVmOpbLnkK57qeEWyDJgTZ7lai3q6oG11FhJEnTnkImYmGR0LRwd2SjqbHN2SXJDEZCB7S1tJSymfY7Vq7u8V5Xw8aBGq0YUb7RXuDui6ujHk+UTWpCNJuujUqv9gbXTO36ZFvOF9dFBwwEyKLwQBHat8RSxx/5rcXIMNzBUmikySx9v9eMHLfrzsx8t+vOzHy3687Gi80KWQLOep+a4RDCYMCN33DcZe+7JpWsMXUUFzkWmk9Br0BvZKCIFCAFse3YZ+ximYZCQHd5rnIGhuwPRMU5/AEtTWCA2LuZEEaz5TcaDHWoPeXA/uO+G0oy/FhZ3XuCx4EH5FUzRyK5AKoEpzbjFvZkC3nRmSBqPuYcAfNE8ZZz423yK8BCvkBgrEC7Ak7KpA6kJ8Ad9RiHZzDhuhbuf+MXZHkCpbSlB+kyF+VqKxKp1SyXKVXtvg8fBie+PtBk8nuWieakBRFrAQz3AzGJ0LdT5Zqvt/qkjGIjX7dkqpKJH+iWgog6TUvLCJgfjjzyUa2HWd69iGjeT8DltsWb0jWYpqwQZXfBhtqlz5YtqqLt1y6PjS2yFfwt+OMXetxNg2XyUmnA97ME57g6Tb74XdMDnucgI3/eFJlw6j01riPiCR3Blgk73Gv0kugapaoip4RH1HKTx5vxTuNlOuTOvwNAvXJ6Z+VgF585QC+pfOJ6bzvvVkEvxA73muU2BHcoHyFN2x2pjsbn8Jmv7TbikvjcY2d6fw8p9jXLbiL2PDsHsypLR/zJG/g8GgnwyjkLAoZIzRGn834W3F63ibKCU5SX8Ncd9nVs0dOM+3n0r77lPrWebcIVEsBwubbMapwD8Jpii7rP65RsUj5EzQuuhe5f8hyTeyr/8DQmiRFQMXAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">054fc35783156210b0abcfc0deaad3f4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>c78771508329e210b0abcfc0deaad3a8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:22</sys_updated_on>
+        <ui_id>4dbb297a-995c-405f-be29-a08400e557e6</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_ae8771508329e210b0abcfc0deaad35a^sys_idNOT IN3e8771508329e210b0abcfc0deaad37f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task</element>
+        <help/>
+        <hint/>
+        <label>task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ae8771508329e210b0abcfc0deaad35a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:44:57</sys_created_on>
+        <sys_id>3e8771508329e210b0abcfc0deaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:44:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1920000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from>b20de1d883a5e210b0abcfc0deaad39c</copied_from>
+        <copied_from_name/>
+        <description>Summarize a given task</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>genai_vulerable_item_summarizer</internal_name>
+        <label_cache>[{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Table","label":"4 - Look Up Record➛Vulnerable Item Table","reference":"sn_vul_vulnerable_item","reference_display":"Vulnerable Item","type":"table_name","base_type":"table_name","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["table_name"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"c47f9db1-530f-4cf5-8bed-b8e419fe4b71.scriptnotes","label":"1 - Get Vulnerable Item info➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task","label":"Input➛task","reference":"sn_vul_vulnerable_item","reference_display":"Vulnerable Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"d99a444e-248c-4782-8598-7cf76957776c":["task"],"e5040fde-384a-4bb0-bf5e-bad22e0c11b2":["task"],"78a6a9d1-ad10-4f35-8ef3-3318d8d586e1":["record"],"539928d1-2b0b-4e74-803f-30204590f76d":["task"],"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"],"c47f9db1-530f-4cf5-8bed-b8e419fe4b71":["task"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fbe9281-5869-44ba-bdb2-772e47b5c15d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d99a444e-248c-4782-8598-7cf76957776c.scriptnotes","label":"1 - Fetch Task activity➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"e5040fde-384a-4bb0-bf5e-bad22e0c11b2.scriptnotes","label":"1 - Fetch Task details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"],"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"]}},{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Record","label":"4 - Look Up Record➛Vulnerable Item Record","reference":"sn_vul_vulnerable_item","reference_display":"Vulnerable Item","type":"reference","base_type":"reference","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record","label":"2 - Create Record➛WatsonxAIInputMessage Record","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"reference","base_type":"reference","usedInstances":{"d93fdd1b-e9dc-4bf4-8547-46532133cab0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record.sys_id","label":"2 - Create Record➛WatsonxAIInputMessage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"sys_id","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["conditions"]}},{"name":"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89.Record.responsetext","label":"5 - Look Up Record➛WatsonxAIInputMessage Record➛ResponseText","reference":"","reference_display":"ResponseText","type":"string","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"responsetext","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["close_notes","work_notes"]}},{"name":"afab152c-a0b5-427d-a46b-7838c3bec07d.scriptnotes","label":"1 - Fetch Vulnerability Details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.table_name","label":"2 - Create Record➛WatsonxAIInputMessage Table","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"table_name","base_type":"table_name","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["table"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"539928d1-2b0b-4e74-803f-30204590f76d.__action_status__","label":"1 - Get Vulnerable Item Detail➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD5088f1d09629e2108da7c93c12e8b08a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"230503ba-ba99-4bc8-8c19-2d7c18767b59"}},{"name":"539928d1-2b0b-4e74-803f-30204590f76d.scriptnotes","label":"1 - Get Vulnerable Item Detail➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}}]</label_cache>
+        <master>true</master>
+        <name>GENAI Vulerable Item Summarizer</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b378f1d08329e210b0abcfc0deaad33d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:27</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b378f1d08329e210b0abcfc0deaad33d^sys_idNOT IN7378f1d08329e210b0abcfc0deaad33e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b378f1d08329e210b0abcfc0deaad33d</id>
+        <name>GENAI Vulerable Item Summarizer</name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:06</sys_created_on>
+        <sys_id>7378f1d08329e210b0abcfc0deaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:49:06</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7378f1d08329e210b0abcfc0deaad33e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b378f1d08329e210b0abcfc0deaad33d^sys_idNOT IN7778f1d08329e210b0abcfc0deaad33f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=6fbe9281-5869-44ba-bdb2-772e47b5c15d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_vul_vulnerable_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>task</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</model>
+        <model_id>b378f1d08329e210b0abcfc0deaad33d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b378f1d08329e210b0abcfc0deaad33d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_vul_vulnerable_item">sn_vul_vulnerable_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:06</sys_created_on>
+        <sys_id>7778f1d08329e210b0abcfc0deaad33f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:49:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7778f1d08329e210b0abcfc0deaad33f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b378f1d08329e210b0abcfc0deaad33d^sys_idNOT IN4888f1d08329e210b0abcfc0deaad377,8488f1d08329e210b0abcfc0deaad373,8888f1d08329e210b0abcfc0deaad374,8da20e948369e210b0abcfc0deaad31f,c488f1d08329e210b0abcfc0deaad376,cc88f1d08329e210b0abcfc0deaad375"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>4888f1d08329e210b0abcfc0deaad377</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:49:08</sys_updated_on>
+        <ui_id>45c7028b-780a-4e0e-808d-c5a511b28931</ui_id>
+        <values>H4sIAAAAAAAA/+VV207jMBD9lSrPTeVcml7eEBVSJRYkWPWFRdHEnoC1jpO1nUK36r/v5NJSAUKgZR/QVuqDZ+aMz5zOqW+2HnAnS73U1oHmeL2xS+HNvSmbBBwRZpNoPA4DlkyCWZaNk5yNI8gz5g092dTFKFgwCxIeBVEUMhZO4yBLoiwIRQSIAdVpKJAqDfLSCDqvQdVNYLsNomk8S5LIT8Zs4sc8En4WiNDPgS7Ko2wscjG6anG7HSGFtJWCzapvQBF+L5UwqL35ze3Qq8DQXQ6NN98+S72XrIIMFZVe7dk+Z+82VXMWJa8L1C6V++B5j1z0mcFyQRkCNXQCNvTw0aEWSERyUBaHXgFagCvNxps7U1PAIIhLrTaHinupXTdoAY9W/qabY9bU5UiT8V6EwzHtBerC+QIcXFNn7mpz0KuUHG2nicAcauVOj2NdwWXV7EQHcZCpPbpUdaEvOkW8Q4Oj36O2RAKrZs6GeTdWfn1fPlztSZ5J3UrSj6hKDupwAueMzGrX0Nl6qLDVuICqkvourUy5li2YqBSjO0WHUa7KB7rTyjs96nZ5RKrC6Iziiza8AiObIb5RGwLvhp7d2FMF1j6NQhqmv+qGSTdYP0LaqtBKkLab0IC5kZU7oavW2BPfDf/WR7Trb6wmnz1t4hGZJy9Zna5r1Xw1mrZAOixeWmZ1KBgsu4KPOegdNPcO+t7uzeu0exO9iJ0fYwcXXaK30PjTLDT9Shbqx/jyHvpnzmHhm3/qRyvYmsUeueahND9TXZJSP2rGIrHdxpNJAATzo3gKfhzy3J9xzHxgjGchhEJMZ/2LNDJoq1Jbcsuje+15+uTuHzPqO1TZG/VMohL2FZn2LsWCxnKYdrI9c2qfHKz65OHB+zS7BglrP1/ItP/Nu3f7B365LLZBCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>8488f1d08329e210b0abcfc0deaad373</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:26</sys_updated_on>
+        <ui_id>e84c4d71-5589-4790-b48e-71c44232bcfd</ui_id>
+        <values>H4sIAAAAAAAA/9VUXWvbMBT9K0XPjrFiJ03yVloChbWFdXQPXRHX1nUikGVPkvOxkP8+yXLS0DVsg740b/f7nGOdPO+I4GRGxhST0ZSOi5Sm6TBJhpOM5uM0p0OeAmJGIqKgQtdpIZfIuiAiK5CtT24YzcaTNGULVCCKmiVsDdbUagNCqKa1rpcL00jYPvUj30P96vbW1+/QGFj4lcVSSK5RkdnzS0Qa0O6SRU1muzelf8UtIUfpWr954Gd42G3zbu7L6ezFfSjUmns8SURwY1FxdEBKkAYjUoHiYGu9JTOrW5fQCPxBye2xYymUdQuJ790Y8cudnSS+r0THrMBQO4asVy2kyxuw8Og2F7bVfWuxrEWBJmjCsYRW2uvTXGh4aKyoVRjpaPbTtWwrdR8kIccFh4/kMq1xILDxPD3ynkb5uKzXXw8o50J1kvRFWRcgjxFYq0XeWo9nR1Bi5RaxCppGqAVrdL0S3bDDUsUL6YK4lPXaHTVioWIoPPDYyQrx3OVvuvQTaOFZ3Lk1bngfEbM11xKMeeXiRGQ/W48kMOs5sCCDHym0aOyVO7DCHu4+OhiCYzI9+7Bo/vqQOg+YEzO0rHvyP9okSfluV2SX5ZTndDBKk3KQFeVoMMmRD/IJZnRaYpZf0jhAUbVTab//0ywfsfI/jfV3/gdjzQVKbt4R5OAqrBwXiywI9MZZffHiqS/27qIf5S46TrrfJ/JYIPfpLXbyb3rGbC+/Aan8jYV/BgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>8888f1d08329e210b0abcfc0deaad374</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:49:08</sys_updated_on>
+        <ui_id>d93fdd1b-e9dc-4bf4-8547-46532133cab0</ui_id>
+        <values>H4sIAAAAAAAA/+2XXW+jOBSG/8qI6ziLwYDpXZW02kqdqZR2Zy5mR8jYx4klAhk+2mar/vc14BQS0ky7k1aqtJcc+zjveX2eHPj+YClhnVgk5EAZwTTAjm1j2/ddznAcuz6P7RiINbJStgS9Mwee5UI/37KkqgMPD0AJJyLAyPNoiEgQ2igmFFCAOSGO68RcinGb9/ioM4UqVglbfzUH6AhfqETkkFon33+MrBXL9W+VkFsnDztLLxWbsBgSvXW2Uburvlyv6meR8WoJaRmpTfDSZE7NyqeLqV7RSbUcPLLgvoRUgNYhWVLAyFqyVLAyy9fWSZlXOpADE1dpsn7asVBp2da5ZPeF+kf/sOvU+yTowrjx4OkxMv60YTllJbvWJ/Oyyp/syhSHorVEgGRVUk76sXbD1apUWdqmlCxONtlZUi3TL60h1tMBveuoCi0CVnWdtfK2LHm9yO5mG5HnKm0cMSUmGWfJ0xMry1zFVVnLebAqdbPP7Da8326pEn39USM6KrIqb0yanU2uZtPo2+nN5M+zWTQ7u76ZXUxuzuoMSKA5eslWK5XOo1We3apGoa53OZ4n+mEsk+xOF1aoeTpmvDZnrK+Ojc91fNqEv7Jc1T/6WR+jk2uVf6XqZwUXTeNJiV3s+whj20UExz4KKXjIBo8RzyG+5zvW48gq1sUkYUXReawvN/pZ1Ra1jhtvo+Z62jKbDq2Tea5W5amWdwvG0cfRBlPvYOezrtF7Z3ao3keY+NR1ozmkTPEssqM7VhZZes+USldVOYTzW7t+enFRr3+GomBzeD2xv9a9IfamadT9dRhoB7HLfu6nL+2CQdY5jKyJdMy2zb4HWWp/IGRNWb/P7JbX28huua2KqG1cI7o59b24dDANKYld5MbEQySUElGbEkSA2dxzREAw/w9c/pLGw3NIdl3Ms1Souq6iR2NRshL+rmzbFdoV3QgFiCGAz+w66sSUPf4mfan75BsIB7HLfQcYCN1jzU1i2x8Jw2NNzi2ztyncsvtdaANB/dizKQJJKSJuQFGIHQf5PhMYEy6k/bZT0BaHuln2XlZLtYSsKiOZsHmPPHuI2eb/6nVcvUDJhquztPm7NIqelWjoirMsAZbuzjfdTn+cG6UGLfLK+XaIrQ9E1tEGXOf0znTre/0uXHHOqB5XDIUuB0T8mCMquUQuxJ50vZjGgf0GU4wf7uFw2Kqiyllzix1RR/iqe4GODUvTTsDz0gxJzd3sxi+HBxmcvP9x+i2cBnbvfOZ1C2/F1ELnTdm6qLtCMzykDDALvLj+cmOIOCFGLCQOCn0IgEjquyx8A8ooPtjdctjKBV+AqBI4LmUv0LGh7LoT8Lw0Q1nX6NuAzXpxQ5h/NMLo4GWQL9O+uH289ar6kNzJa2A5X5wrSOr7NF9mz9DYv5ZtEPsX8z7TzXGwK4AjLPSrI3F8B1GXBCgIaWwT3XqxC0fk7se/LmVNn9oUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Vulnerable Item info">6cb08a908369e210b0abcfc0deaad3b4</action_type>
+        <action_type_parent display_value="Get Vulnerable Item info">e68006908369e210b0abcfc0deaad394</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>6cb08a908369e210b0abcfc0deaad3b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 14:33:26</sys_created_on>
+        <sys_id>8da20e948369e210b0abcfc0deaad31f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:26</sys_updated_on>
+        <ui_id>c47f9db1-530f-4cf5-8bed-b8e419fe4b71</ui_id>
+        <values>H4sIAAAAAAAA/42STW+bQBCG/0q1Z4ywnRibW5XIUqS2kZrWlyhCw+5gr7osZD+cUOT/3llAhLRV1QOHmXl35p1neOyYFCxjG14kW9gl2/Vmh6tlUiRQ8JInAgHEukhZxDRUSEoH9gdFZ1A+hF1nfVGq+iUOhcuFSkLaRkF7GBWU4SephEHNsseniDVgqJVDw7Lut9L/elFQoHoz896aa5sQGSyRGnMcU5/GN19n+dqIYGMZMXx1qAXS/BKUxYhVoAW42rQsc8ZTwiCIe63aSXGS2g37VfBq5U8aul5Fs7kZszo/exU+jQYKhbl0WLGZKB9pkfgwqT7cDaryFhw80HjuvJlY1pKjHXgJLMErdzPPDYL7xslaD09c6PkvN7xWvtJfBopsaju7oLfkFJuAKCw9EigfTvXLxHMvdU9zLKqag5pJEQw/7SWqcGPtq4K0EQPnjCy8C+475uW3P483JP92PlRYkZ+8gqaR+pg3pj7L3gOtVMVHRUEcfk7ybuVRx8ADlZgOC/Ge8rd9+gBGBhyfqU1vysvvWj57vOt/x3K1SVMUi2vYbBdXabJcbJEnC77alXidrhO4AnaJmG3tjQJr3zDSEvmzDxAGqCO+fLhLeMKNbNxHMnXGkdTl6RdnVqUPkwMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>c488f1d08329e210b0abcfc0deaad376</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:26</sys_updated_on>
+        <ui_id>4771a3ae-348a-42cf-9ceb-a00cb2a2dd89</ui_id>
+        <values>H4sIAAAAAAAA/+VYUW+jOBD+K4jnJAeBBNK3U6tIK+1tpW1vX3ZXlsGmsc4xrDHttlH++42xSVBCk6CjUqt7ZDxjfzPzfWMn3zcuI+6VSxbeIlssZnHkeUHgefN5kGI/SYJ5mngJDt2RK/CagqfCCafw+Yh5pb83GxqHaUgifzybxYtxGC28cRLGdBz5aRhOg2mSZmRShyG9x3YL0YSVBcfP3+wmYElXjBNJhXv1/efILbAEV0Wle7U5WLoUL8cJ5eB6bwEf4FfPxe6zxmVtn9thzhezkEuioXgjl/5WVBAKGDLMSzpy11gQrHL5vLNIismt4HvDigllklzj3yV7gXNjT/tlFLJKbQF2n8gWx5izG6zwnZJVqiq5q1XOUlqaehCa4Yqr67bNONwWiuXChJi0TXTOq7X4Ysrh7jZo9aIqAQQtdKIauU0ju1vlT18blEsm6prYRZ6nmO++sFKSJZXSeDYu5XQNG6E1LgomHlAh80dWBwOW9eSBw8ck4/kTHFqyBzHBqQY+gbriyRLsN7X5G5ZMZ/EXbAPBAIhxYAgyLSzzStalfEQpr8p6QWJRmr3c7cgtn8trjstynzmUHP2qNG5TB5sxMkXTIalkhfoTtnikNrntqJHM7CQFF3vKpbkgTKMoW7oBNIiRHxUEkws1JGkKRJyYyC4ZDbJnTyGer0IjxOt2GbpKYyV5ZPvctYGVpD+YJEPP+0iihMPfnyb7q8yU4IzUfHKSZGTPpzKXCplatrQ2wIVzAYSG57eamU7y/BoqS/OMUU66bp6lXji4eab/z5vnXZIcABFkuscEZ6J+RgDQt2L/7CT1Ev+AZzW9WveMtuEyPdYAdlTuvPRWwgVwGiXcwdnOvcHTAbGZ9zVlDmd9Y7QCCAYTQDAdRgCbXZq7QnbUvHk56m42/i/aHx/6AwVbAf62S2C9zvT7njndHgs46KXgNtnMys0rnBv4ifmKIkdvOQJWEGrPQ0a/6ImRB6r2pzdeJFdPmP/TtW4Zh5pG1em9wXPVP/mLKWk9V1mG1tA5VsCr2jwPS4QlRVleCYLse3pPJN3JjMlSWefjQfOVgn6Ek4MwHbWiTu3t7Lx7XsTn82hK+SlzmkTsaaUDiTh1Is4ukX5p9xla4YCP06GH1hIzXncDfioVrXZSKXP5yuA608gTjLhwql0Iyh8U1H8fe10S6Bx/Z7B+iN/dw4+mlOIknOJ5FPi+5/keibw4ivx4nmRzHIXZXqMIlSKFaQo7Z0AV2B411Gj67B3PHzNS+w6aC1A1FLzJhf7RPY2Uo2FBf50G1nngdqAkec4pFgcT5R7uiT+WFr/l6+zdTZUP8S9Uxe4PK21MnbV+q3dDxf4W7FdFP2mKxdSbxj5Jx3HkR+MwI/PxguDZGC+SWRQQmobZkE+Bn/8CCs6bHe4VAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>cc88f1d08329e210b0abcfc0deaad375</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:16:18</sys_updated_on>
+        <ui_id>13849663-6507-4c3d-b1d2-fa56ff3b5dfd</ui_id>
+        <values>H4sIAAAAAAAA/+VY0W7iOhD9lSjPlE0IEOjbVSukSrtbadvbl92V5dhOsdY4WduhSxH/fsdxEhBQIFoqUd0HHjwee86MzxmbfF/6mBieyTupDZaEPSz0HfWvfdKPQ8IYHsfRYNALg2EcjpNkMEyDQYRTHPsdn1s/Og7G6Xg8GMVBEEVBMBxGBIdJEg1JEiS4D34Szxh4GpwIBsM5FoUda4nmhbA/yZSdQ9ywGThQrnOBF0+V31Pj4N05BzLlgiom/evvPzt+jhUEMEz518utqVMRCpwwAa6PFcQtxGaRN0NUzjnb581l3lc3kSlqoQQdn/0xTFIGGFIsNOv4MywpNplaNBbFML2XYm2YcmlgR986/9H8FeKOAuuXMsiKMDfXDFFVK2dOb7HBD0YVxBSqciXTjBOmXT0oS3EhzM2mzTnc55YEbolL263ORDGTX105/GaD+mjAUmgAwXKbqEVepZE+TLOXbzXKCZdlTapJkREsmhE2RvGkMBbP0meCzWAjNMN5zuUzylU25+ViwDLrPgsYdFORvUBQzZ9l17G3C3XF3QnYb0vzE1bcZvEFtoHFAIgLYAhyR6izQpWlnCMiCl1OKCy128tfdXy90DcCa73OHEqOfhcWt6tDlTFyRbNLiOK5+Qe2mLMquVXnr9U1OMjd8ZqrJJOU21B6U2ILjTj9UcBiulzqIrGV6xqsf61Wu0I74t1SdceR16q72YS+L51Kfzu2z/s2qPQXnk1//SD4SAqE4JcnwPaSciV4L12F9CA76ZqIOlMGuUPYENaueFoL5AQItUDuLaW9ZPEWqkofKWeC7rufJnZi637q/T/vp4tUBwCiyJ0el4LL8rEBQC9ONoODnE3CLYKWvNy4jawNa7IrHuyZzHttLaET4NQSeoDY3qPDswdifcOUXNu+XWpjpZzobMqJeudRzrJJsynknprXD1NLg9r/1frjbX/g7saCcLVPma1ihm1j9la7yo9aSX+TbG7m9g3OnfkF+4aUO+/ZO6awtIqHnPDRC6fPzKyj1140My9Y/No3XzEO1QdVpndJr+Hw4D+5ZOM1zFM0gyPnObz2FSPAKo2wYijNCklR9c5fM9BSIOVKm8p5t0N9YyA86WWgaM9MmVd6e413y6v/eB71GdylXp1IFU17kIhXJuI1ibRLu02365/xHX3ubjfBXJSnAX/h8o3jZEpl6o2Od+QgDzDixHZ4IqjwrKD+vl/uk8DevnkE64f4HnBBPY0wnPR7eBhHYRgEYUDjYBTH4WiYpEMc99O1uBHSkkD/BkgpcAxwoZpTNUHC3cZVtfd2DeoEUDV1bzNpvxj0YuNZVMALr0Z1HHfViJIsEwzLrU70CMg/Tco7qOH54OK60Yf4qlbwx+1KO9PeWr/XQ6Xg/0r+u2ClPkYs6I1CSq5GcRhf9VM6vBpTPLjC42QQR5SRfnrOt8fP/wAgT33Q6RYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b378f1d08329e210b0abcfc0deaad33d^sys_idNOT IN0c88f1d08329e210b0abcfc0deaad370,cc88f1d08329e210b0abcfc0deaad36f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">414fc35783156210b0abcfc0deaad3f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>0c88f1d08329e210b0abcfc0deaad370</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:26</sys_updated_on>
+        <ui_id>4e0895f2-d1a0-471a-94b6-c39c5758a56f</ui_id>
+        <values>H4sIAAAAAAAA/+1Z30/jOBD+V04Rj6WXtimFviG4SpwWKl27+3JFkWM7xbuuk42dAov432/8I27SltXCFh0PkVCUzIwnM998M47pU5CVKi+VnGfnUrKlCMb/3nYCJrQM7p8CgVY0GAdxLBVSpYzjoBOsES+18GkRrGkhWSYWwXgR9LrhIugsApytck4fpslXitUM39EVAj0YT3h2f0n1a2gxnlyeX8yvpjez+fn888wa4IxQ4+pKKLqkhXNHaPcoZZSTOEWYKmmNZ0y/5hrlEy00y54Wi0VQsvljTj+hhHL9ONaXyt9Ce4RLQRGJM8EfvUWKuKRef8eE8iovtZ69nG05JTRFJVexgWd3NW9EdKFTrVQIKwAxpkWRFbGtiDdURbkxXCFBkMqKl+LOCmIDMrpebd1DzKlYqjuvjEJ9fYY/wHhFpURLi/1MFUwsDfRO/LvoO48HBV82fb4K+2uX7TvD3/85/KEvgK7AT3qje6Qg819C/1UwnJu0/5iZxj48GCX7LNj3kl4RbzA6ixI8iPrHZ/iMHEdRlByjQdo/JiRKTtAQhb3RYKvgTSbZmeJNcBYbaPSQ8jZbg6WypZyuqFDxCuU5MCfOi2zN6uWCsdVdchB1U6hFTEwxuhaOLmSKupsafUEFQ4mpQP6WsSJKzvexOmvm94p2PhluEaoxhRvjFe6O8Lq6MeT5itaoy5FYdmvdf7Q2OudvMyLesF47kBQw4+wH0oBOsmKFLHH/nk1vwAb2FcJkztHjl3Z70Zd2e2m3l3Z7abeXdns50PaC7xgnBRX1c42OGVQ5KuBZ0QLeGphpZJgP+GtBjSqwxA17WLWHy6DXLIap509JuxsbSCQuWK50i6xBYspYCeGNzx0z/QuB+CcmvtkltfDhiFayS+tUhwYGzEdlKMt3gmXEuqk0FzbzJg5qn7PdxA1xgnGvE9AHRQWhxOfg29ZLNGunQFov0DS1sQDRJPsBb4xCbZdSSA87hPxj7NCz4vQSWgVYUGJVFrRCJmOYSguMfZjmujRWrXQrOcuMlytxY3PWhbEDrVYYJ7ncqVgpIRKa62x1+C6XdHaX3f9ThTphwgDjlDzDiPsnpIC7Sal0oLrC8lFecCTlJhpIOf5e6iU2Evey2CbyvJc1zx3PZddCr6Sz7agPxmZZBdUgsw91m8vXPvMdKNQehzupOz73D8jnsGX0Wxl9u0Xgxtxuh3M7nD8kldtB2w7aD8vOW1fKMB314SDUHya9QT/shclJjyK4GYxOe3gUndVK/Zempzu9berd+B3AldyeKrZKPq2E1TjSdTpQ0U8PWXRXtYsDEuGw9XZjpA50c7B4qOvnVZA3T6qgf+mMaraYt55Og/f4lKVCv4DUfmvq7c5DMzG3B9xLXw5VBxAyCnunI4wHJ1R3wHA4HCSjKEQkCgkhuNYBmyB2onLMT7KMUyS2qD+HuP6c6Izeh/4H3I8PTf7UZb1/FFba/38evvjhuXbc9vhgpv8BPdeyq+pXUa14BE4wXBfdZ8U33Twb2fN/qUJS418dAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">054fc35783156210b0abcfc0deaad3f4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="GENAI Vulerable Item Summarizer">b378f1d08329e210b0abcfc0deaad33d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>cc88f1d08329e210b0abcfc0deaad36f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:26</sys_updated_on>
+        <ui_id>4dbb297a-995c-405f-be29-a08400e557e6</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b378f1d08329e210b0abcfc0deaad33d^sys_idNOT IN0088f1d08329e210b0abcfc0deaad350"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>task</element>
+        <help/>
+        <hint/>
+        <label>task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b378f1d08329e210b0abcfc0deaad33d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:08</sys_created_on>
+        <sys_id>0088f1d08329e210b0abcfc0deaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 13:49:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b378f1d08329e210b0abcfc0deaad33d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ae8771508329e210b0abcfc0deaad35a</sys_id>
+        <latest_snapshot>b378f1d08329e210b0abcfc0deaad33d</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4a-12-16-2024_01-07-2025_0947.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ae8771508329e210b0abcfc0deaad35a"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ae8771508329e210b0abcfc0deaad35a^sys_idNOT IN5088f1d08329e210b0abcfc0deaad39a"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"5088f1d08329e210b0abcfc0deaad39a","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="GENAI Vulerable Item Summarizer">ae8771508329e210b0abcfc0deaad35a</plan_id>
+        <snapshot>833302188369e210b0abcfc0deaad37f</snapshot>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-12 13:49:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5088f1d08329e210b0abcfc0deaad39a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-12 14:33:28</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

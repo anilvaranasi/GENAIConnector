@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_target_values">
+    <pa_target_values action="INSERT_OR_UPDATE">
+        <next_target>00000000</next_target>
+        <sys_class_name>pa_target_values</sys_class_name>
+        <sys_created_by>avaranasi</sys_created_by>
+        <sys_created_on>2025-05-10 03:57:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85ed11a783dd2210b0abcfc0deaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>90</sys_name>
+        <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_update_name>pa_target_values_85ed11a783dd2210b0abcfc0deaad3c6</sys_update_name>
+        <sys_updated_by>avaranasi</sys_updated_by>
+        <sys_updated_on>2025-05-10 03:57:26</sys_updated_on>
+        <target display_value="Security score">45ed516783dd2210b0abcfc0deaad3b1</target>
+        <target_at>20250510</target_at>
+        <target_name>Security score</target_name>
+        <target_review>20250531</target_review>
+        <value>90</value>
+    </pa_target_values>
+</record_update>
