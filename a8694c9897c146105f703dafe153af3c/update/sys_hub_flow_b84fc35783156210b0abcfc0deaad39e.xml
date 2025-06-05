@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1051000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2302406000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category display_value="">{}</category>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>genai_task_summarizer</internal_name>
-        <label_cache>[{"name":"subflow.task","label":"Input➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","usedInstances":{"d99a444e-248c-4782-8598-7cf76957776c":["task"],"e5040fde-384a-4bb0-bf5e-bad22e0c11b2":["task"],"78a6a9d1-ad10-4f35-8ef3-3318d8d586e1":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fbe9281-5869-44ba-bdb2-772e47b5c15d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d99a444e-248c-4782-8598-7cf76957776c.scriptnotes","label":"1 - Fetch Task activity➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"e5040fde-384a-4bb0-bf5e-bad22e0c11b2.scriptnotes","label":"1 - Fetch Task details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"],"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"]}},{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Record","label":"4 - Look Up Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record","label":"2 - Create Record➛WatsonxAIInputMessage Record","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"reference","base_type":"reference","usedInstances":{"d93fdd1b-e9dc-4bf4-8547-46532133cab0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record.sys_id","label":"2 - Create Record➛WatsonxAIInputMessage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"sys_id","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["conditions"]}},{"name":"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89.Record.responsetext","label":"5 - Look Up Record➛WatsonxAIInputMessage Record➛ResponseText","reference":"","reference_display":"ResponseText","type":"string","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"responsetext","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["close_notes"]}}]</label_cache>
+        <label_cache>[{"name":"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89.Record.responsetext","label":"5 - Look Up Record➛WatsonxAIInputMessage Record➛ResponseText","reference":"","reference_display":"ResponseText","type":"string","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"responsetext","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["close_notes"]}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record.sys_id","label":"2 - Create Record➛WatsonxAIInputMessage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"sys_id","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["conditions"]}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record","label":"2 - Create Record➛WatsonxAIInputMessage Record","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"reference","base_type":"reference","usedInstances":{"d93fdd1b-e9dc-4bf4-8547-46532133cab0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Record","label":"4 - Look Up Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"]}},{"name":"e5040fde-384a-4bb0-bf5e-bad22e0c11b2.scriptnotes","label":"1 - Fetch Task details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"],"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"d99a444e-248c-4782-8598-7cf76957776c.scriptnotes","label":"1 - Fetch Task activity➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task","label":"Input➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","usedInstances":{"d99a444e-248c-4782-8598-7cf76957776c":["task"],"e5040fde-384a-4bb0-bf5e-bad22e0c11b2":["task"],"78a6a9d1-ad10-4f35-8ef3-3318d8d586e1":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fbe9281-5869-44ba-bdb2-772e47b5c15d","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>422293db83156210b0abcfc0deaad3a8</master_snapshot>
         <master_snapshot_digest/>
         <name>GENAI Task Summarizer</name>
@@ -36,16 +36,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b84fc35783156210b0abcfc0deaad39e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>GENAI Task Summarizer</sys_name>
         <sys_overrides/>
         <sys_package display_value="GENAIConnector" source="x_146833_genaico_0">a8694c9897c146105f703dafe153af3c</sys_package>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name>sys_hub_flow_b84fc35783156210b0abcfc0deaad39e</sys_update_name>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:50</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:45</sys_updated_on>
         <type>subflow</type>
+        <updation_source/>
         <version>2</version>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=b84fc35783156210b0abcfc0deaad39e"/>
@@ -152,7 +153,7 @@
     <sys_hub_flow_output action="delete_multiple" query="model=b84fc35783156210b0abcfc0deaad39e"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=b84fc35783156210b0abcfc0deaad39e"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b84fc35783156210b0abcfc0deaad39e"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b84fc35783156210b0abcfc0deaad39e^sys_idNOT IN102253db83156210b0abcfc0deaad327,414fc35783156210b0abcfc0deaad3f8,4d4f075783156210b0abcfc0deaad308,502253db83156210b0abcfc0deaad325,982253db83156210b0abcfc0deaad328,c94f075783156210b0abcfc0deaad307"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b84fc35783156210b0abcfc0deaad39e^sys_idNOT IN102253db83156210b0abcfc0deaad327,4d4f075783156210b0abcfc0deaad308,502253db83156210b0abcfc0deaad325,982253db83156210b0abcfc0deaad328,bf3e9c0083ce6e10fbe1c2dfeeaad352,c94f075783156210b0abcfc0deaad307"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
         <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
@@ -168,34 +169,13 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:46:47</sys_created_on>
         <sys_id>102253db83156210b0abcfc0deaad327</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:52:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>d93fdd1b-e9dc-4bf4-8547-46532133cab0</ui_id>
-        <values>H4sIAAAAAAAA/+2XXW+jOBSG/8qI6ziLwYDpXZW02kqdqZR2Zy5mR8jYx4klAhk+2mar/vc14BQS0ky7k1aqtJcc+zjveX2eHPj+YClhnVgk5EAZwTTAjm1j2/ddznAcuz6P7RiINbJStgS9Mwee5UI/37KkqgMPD0AJJyLAyPNoiEgQ2igmFFCAOSGO68RcinGb9/ioM4UqVglbfzUH6AhfqETkkFon33+MrBXL9W+VkFsnDztLLxWbsBgSvXW2Uburvlyv6meR8WoJaRmpTfDSZE7NyqeLqV7RSbUcPLLgvoRUgNYhWVLAyFqyVLAyy9fWSZlXOpADE1dpsn7asVBp2da5ZPeF+kf/sOvU+yTowrjx4OkxMv60YTllJbvWJ/Oyyp/syhSHorVEgGRVUk76sXbD1apUWdqmlCxONtlZUi3TL60h1tMBveuoCi0CVnWdtfK2LHm9yO5mG5HnKm0cMSUmGWfJ0xMry1zFVVnLebAqdbPP7Da8326pEn39USM6KrIqb0yanU2uZtPo2+nN5M+zWTQ7u76ZXUxuzuoMSKA5eslWK5XOo1We3apGoa53OZ4n+mEsk+xOF1aoeTpmvDZnrK+Ojc91fNqEv7Jc1T/6WR+jk2uVf6XqZwUXTeNJiV3s+whj20UExz4KKXjIBo8RzyG+5zvW48gq1sUkYUXReawvN/pZ1Ra1jhtvo+Z62jKbDq2Tea5W5amWdwvG0cfRBlPvYOezrtF7Z3ao3keY+NR1ozmkTPEssqM7VhZZes+USldVOYTzW7t+enFRr3+GomBzeD2xv9a9IfamadT9dRhoB7HLfu6nL+2CQdY5jKyJdMy2zb4HWWp/IGRNWb/P7JbX28huua2KqG1cI7o59b24dDANKYld5MbEQySUElGbEkSA2dxzREAw/w9c/pLGw3NIdl3Ms1Souq6iR2NRshL+rmzbFdoV3QgFiCGAz+w66sSUPf4mfan75BsIB7HLfQcYCN1jzU1i2x8Jw2NNzi2ztyncsvtdaANB/dizKQJJKSJuQFGIHQf5PhMYEy6k/bZT0BaHuln2XlZLtYSsKiOZsHmPPHuI2eb/6nVcvUDJhquztPm7NIqelWjoirMsAZbuzjfdTn+cG6UGLfLK+XaIrQ9E1tEGXOf0znTre/0uXHHOqB5XDIUuB0T8mCMquUQuxJ50vZjGgf0GU4wf7uFw2Kqiyllzix1RR/iqe4GODUvTTsDz0gxJzd3sxi+HBxmcvP9x+i2cBnbvfOZ1C2/F1ELnTdm6qLtCMzykDDALvLj+cmOIOCFGLCQOCn0IgEjquyx8A8ooPtjdctjKBV+AqBI4LmUv0LGh7LoT8Lw0Q1nX6NuAzXpxQ5h/NMLo4GWQL9O+uH289ar6kNzJa2A5X5wrSOr7NF9mz9DYv5ZtEPsX8z7TzXGwK4AjLPSrI3F8B1GXBCgIaWwT3XqxC0fk7se/LmVNn9oUAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Fetch Task details">525f79d2973596506719bb56f053af28</action_type>
-        <action_type_parent display_value="Fetch Task details">2f26d55693359650bdc1f6627cba10c5</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>525f79d2973596506719bb56f053af28</compiled_snapshot>
-        <display_text/>
-        <flow display_value="GENAI Task Summarizer">b84fc35783156210b0abcfc0deaad39e</flow>
-        <generation_source/>
-        <order>1</order>
-        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>avaranasi</sys_created_by>
-        <sys_created_on>2025-05-09 17:34:17</sys_created_on>
-        <sys_id>414fc35783156210b0abcfc0deaad3f8</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:52:05</sys_updated_on>
-        <ui_id>e5040fde-384a-4bb0-bf5e-bad22e0c11b2</ui_id>
-        <values>H4sIAAAAAAAA/41TTW+bQBD9L3vGCH8AxrcokaVIbSPVaS5RZA3LrL3qspD9cEIt//fOGkRom0OP8+btzJv34PnMgDvZ6HttHWiOu87eV2zDyiLP1lhgkS/TIkuTLJ8XZZlmIkmXIMqERUwGXrFIRV5Ui895q5R4GmokpgP7k6oTKB/K89n6UqjmLQ6Ny4ValbStgu5pYBDCj1JVBjXbPL9ErAVDoxwatjn/1fpfLQpKVB9i/pTmujZUBgXSYI4D9GV4832CN6YKMuYRw3eHukLaL0BZjFgNugLXmI5tnPEEGITqQatuZByldv19Nbxb+YuWLhfRZO+oaIT2gzfUeuxb4g4c7GgDd96MdjWSo+0tqVCAV+52ivWEhzYk3j9xUKrJQt4oX+tvvS1sHDKJxFsSg224OVwxnCR2x+ZtNGgr9dWeoakaDmpCRTD8uJWoQmja1yVxIwbOGVl6F7SemZeP/6bRg5/lgQpr0rOvoW2lPuxb05zkVQOdVMcHRUUcvjbSbuVBx/1XH1NSEG8Jv7vCT2BkMOQrjbmK8vKHlq8er/9EJhZZnmM1SyFbz1Z5Mp+tkSczvigEpvkygRWwS8RsZ28VWPthIx2xf/XBhN7Uwb59n0J4wo1s3Q2JOuHg1OXlN9HIr9idAwAA</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XWW/bOBDHv0qh59BLSpRE5S3IgQ2wbQAn2z50C4HH0CEgS66OHBvkuy8lUbEcO66RuOkusI8acob/OX6i9PXBM8o79GgigXFKWEx8jAmOokByIkQQSYEFUO/Ay/kc7M4SZFEq+3zDs6Y1PDwAo5KqmKAwZAmicYKRoAxQTCSlfuALqdWk93t8tJ7KVIuM3392AaxFXptMlZB7h1+/HXgLXtqzaii9w4dnS/X9AtKMC8is40khmznk9YfzExtj1zwG7+mQyPPE2jPss3LRU9Ma7VKrhxx4cFdDrsCepnlWwYE357nidVHee4d12VhDCVxd5Nn9045rk9d9onN+V5m/bfjAb/dpsJlJV4Snx9QVaKhNYSRcLGpT5L2l5iIbCldkzTz/1GfQlhY0b7J6VNqmsvFg0UpuRfQK9eV1cTsdzjszeZecU5sVkmdPT7yuSyOaGqq2G4252lSd3vzHxr5ok9lWpp3otCqasst3enp8MT1JvxxdHf9+Ok2np5dX0/Pjq9PWAzLoQs/5YmHyWbooixvTKbT5ziezzD5MdFbc2sQqM8snXLbFmdgu8MmZtZ905s+8NO2hH20Y69yq/DM33xs47yZFaxKQKEKE4ABRIiKUMAgRhpDT0KdRGPneY9eV9HvTFqSvr6tk2jWjT6obILu1kqVZ1EdWzA24+j0eDICFWweTL+dwFHMJ2V1KaMSCIJ1Bzo0sUpze8roq8jtuTL5o6nWsvvTrR+fn7fpHqCo+g1ezdtWq+vCpV7VrRivOL2ToaFuxOdj87bA5yy60MfxraHOK3o7bSnlWaVvtTJX2U+hEd1HfCymfsIRREaBA0BDRRGvEMKOIAscy9FVMifwhUj8EafsbXi/HTBa5Mm0W1QikquY1/NVgHChbA2mpALXOzgu7XofO8VjHrjlsdN6UmONnxeb4CfZ1WVGMfxFA+7quVsqzys9Khd+FE1AsEiFmCDRjiAYxQwnxfRRFXBFCpdJ4n1cPVtumTY++7Wozh6KpU53x2YgZvA7I8F555WViu/rbmQuxq8bB+TTvXnhO64viHReiKDLg+RIKurdLhf7XL5VlbZ7dKOP2vAsRUnJmrwiOkkACopGQiGmpUQAi1EEomIjxm28OuX3GkvVRUk3Ju54tWdjn78sy+q76Nri+LNkR0HVobHcghP+DMICwVqJn/zPLhZ9Fw7X1O+H3VdtJS986H0B4HIr2F4Uj6icE8YT6KIkgBqpZFPDkzXwwsnX+9PqwVfIaVJPBz+HjqaUDIDsIHHwvl8pe1uwAKUfnODaiPf55PP90kvN8LGITKSP1/1JixjVbhWXctfe5O3yfBAokIsp+UlE/8hELaIzihAlM7VyIAF7Nxrd/ANYaYpIhEwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
@@ -212,12 +192,13 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:34:17</sys_created_on>
         <sys_id>4d4f075783156210b0abcfc0deaad308</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:52:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>45c7028b-780a-4e0e-808d-c5a511b28931</ui_id>
-        <values>H4sIAAAAAAAA/+VV207jMBD9FZTnprKTNL28raiQKrEgwYoXFkUTewKWHCcbO0C36r/v5NZWBSHQsg9o++a5eM45mVPfbjwQThVmZawDI/B6bVfSW3gzNuUCEebTcDIJOIunfJ6mkzhjkxCylHkjTzV1EUrG5zwWIQ/DgLFgFvE0DlMeyBAQOdUZyJEqKxRFJen8CLpuApsND2fRPI5DP56wqR+JUPopl4GfAQ3KwnQiMzm+avu2W+qUypYa1jf9BRQRD0rLCo23uL0beSVUNMth5S02R6n3gtWQoqbSqwHtMXq3LpuzLESdo3GJGoLnfeeyz5yslpShpgYOZyMPnx0aiQQkA21x5OVgJLiiWnsLV9UUqBDkpdHrXcWDMq4jmsOzVb9pcsSaugyJmehF2B2TXqAunC3BwTXdLFxd7fQqlEDbaSIxg1q708NYV3BZNjvRtThI9dBd6Do3F50i3u6Cg+9RWwKBZcOzQd7Ryq4fiqerAeSZMq0kPUVdCNC7EzhXqbR2DZyNhxpbjXMoS2Xuk7IqHlXbTFDy8b2mwzjTxRPNtOrejLtdHpOqMD6j+LIN30ClGhLf6Rpq3o48u7anGqzdUyENk191g6Qj1lNIWhVaCZJ2E5pmUanSfaNRj9gD347+1ke062+sppjvN/EAzN5LygjVSv7CJKt95mNmeQeiwSw/2hV5HWHvlxex88Pek4su0btl8mlumX0lt/Q0vrxd/plJWPDm//fBCra+sAcGEbogsU1BUv2sGQvlZhNNpxyozw+jGfhRIDJ/LjD1gTGRBhBIOZv3r8+4QlsWxpJdnt1rT9FnX/8xq75Dl8GqZwq1tK8INfgUc+LlMOmEO/Jqnzy56ZO71+3TDMtj1v6+kG3/m0fu7g9Xl1e8LgoAAA==</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9KyjPTWTnq03fJiGkPgwkmHhhU+TYN2DJcbLEKXRV//uuE6cUxhBjnaZJy5uv78c5x8fxzdZj3Mhar3RnmOZwtelWwlt6CzKnHIBl8yhJQkrSOc2KIklLkkSsLIg386TNi0EQmtGURzSKQkLCRUyLNCpoKCIGQDFPswowswVetwLXa6Z6G9huabSIszSN/DQhcz/mkfALKkK/ZDiojIpElCK4HOp2O6wUsmsU21y7Bhjhd1KJFrS3vPky8xrW4iwDrbfcPtsymwZyxQpQWHha874CbU5Wp7/AY6q+nIg8J2Zn4Fq47rm0QdyyeCiZefBgQAvAcSVTHcy8imnBTN1uvKVpewy0wMSFVpt9xp3UZmRasYdOfsP+MbF5JSA17lTYL3On0CROLTlcNPZ8x4hhhZqUq1Vf6fORgtUWStYrc6Bt32E/aCxkC2JEWF7d1feX07wzqQd2Dq2qOVP7FTOmlUVvoLPHAQoGUSrWNFLf5k1br+VQjFCq4FbhIihVfY8zO3mrg9GXAQrEgjOMnw7ha9ZKS+IjtsHi3UA+/9rbuSMNBzgfOA+E8+GgMLXjrWzMB2y8BgdzN/vdG4AufcU5PHs0ygGYx1sgNZeDwD/Ye/W48z6bf7LzTs7HeW/F+qT4J9id0Z/EnM+To/l88Zd87hD9Y0b/Y/Ym4as/xgOLDI7uDqzNVY3S6hqF+dwTEontNp7PKcM6P4oXzI9DXvoZh8JnhPAiZKEQi8z98YMWuqbWHRr9wbz0+z92+3deMqgQlIGTEdbbVZsanElQontBxumWuQH52g3YvyhHu2o0JcP3/2E54sPy5TuZw/z6XAkAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
@@ -234,12 +215,13 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:46:47</sys_created_on>
         <sys_id>502253db83156210b0abcfc0deaad325</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:52:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>e84c4d71-5589-4790-b48e-71c44232bcfd</ui_id>
-        <values>H4sIAAAAAAAA/9VUW2vbMBj9K0XPjpEvCWneSkugsLawju6hK+Kz9TkRyLInybks5L9Pspw0dA3boC/N23c/51gnzzsiOJmRSYJ0fJlMyizJspTSdJonxSQrkpRngJiTiCio0XVaKCSyPojICmTnkxuW5JNplrEFKhBlwyhbgzWN2oAQqu2s6+XCtBK2T8PI91C/ur319Ts0BhZ+ZbkUkmtUZPb8EpEWtLtkUZPZ7k3pX3FLKFC61m8e+Bkedtu+m/tyOntxHwqN5h4PjQhuLCqODkgF0mBEalAcbKO3ZGZ15xIagT8ouT12LIWybiHxvRsjfrmzU+r7KnTMSgy1Y8gG1UK6ugELj25zaTs9tJbLRpRogiYcK+ikvT7NhYaH1opGhZGe5jDdyK5W90ESclxw+Egu0xkHAlvP0yMfaFSPy2b99YByLlQvyVCUTQnyGIG1WhSd9Xh2BCXWbhGroW2FWrBWNyvRDzssdbyQLogr2azdUSMWKobSA4+drBDPXf6mTz+BFp7FnVvjhvcRMVtzLcGYVy5ORPaz80gCs4EDCzL4kVKL1l65Aysc4O6jgyE40suzDyspXh9S7wFzYoaO9U/+R0dpxnc7HNOcVhxH2TSHUV4UdFRUYxwVwNMUaZkkRRoHKKpxKu33f5rlI1b+p7H+zv9grLlAyc07ghxchbXjYpEFgd44ayhePA3FwV3JR7krmdD+94k8Fsh9eoud/JueMdvLb8QM+f1/BgAA</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VU22rbQBD9lbDPslhdbBy/BYohD0mgLelDGpaRdmQvrHZV7cqXGv97ZyXZTdMaQgmU6m1uZ86ZndHTgSnJFmyWIJ9eJ7MyS7Is5Tyd50kxy4oklRkg5ixiBmqkTA+FRtEbEduA7oJzJ5J8Ns8ysUIDqrSCiy14Z80OlDJN5ylXKtdo2D+OJV+G+M3tbYjfoXOwCpDlWmnZomGLp+eINdBSJ48tWxxehfy+QaGhQE1onwOrq/uB1VsV/VJ8QWHo8tpnWxkI8YjhzqORSP0q0A4jVoOR4G27ZwvfduRoEeSD0ftzxloZT4As5O6c+k7ocx7yKiRpJQ6xsynGsQ3ucm1ViQ+NV9YMnp7YGLS6q839ICIMHCvotD8NnDydIzxsAuVAYmRUfVrb7cdTw6UyvboxqG0J+myB960qOo8uvAdqrAlI1NA0yqxE09qN6ouJSx2vNBlxpe2Wmjq1MjGUgXhME4J4Sf4PvfsRWhVU3BEMFR979eJbF/oOOkbGYhBNCa5sVeNvCG6DI7ljdFplifz64sMnxc+H7rfXvVjjTvTL+rXjPJOHA055ziuJk2yewyQvCj4pqilOCpBpirxMkiKNByrG0kyOx9/X/D0g//IksCYiHq8GKtGbp3MCWCrU0v1hXKebGBuIzdhgvIvkve4imfH++zfXMfD8z47jxX/qwpk8/wBBk0ej8wUAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -256,12 +238,36 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:46:47</sys_created_on>
         <sys_id>982253db83156210b0abcfc0deaad328</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:52:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>4771a3ae-348a-42cf-9ceb-a00cb2a2dd89</ui_id>
-        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GegZuQQELfVq0qVdrdStvevQ97V5ZjO2CtsbOx0y/Ef7/jOAEEFIgulVrto8dj+8zMOWMnPxY+p/6FTyfBJJ9MRmkSBFEUBONxRHCYZdGYZEGGY7/nSzxn4GlwJhgMH7Co7PgJhfE4jSI0ZRJzolCAHrHRSj5hzmVRGfClXBcCP39vlvzj5j/d3Nj5L0xrPLVbkhkXtGTSv/jxs+cXuIQTDSv9i8XW1KmQBc6YANf7BvNWCOa5WA1RPedsnzeXeV/dhCqphRL0fPZkmKQMMORYaNbz51hSbFT5vLKUDNNbKdaGGZcGdvSt85PmL3BuGli/nEFUhLm51RA1GXPm/AobfGfKipiqbFzJTHHCtMsHZTmuhLnctDmH28JwJd0SF7ZbrUQ1l19dOvzVBm2BwFJpAMEKG6hF3oSR383U47cW5TWXdU6aSaEIFqsRNqbkWWUsnoXPBJvDRmiOi4LLKSpK9cDrxYBlPpgKGAxyoR7hUM2ncoCJBT6AvOLBNdivavN3XHIbxRfYBhYDIC6AIciVUKuqrFP5gIiodD1RYqndXv6y5+tnfSmw1uvIIeXod2Vxuzw0ESOXNLuElLwwn2CLB9YEt+y1qhkdpOBkTTmiJOUWhd6QDqBBnP5bwWK6WLA0JjFNwv5olE76cTIJ+lmcsn4SkjgeRsOM5HRQMgJEHLiVy+Wuts6yZ0chHs9CK8TLzTTsS00jyR3b530bNJIMzybJOAg+kijh8Penye4qcyk4IrWQHiQZXfNJq9Igl8sNre0qpTPPT4DQ8vzWMtPLnl9D1dA850zQfTfPtZ3YunmGf+bN8y5JDoAoctXjUnBZPyMA6Fuxf3SQelm4xbOaXhv3jLVhTXY1gD2jvJfOSjgBTquEOzjbu3d49kBs+31Nme1e3xobAURnE0A0PI8AFqswV4nck/P25Wir2fq/WH+87Q8U3FgQLvcJrNOZYdczh8tdAUedFLxJNjdz9QrnzvzEfEWRvbdsATNY2pyHnH7RI6dTZtant15UmUcsfu2bbxiH2kLV4b3BczU8+MWUbTxXeY7mUDlewKvaPQ81wiVDuaokRc17ek0kW8mcl9o0zruN5hsD/UhPgTA9M2Ne7e2tvDtexMfjaFN5k3ttIM1p2oNAvDoQbxVIt7C7NK34jI/Tczeta8xFXQ34VCo2ysnKUpWvNK4jhTzAiBO72omgwrOC+v9tb58E9ra/I1g/xHf3+VsTYTiLh3icRGEYBGFAkyBNkjAdZ/kYJ3G+1ihCWhLoprBzDlSB7VFLjbbOwW7/cS21a6M5AVVLwSsl7Uf3MDGehQX19VpYx4E3DSVTSjAstzrKPdwTf103+Bu+jt5dV/kQf6Eqfr+daWfam+u3ejdU/G/Jf1fsxlIsZcEwDSnpp0mY9OOcjvsTikd9PMlGSUQZifNzPgV+/gdOgIKP8RUAAA==</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPtleyZEvOW9EgQIC2Adps9yEbEBRJ2URpUiWpXJF/71CUbMd2Esdx0fSRw7mcmTkzpnxxH3IaHoV0Ek3KyWSUZ1GUJFE0HicEx0WRjEkRFTgNe6HEcwaaFheCwfEKi9qdb1CcjvMkQVMmMScKRegaW6PkDeZcVrUFXcpNJfDt99bkP3//4fTU3X9mxuCpc0lmXFDNZHh0cdkLK6whomU6PLpfu7K3FUMCF0yAt3MHKPji0PV2TuaR8WZyLkB3RNK7Vpo6LFEvZDeWScogVImFYb1wjiXFVunbhUQzTM+kWApmXFrwGDrlG8PvwH0eOb2SQVqE+bvFEbUl82IyU5yws8pyJb3EA/WXStRz+cUn4IrNSlwL2xUbJLUBf6xymB2IFlH5baauv3YBT7hs0msvhSJYLE7YWs2L2jLjesEEm4MjNMdVxeUUVVpd8cYYsMwHUwGHQSnUNQQ1fCoHmDjgAygRHpyA/LgRf8eauyw+gxswBkBcQLeRL7pRtW6qcoWIqE1zobE03lf40NQK/awdSp91mx/yJQIFQzSv7AcwuGJtKg+9ju+jZykyWVKCKEm5i2lWSG9uDeL0/xqM6f09y1OS0izuj0b5pJ9mk6hfpDnrZzFJ02EyLEhJB5oRYNDAWz48bE7FQXzuN0IfV3PctT5bjbcVrR2mR7J2mOKDDVMaRX9onKyu3980vTQfPuEXhiSmz5KALvttlLbIV25lSjY5vjdDTzgT9NGS3wFcZ3zmyBYUt0/hbQlauhhr237412/7d0lPAESRrzeXgsvmxxaAHoa3o2epUcRrPGjav7LbnQwbssleHFgV3O2/ZZu+dvzdAWRn+A0QBece5Rbg3X7t3LfUTQ5G3WT4OuoCcS7uF+gXVdtS4O5N5VrX6d85fbyuD+xaMYgfLhfU/7hfzPi1MYcu5tpsJq8azlVm+ZvjJwh24BfbE8PW+53TPQPTNh7yw4quOZ0yu4zeaVFlr7H4se2+Zddihpr03vz6i5/9QChWXn+8RHPoE6/gSepfWwZhzVCpaklR+xhd0sb1reTa2FZ5c4d8ZbbWMlAwcoGdsaDRDhbah9gsO2TXGZ6WQZdei8EEkF7QpBcs0ntdMZ7YR+kB33pv2UcnmIum9PBRUa30jmmt9BM76YWuPdP+HRfWjqDig4J6+0bbxvetm+0FrH/FF+pbtw5huEiHeJwlcRxFcUSzKM+yOB8X5RhnabkcNISMJLAWwXMJxAD3qCNC19Voc7X43bj33yiwc/85aV3sirczPlbSfbgOMxs4wNDnoAP8ckrtviiUEgzLJT1Hf2xhvJd/Wmp+vl4bL/q0rWm/68e85v9K/rNmp44UOYuGeUxJP8/irJ+WdNyfUDzq40kxyhLKSFru//t8+QvxgJWljxQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="WatsonxTokenAPI">67e010c0834e6e10fbe1c2dfeeaad35c</action_type>
+        <action_type_parent display_value="WatsonxTokenAPI">00db4c84830e6e10fbe1c2dfeeaad39f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="GENAI Task Summarizer">b84fc35783156210b0abcfc0deaad39e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 09:07:42</sys_created_on>
+        <sys_id>bf3e9c0083ce6e10fbe1c2dfeeaad352</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
+        <ui_id>5a73231c-2a97-4cf7-9375-30fb3199e63d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -278,18 +284,19 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:34:17</sys_created_on>
         <sys_id>c94f075783156210b0abcfc0deaad307</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:52:05</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>13849663-6507-4c3d-b1d2-fa56ff3b5dfd</ui_id>
-        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQQqBvp1ZIlfa20ra3L7sry7GdYq1xsrbTLkX89xvHCURAgWipRHWPnhnb34y/b+zk29LHxPBc3kltsCTsYaHvqH/tk2ESEsbwJInieBAGoyScpGk8yoI4whlO/J7PbRydBJNsMonHSRBEURCMRhHBYZpGI5IGKR5CnMRzBpEGp4LB8BmL0o65JJwyacBEuS4EXnytPXcbD5lxQRWT/vW3Hz2/wArWMkz518st16lgBE6ZgNDHGs0WOLMo1kNU+ZztU3ua99k5ckUtlKDns9+GScoAQ4aFZj1/jiXFJleLtUUxTO+l2BhmHDK89n0b/FvzV9h3HNi4jEFWhDnfeojqIjlzdosNfjCqJKZUdSiZ5Zww7epBWYZLYW7aNhdwX9jzdlNc2m52Lsq5/OzK4a8XaM4ELKUGEKywiVrkdRrZwyx/+dKgnHJZ1aR2ipxgsR5hYxRPS2PxLH0m2BwWQnNcFFw+oULlz7yaDFjm/ScBg34m8hfYVPMn2XdE7UNdcX8K9tvK/BUrbrP4B5aByQCIC2AIckeo81JVpXxGRJS6cigstVvLX/V8vdA3Amu9yRxKjn6VFrerQ50xckWzU4jihfkblnhmdXKr3h8LKT7I3cmGqySXlNutdEtNkAbi9HsJk+lyqcvUVq5vsP7Zd67Valdop03qqMHjeTQavGknsi+5Wo07tk/7FqjVGJ5NjcMg+Eh6hM0vT47dBeZK8F4qC+lBdtINEXWuDHKH0JLZroY6C+QECI1A7i2lvXTxFqpaHxlngu67rabWsXVbDf6ft9VFqgMAUeROj0vBZfX0AKAXJ5v4IGfTcIugFS9bd5O1YU12xYM9k3uvnSV0ApxGQg+wt/fo8OyB2NwwFde2b5fGWCsnOptyosF5lLNcp7ku5J6aN89US4Mm/tXG4+144G5rQrjap8xOe4Zd9xysdpUfdZJ+m2zOc/sG5878nn1Dyr337B0zmFrvh5zw0QunT8xsdm+iaG5esPi5z18zDjUHVaV3SW/j8OB3Xdp6G/MMzeHIeQFvf8UIsEojrBjK8lJSVL/6Nwy0FMi40qYO3u1QXxgIT3o5KNozM+ZV0d46uuPVfzyP5gzuMq9JpN5Ne5CIVyXirRPplnaXbjc84zv63N1uirmoTgM+6IrWcTKlcvVGxztykAcYcWI7PBFUeFZQf94v90lgb988gvVD/B24oJ5GGE6HAzxKojAMgjCgSTBOknA8SrMRTobZRtwIaUmgfwOkDDgGuFDDqYYg4W7jqtt7twZ1AqiGure5tD8OBonxLCrghdegOo67bkRpnguG5VYnegTkf02rO2jN8/jiutGH+MdW8sftSjvT3lq/10Ol5P9K/qtklT7GLBiMQ0quxkmYXA0zOrqaUBxf4UkaJxFlZJid8+3x4z/JrhFQ4hYAAA==</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VYW2/iOhD+K1GeKSchhEDfjrZCqnTOVtr27Eu3shzbKdYaO2s77VLEfz/jXIByK1Aquo8ez3i+mflm7OR+6mNiuZLX0lgsCbudmGvqX/qkm4SEMTxIojjuhEEvCQdpGveyII5whhO/5XOnRwfBIBsM4n4SBFEUBL1eRHCYplGPpEGKu6An8ZiBpsWpYLB8wqJway4Jp0xaEFFucoEn3+ud68UOGXFBNZP+5f1Dy8+xhrMs0/7ldGXLTnKGBE6ZgAPunCvvq/O7P8xXxuuwnYNmiWR1tNLUYQlaPvttmaQMXGVYGNbyx1hSbJWezCWaYXojxUIw4hDipe875d+Gv8Dx/cDpZQzCIqzamy9RnaVKTEaKE3aTu9pVkgpotalEMZZfqwBcflmGC2Gb/IKkMHAeyx1mB6JGlN2O1PO3xuGQyzK8elMogsV8ha3VPC0sM64WTLAxHITGOM+5fES5Vk+8NAYs4/ajgEU7E+oZnBr+KNsV6dqQItwegvyqFH/Hmrso/oVjwBgAcQHVRlXSjSp0mZUnRERhyg2NpanO8mdlrtCvwqGsoq7jQ1WKQMEQzXP7Nxg8sTqUWevdLRDv5NZgwSWiJOXOlVnqAzMxiNMfBRjT6dQUqctT22Lzs11tzWbrLbKf0XHd82UZ5b4RbjTeFHbdR69kdR+FJ+ujbhCcqZOsLj5fI73VGlXAH9UfId3JHrogilHaoirlSw2yzv6jqT3kTNBXF8Me4BrjG8dSL51sw1szO3M+Vm6Izh9/Q3xKXgMgiqp8cym4LC9oAHpmwsc7OZWGKwQqebN0HzgZNmSd9tizyns5fq6XhDgAZGN4C4i8uwrlBuDNRG+OrzkfnYzzUecwzgPj7qdz9POsbUhw84BzNW/0X5w+XtUHWi4ZhLOHec98Oc5neKjPjvO50tTRQV29zKxq52oLwU78PNzSpa2PHAsjMK39oarL0TOnj8wuvDdaVNlnLH5u2q/ZNe+hMrzzPTXDnZ8x6dJTk2doDAXmOTycNSPAIYOwZihThaSofjIv+OYKnnFtbK28Pny+MVto6SnoVc+OmFdqe3PtU4ykPaJrDK8zrwmvxmA8CM8rw/Pm4R2WjC2DrHvCZ+l7BtkQc1GmHj598qXaMa2V3jLM3qjajvLvOen2BBWeFNT7R+Emvm8ciW9g/SO+o882rgjDabeDe0kUhkEQBjQJ+kkS9ntp1sNJN1t0KEJGEhjEACkDRgEu1DCooUO4PpPqOX3kTyIw/mtYzvP94TbGV0q6j+9OYj2HF/jhNXjfjqieM6lSgmG5oHV8tkHzWf4jFfxuNTeV6J9NRfuo10PB/5P8V8FKrvdZ0OmHlFz0kzC56Ga0dzGgOL7AgzROIspINzv+QfDwP+tFsA2AFQAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b84fc35783156210b0abcfc0deaad39e"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b84fc35783156210b0abcfc0deaad39e^sys_idNOT IN494fc35783156210b0abcfc0deaad3f6,814fc35783156210b0abcfc0deaad3f5"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">414fc35783156210b0abcfc0deaad3f6</block>
+        <block display_value="">f33e9c0083ce6e10fbe1c2dfeeaad358</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -305,17 +312,18 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:34:17</sys_created_on>
         <sys_id>494fc35783156210b0abcfc0deaad3f6</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:47</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>4e0895f2-d1a0-471a-94b6-c39c5758a56f</ui_id>
-        <values>H4sIAAAAAAAA/+1YUU/jOBD+K6eIR+ilbUqhbwi2EqcDpGuXlyuKHNttvefG2cQpsGj/+83YjpuksLuwXV62UhUlM5Px+JtvZpw+BarUWamLqTorCrFIg9G/d4eBSFEG909BSlY8GAVxXGiiyyKOg8NgTWSJwqdZsOZ5IVQ6C0azoNsJZ8HhLKBqlUn+cJN84lRP6JKvCOjBeCzV/QXHZXg+Gl+cnU8vb64n07Ppx4k1oIpx4+oy1XzBc+eO8c7BXHDJ4jmhXBfWeCJwmSuSjVFoXnuazWZBKaaPGf+bJFzi4wgvlb8ZeoRLzgmLVSofvcWcyIJ7/VKk2qu81Hr2ctFyyviclFLHBp7tt2UjonPcaqUiVAOIMc9zlcc2I95Q5+XGcEVSRrTKX4pb5cwGZHTd2nsPseTpQi+9Mgrx+hV+gPGKFwVZWOwnOhfpwkDvxD+LvvO4U/CLps9XYX/ldvuL4e99G/7QJwAz8I3a6Bxo2PkPof8qGM7Mtv+YmMLePRil+JiKzyW/ZN5geBoltB/1jk7pKTuKoig5Iv1574ixKDkmAxJ2h/1WwptMsj3Fm1AVG2iwSXmbVmOpbLnkK57qeEWyDJgTZ7lai3q6oG11FhJEnTnkImYmGR0LRwd2SjqbHN2SXJDEZCB7S1tJSymfY7Vq7u8V5Xw8aBGq0YUb7RXuDui6ujHk+UTWpCNJuujUqv9gbXTO36ZFvOF9dFBwwEyKLwQBHat8RSxx/5rcXIMNzBUmikySx9v9eMHLfrzsx8t+vOzHy3687Gi80KWQLOep+a4RDCYMCN33DcZe+7JpWsMXUUFzkWmk9Br0BvZKCIFCAFse3YZ+ximYZCQHd5rnIGhuwPRMU5/AEtTWCA2LuZEEaz5TcaDHWoPeXA/uO+G0oy/FhZ3XuCx4EH5FUzRyK5AKoEpzbjFvZkC3nRmSBqPuYcAfNE8ZZz423yK8BCvkBgrEC7Ak7KpA6kJ8Ad9RiHZzDhuhbuf+MXZHkCpbSlB+kyF+VqKxKp1SyXKVXtvg8fBie+PtBk8nuWieakBRFrAQz3AzGJ0LdT5Zqvt/qkjGIjX7dkqpKJH+iWgog6TUvLCJgfjjzyUa2HWd69iGjeT8DltsWb0jWYpqwQZXfBhtqlz5YtqqLt1y6PjS2yFfwt+OMXetxNg2XyUmnA97ME57g6Tb74XdMDnucgI3/eFJlw6j01riPiCR3Blgk73Gv0kugapaoip4RH1HKTx5vxTuNlOuTOvwNAvXJ6Z+VgF585QC+pfOJ6bzvvVkEvxA73muU2BHcoHyFN2x2pjsbn8Jmv7TbikvjcY2d6fw8p9jXLbiL2PDsHsypLR/zJG/g8GgnwyjkLAoZIzRGn834W3F63ibKCU5SX8Ncd9nVs0dOM+3n0r77lPrWebcIVEsBwubbMapwD8Jpii7rP65RsUj5EzQuuhe5f8hyTeyr/8DQmiRFQMXAAA=</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YbW+jSAz+KyfUjy1H3tN8q9qL1NO1kS7ZfjkqNGFMMnsThoUhbTfKfz/PCwRIurvtZvvlIkUR2MZj+3nGHtg4IpdJLrOZuMoytoid0T+P5w6LlQyvN05MVuCMnCDIJJF5FgTOubMmPFfCje+sIc2YiH1n5Dst1/Odc98JxSrh8DyZf4ZQomajRBTM1Vm4Li70Q5/JmricxAt3KlMWL7SHs7XW+c52i3cryDKyeOfz22ZA03AJK2J8jLl4ugGVN6Sj8c3V9ex2cj+dXc0+TWtx+85tLGEBqc2PgnsWMeA0iEgIMjPGU6aWuSPJWAn1Yxvf952czV4S+IvMgavbkfor/PnKI/6lQGggYv5SWkSEZ1DqlyyWpaqUGs+lnDWcUohIzmWg8dp/mtciulapFioSSkQ1gDQVaWAoUhrKNN8ZrkhMiRTpa3GLlJqAtK5Vee454BAv5LJUdj31v8VfDXOs6w5YK/7Z6luPRy1+Vvf5ptrf2Wx/cfnb3y6/VwKgEPjG3nDPJGb+Q9V/UxmudNq/TXWnOX4xcvYpZl9yuKW7pAmN5oN5eHFJ+4OL7uWQXgyH1LsY0n7Yob1hNwLaALzOJNvkCpNQBLo0qmuWNo3GUtgChxXEMliRJEHmBEkq1qwKF7Ytd8FR5EaIRUA1GK4ph4uZEneH0QNJGZlrBJL3tJU45/wQq0U9vzds536vQagMMETOvhIV/1ikK2J48ud0co8mOFcoyxJOXh5O4+U0Xk7j5TReTuPlNF6OOF7CJeM0hVi/1zCKEwaF9v1GNd3Km03dGt+IsjBliVQMWqNeZ1kIkaAYwJ5H20t+ximaJCRFdxJSFNQT0C1KbwcERWkr/MHF7ATANQ8QHPWK2tgKq8F9J5xm9Dm7MfNaLYseWLmi5ijfC6QoUKG5NjWvIyCbzjQnnFHr3IFnCTEFWsZW7shSogg5QT6WAsVAsypyKGNf0XfXU3YRYCKhzby8DewRpEBLsBAmiaqfkUi1CaxS8HwV35vg1eHFtKKHXT2t5KZ+qkFFnuFCkKhkVHQ21Gi6FE9/F5GMWazztkouQsLLOyJxGsxzCZkBBuMPvuTKwKxrXQcmbEXO77DFTKwPJEtWLFjjShlGkyp35Wba212y4dDypX1Evnj/O8Y8NoAxc6gAxosGbdIj7d681Wl7LW/ebwHBi85g2AoH3csKcH8oItmRu0Ov9jXJAiiKJYoNr6p+JAiHHwfhcZGy27RanvrGLYGpHg1QXj8UoP6144DuvO89CDg/0HsOdQrVkWygECt3tDImW/tvgrr/NFvKa6Oxyd0ZPvz7WC1b8JfSgdcaDsKw0wfF316v15kPuh6hXY9SGlb4uwtvL17L27kQHEj8a4j7MbMqssU53H4K7YdPrYPMeVREMRzMDNgUQqY+EsyU7Lb4cq0UL4gZC6uiJ5H+q0i+k23/A0Cs7/IDFwAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">054fc35783156210b0abcfc0deaad3f4</block>
+        <block display_value="">f33e9c0083ce6e10fbe1c2dfeeaad352</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -331,17 +339,17 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:34:17</sys_created_on>
         <sys_id>814fc35783156210b0abcfc0deaad3f5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:47</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:42</sys_updated_on>
         <ui_id>4dbb297a-995c-405f-be29-a08400e557e6</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=b84fc35783156210b0abcfc0deaad39e"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=b84fc35783156210b0abcfc0deaad39e"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b84fc35783156210b0abcfc0deaad39e^sys_idNOT INf84fc35783156210b0abcfc0deaad3c5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>task</element>
         <help/>
@@ -366,7 +374,6 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b84fc35783156210b0abcfc0deaad39e"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b84fc35783156210b0abcfc0deaad39e"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b84fc35783156210b0abcfc0deaad39e"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -382,7 +389,7 @@
         <description>Summarize a given task</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>genai_task_summarizer</internal_name>
-        <label_cache>[{"name":"subflow.task","label":"Input➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","usedInstances":{"d99a444e-248c-4782-8598-7cf76957776c":["task"],"e5040fde-384a-4bb0-bf5e-bad22e0c11b2":["task"],"78a6a9d1-ad10-4f35-8ef3-3318d8d586e1":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fbe9281-5869-44ba-bdb2-772e47b5c15d","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"d99a444e-248c-4782-8598-7cf76957776c.scriptnotes","label":"1 - Fetch Task activity➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"e5040fde-384a-4bb0-bf5e-bad22e0c11b2.scriptnotes","label":"1 - Fetch Task details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"],"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"]}},{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Record","label":"4 - Look Up Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record","label":"2 - Create Record➛WatsonxAIInputMessage Record","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"reference","base_type":"reference","usedInstances":{"d93fdd1b-e9dc-4bf4-8547-46532133cab0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record.sys_id","label":"2 - Create Record➛WatsonxAIInputMessage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"sys_id","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["conditions"]}},{"name":"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89.Record.responsetext","label":"5 - Look Up Record➛WatsonxAIInputMessage Record➛ResponseText","reference":"","reference_display":"ResponseText","type":"string","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"responsetext","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["close_notes"]}}]</label_cache>
+        <label_cache>[{"name":"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89.Record.responsetext","label":"5 - Look Up Record➛WatsonxAIInputMessage Record➛ResponseText","reference":"","reference_display":"ResponseText","type":"string","base_type":"string","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"responsetext","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["close_notes"]}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record.sys_id","label":"2 - Create Record➛WatsonxAIInputMessage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_146833_genaico_0_watsonxaiinput","column_name":"sys_id","usedInstances":{"4771a3ae-348a-42cf-9ceb-a00cb2a2dd89":["conditions"]}},{"name":"e84c4d71-5589-4790-b48e-71c44232bcfd.record","label":"2 - Create Record➛WatsonxAIInputMessage Record","reference":"x_146833_genaico_0_watsonxaiinput","reference_display":"WatsonxAIInputMessage","type":"reference","base_type":"reference","usedInstances":{"d93fdd1b-e9dc-4bf4-8547-46532133cab0":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"13849663-6507-4c3d-b1d2-fa56ff3b5dfd.Record","label":"4 - Look Up Record➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"45c7028b-780a-4e0e-808d-c5a511b28931":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.task.sys_id","label":"Input➛task➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"13849663-6507-4c3d-b1d2-fa56ff3b5dfd":["conditions"]}},{"name":"e5040fde-384a-4bb0-bf5e-bad22e0c11b2.scriptnotes","label":"1 - Fetch Task details➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"],"e84c4d71-5589-4790-b48e-71c44232bcfd":["u_input"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"d99a444e-248c-4782-8598-7cf76957776c.scriptnotes","label":"1 - Fetch Task activity➛scriptnotes","reference_display":"scriptnotes","type":"string","base_type":"string","usedInstances":{"0778bdd8-534c-452e-9a2c-8dc6f97b5ac3":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"933edbf0-ef00-4408-a409-0949d5ea4cde"}},{"name":"subflow.task","label":"Input➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","column_name":"","usedInstances":{"d99a444e-248c-4782-8598-7cf76957776c":["task"],"e5040fde-384a-4bb0-bf5e-bad22e0c11b2":["task"],"78a6a9d1-ad10-4f35-8ef3-3318d8d586e1":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6fbe9281-5869-44ba-bdb2-772e47b5c15d","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>GENAI Task Summarizer</name>
         <natlang/>
@@ -399,15 +406,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>422293db83156210b0abcfc0deaad3a8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:49</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:44</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -515,7 +522,7 @@
     <sys_hub_flow_output action="delete_multiple" query="model=422293db83156210b0abcfc0deaad3a8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=422293db83156210b0abcfc0deaad3a8"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=422293db83156210b0abcfc0deaad3a8"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=422293db83156210b0abcfc0deaad3a8^sys_idNOT IN6e2293db83156210b0abcfc0deaad3ef,9a2293db83156210b0abcfc0deaad3ea,9a2293db83156210b0abcfc0deaad3eb,9e2293db83156210b0abcfc0deaad3ec,d22293db83156210b0abcfc0deaad3ee,da2293db83156210b0abcfc0deaad3ee"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=422293db83156210b0abcfc0deaad3a8^sys_idNOT IN6e2293db83156210b0abcfc0deaad3ef,9a2293db83156210b0abcfc0deaad3eb,9e2293db83156210b0abcfc0deaad3ec,c44edc0083ce6e10fbe1c2dfeeaad32b,d22293db83156210b0abcfc0deaad3ee,da2293db83156210b0abcfc0deaad3ee"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -536,29 +543,8 @@
         <sys_updated_by>avaranasi</sys_updated_by>
         <sys_updated_on>2025-05-09 17:46:56</sys_updated_on>
         <ui_id>45c7028b-780a-4e0e-808d-c5a511b28931</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/+VV207jMBD9FZTnprKTNL28raiQKrEgwYoXFkUTewKWHCcbO0C36r/v5NZWBSHQsg9o++a5eM45mVPfbjwQThVmZawDI/B6bVfSW3gzNuUCEebTcDIJOIunfJ6mkzhjkxCylHkjTzV1EUrG5zwWIQ/DgLFgFvE0DlMeyBAQOdUZyJEqKxRFJen8CLpuApsND2fRPI5DP56wqR+JUPopl4GfAQ3KwnQiMzm+avu2W+qUypYa1jf9BRQRD0rLCo23uL0beSVUNMth5S02R6n3gtWQoqbSqwHtMXq3LpuzLESdo3GJGoLnfeeyz5yslpShpgYOZyMPnx0aiQQkA21x5OVgJLiiWnsLV9UUqBDkpdHrXcWDMq4jmsOzVb9pcsSaugyJmehF2B2TXqAunC3BwTXdLFxd7fQqlEDbaSIxg1q708NYV3BZNjvRtThI9dBd6Do3F50i3u6Cg+9RWwKBZcOzQd7Ryq4fiqerAeSZMq0kPUVdCNC7EzhXqbR2DZyNhxpbjXMoS2Xuk7IqHlXbTFDy8b2mwzjTxRPNtOrejLtdHpOqMD6j+LIN30ClGhLf6Rpq3o48u7anGqzdUyENk191g6Qj1lNIWhVaCZJ2E5pmUanSfaNRj9gD347+1ke062+sppjvN/EAzN5LygjVSv7CJKt95mNmeQeiwSw/2hV5HWHvlxex88Pek4su0btl8mlumX0lt/Q0vrxd/plJWPDm//fBCra+sAcGEbogsU1BUv2sGQvlZhNNpxyozw+jGfhRIDJ/LjD1gTGRBhBIOZv3r8+4QlsWxpJdnt1rT9FnX/8xq75Dl8GqZwq1tK8INfgUc+LlMOmEO/Jqnzy56ZO71+3TDMtj1v6+kG3/m0fu7g9Xl1e8LgoAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Fetch Task details">525f79d2973596506719bb56f053af28</action_type>
-        <action_type_parent display_value="Fetch Task details">2f26d55693359650bdc1f6627cba10c5</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>525f79d2973596506719bb56f053af28</compiled_snapshot>
-        <display_text/>
-        <flow display_value="GENAI Task Summarizer">422293db83156210b0abcfc0deaad3a8</flow>
-        <generation_source/>
-        <order>1</order>
-        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>avaranasi</sys_created_by>
-        <sys_created_on>2025-05-09 17:46:56</sys_created_on>
-        <sys_id>9a2293db83156210b0abcfc0deaad3ea</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:46:56</sys_updated_on>
-        <ui_id>e5040fde-384a-4bb0-bf5e-bad22e0c11b2</ui_id>
-        <values>H4sIAAAAAAAA/41TTW+bQBD9L3vGCH8AxrcokaVIbSPVaS5RZA3LrL3qspD9cEIt//fOGkRom0OP8+btzJv34PnMgDvZ6HttHWiOu87eV2zDyiLP1lhgkS/TIkuTLJ8XZZlmIkmXIMqERUwGXrFIRV5Ui895q5R4GmokpgP7k6oTKB/K89n6UqjmLQ6Ny4ValbStgu5pYBDCj1JVBjXbPL9ErAVDoxwatjn/1fpfLQpKVB9i/pTmujZUBgXSYI4D9GV4832CN6YKMuYRw3eHukLaL0BZjFgNugLXmI5tnPEEGITqQatuZByldv19Nbxb+YuWLhfRZO+oaIT2gzfUeuxb4g4c7GgDd96MdjWSo+0tqVCAV+52ivWEhzYk3j9xUKrJQt4oX+tvvS1sHDKJxFsSg224OVwxnCR2x+ZtNGgr9dWeoakaDmpCRTD8uJWoQmja1yVxIwbOGVl6F7SemZeP/6bRg5/lgQpr0rOvoW2lPuxb05zkVQOdVMcHRUUcvjbSbuVBx/1XH1NSEG8Jv7vCT2BkMOQrjbmK8vKHlq8er/9EJhZZnmM1SyFbz1Z5Mp+tkSczvigEpvkygRWwS8RsZ28VWPthIx2xf/XBhN7Uwb59n0J4wo1s3Q2JOuHg1OXlN9HIr9idAwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
@@ -580,6 +566,7 @@
         <sys_updated_by>avaranasi</sys_updated_by>
         <sys_updated_on>2025-05-09 17:46:56</sys_updated_on>
         <ui_id>e84c4d71-5589-4790-b48e-71c44232bcfd</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/9VUW2vbMBj9K0XPjpEvCWneSkugsLawju6hK+Kz9TkRyLInybks5L9Pspw0dA3boC/N23c/51gnzzsiOJmRSYJ0fJlMyizJspTSdJonxSQrkpRngJiTiCio0XVaKCSyPojICmTnkxuW5JNplrEFKhBlwyhbgzWN2oAQqu2s6+XCtBK2T8PI91C/ur319Ts0BhZ+ZbkUkmtUZPb8EpEWtLtkUZPZ7k3pX3FLKFC61m8e+Bkedtu+m/tyOntxHwqN5h4PjQhuLCqODkgF0mBEalAcbKO3ZGZ15xIagT8ouT12LIWybiHxvRsjfrmzU+r7KnTMSgy1Y8gG1UK6ugELj25zaTs9tJbLRpRogiYcK+ikvT7NhYaH1opGhZGe5jDdyK5W90ESclxw+Egu0xkHAlvP0yMfaFSPy2b99YByLlQvyVCUTQnyGIG1WhSd9Xh2BCXWbhGroW2FWrBWNyvRDzssdbyQLogr2azdUSMWKobSA4+drBDPXf6mTz+BFp7FnVvjhvcRMVtzLcGYVy5ORPaz80gCs4EDCzL4kVKL1l65Aysc4O6jgyE40suzDyspXh9S7wFzYoaO9U/+R0dpxnc7HNOcVhxH2TSHUV4UdFRUYxwVwNMUaZkkRRoHKKpxKu33f5rlI1b+p7H+zv9grLlAyc07ghxchbXjYpEFgd44ayhePA3FwV3JR7krmdD+94k8Fsh9eoud/JueMdvLb8QM+f1/BgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -602,7 +589,31 @@
         <sys_updated_by>avaranasi</sys_updated_by>
         <sys_updated_on>2025-05-09 17:46:56</sys_updated_on>
         <ui_id>d93fdd1b-e9dc-4bf4-8547-46532133cab0</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/+2XXW+jOBSG/8qI6ziLwYDpXZW02kqdqZR2Zy5mR8jYx4klAhk+2mar/vc14BQS0ky7k1aqtJcc+zjveX2eHPj+YClhnVgk5EAZwTTAjm1j2/ddznAcuz6P7RiINbJStgS9Mwee5UI/37KkqgMPD0AJJyLAyPNoiEgQ2igmFFCAOSGO68RcinGb9/ioM4UqVglbfzUH6AhfqETkkFon33+MrBXL9W+VkFsnDztLLxWbsBgSvXW2Uburvlyv6meR8WoJaRmpTfDSZE7NyqeLqV7RSbUcPLLgvoRUgNYhWVLAyFqyVLAyy9fWSZlXOpADE1dpsn7asVBp2da5ZPeF+kf/sOvU+yTowrjx4OkxMv60YTllJbvWJ/Oyyp/syhSHorVEgGRVUk76sXbD1apUWdqmlCxONtlZUi3TL60h1tMBveuoCi0CVnWdtfK2LHm9yO5mG5HnKm0cMSUmGWfJ0xMry1zFVVnLebAqdbPP7Da8326pEn39USM6KrIqb0yanU2uZtPo2+nN5M+zWTQ7u76ZXUxuzuoMSKA5eslWK5XOo1We3apGoa53OZ4n+mEsk+xOF1aoeTpmvDZnrK+Ojc91fNqEv7Jc1T/6WR+jk2uVf6XqZwUXTeNJiV3s+whj20UExz4KKXjIBo8RzyG+5zvW48gq1sUkYUXReawvN/pZ1Ra1jhtvo+Z62jKbDq2Tea5W5amWdwvG0cfRBlPvYOezrtF7Z3ao3keY+NR1ozmkTPEssqM7VhZZes+USldVOYTzW7t+enFRr3+GomBzeD2xv9a9IfamadT9dRhoB7HLfu6nL+2CQdY5jKyJdMy2zb4HWWp/IGRNWb/P7JbX28huua2KqG1cI7o59b24dDANKYld5MbEQySUElGbEkSA2dxzREAw/w9c/pLGw3NIdl3Ms1Souq6iR2NRshL+rmzbFdoV3QgFiCGAz+w66sSUPf4mfan75BsIB7HLfQcYCN1jzU1i2x8Jw2NNzi2ztyncsvtdaANB/dizKQJJKSJuQFGIHQf5PhMYEy6k/bZT0BaHuln2XlZLtYSsKiOZsHmPPHuI2eb/6nVcvUDJhquztPm7NIqelWjoirMsAZbuzjfdTn+cG6UGLfLK+XaIrQ9E1tEGXOf0znTre/0uXHHOqB5XDIUuB0T8mCMquUQuxJ50vZjGgf0GU4wf7uFw2Kqiyllzix1RR/iqe4GODUvTTsDz0gxJzd3sxi+HBxmcvP9x+i2cBnbvfOZ1C2/F1ELnTdm6qLtCMzykDDALvLj+cmOIOCFGLCQOCn0IgEjquyx8A8ooPtjdctjKBV+AqBI4LmUv0LGh7LoT8Lw0Q1nX6NuAzXpxQ5h/NMLo4GWQL9O+uH289ar6kNzJa2A5X5wrSOr7NF9mz9DYv5ZtEPsX8z7TzXGwK4AjLPSrI3F8B1GXBCgIaWwT3XqxC0fk7se/LmVNn9oUAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="WatsonxTokenAPI">67e010c0834e6e10fbe1c2dfeeaad35c</action_type>
+        <action_type_parent display_value="WatsonxTokenAPI">00db4c84830e6e10fbe1c2dfeeaad39f</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>67e010c0834e6e10fbe1c2dfeeaad35c</compiled_snapshot>
+        <display_text/>
+        <flow display_value="GENAI Task Summarizer">422293db83156210b0abcfc0deaad3a8</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id>4dbb297a-995c-405f-be29-a08400e557e6</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 09:07:44</sys_created_on>
+        <sys_id>c44edc0083ce6e10fbe1c2dfeeaad32b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:44</sys_updated_on>
+        <ui_id>5a73231c-2a97-4cf7-9375-30fb3199e63d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -624,6 +635,7 @@
         <sys_updated_by>avaranasi</sys_updated_by>
         <sys_updated_on>2025-05-09 17:46:56</sys_updated_on>
         <ui_id>13849663-6507-4c3d-b1d2-fa56ff3b5dfd</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQQqBvp1ZIlfa20ra3L7sry7GdYq1xsrbTLkX89xvHCURAgWipRHWPnhnb34y/b+zk29LHxPBc3kltsCTsYaHvqH/tk2ESEsbwJInieBAGoyScpGk8yoI4whlO/J7PbRydBJNsMonHSRBEURCMRhHBYZpGI5IGKR5CnMRzBpEGp4LB8BmL0o65JJwyacBEuS4EXnytPXcbD5lxQRWT/vW3Hz2/wArWMkz518st16lgBE6ZgNDHGs0WOLMo1kNU+ZztU3ua99k5ckUtlKDns9+GScoAQ4aFZj1/jiXFJleLtUUxTO+l2BhmHDK89n0b/FvzV9h3HNi4jEFWhDnfeojqIjlzdosNfjCqJKZUdSiZ5Zww7epBWYZLYW7aNhdwX9jzdlNc2m52Lsq5/OzK4a8XaM4ELKUGEKywiVrkdRrZwyx/+dKgnHJZ1aR2ipxgsR5hYxRPS2PxLH0m2BwWQnNcFFw+oULlz7yaDFjm/ScBg34m8hfYVPMn2XdE7UNdcX8K9tvK/BUrbrP4B5aByQCIC2AIckeo81JVpXxGRJS6cigstVvLX/V8vdA3Amu9yRxKjn6VFrerQ50xckWzU4jihfkblnhmdXKr3h8LKT7I3cmGqySXlNutdEtNkAbi9HsJk+lyqcvUVq5vsP7Zd67Valdop03qqMHjeTQavGknsi+5Wo07tk/7FqjVGJ5NjcMg+Eh6hM0vT47dBeZK8F4qC+lBdtINEXWuDHKH0JLZroY6C+QECI1A7i2lvXTxFqpaHxlngu67rabWsXVbDf6ft9VFqgMAUeROj0vBZfX0AKAXJ5v4IGfTcIugFS9bd5O1YU12xYM9k3uvnSV0ApxGQg+wt/fo8OyB2NwwFde2b5fGWCsnOptyosF5lLNcp7ku5J6aN89US4Mm/tXG4+144G5rQrjap8xOe4Zd9xysdpUfdZJ+m2zOc/sG5878nn1Dyr337B0zmFrvh5zw0QunT8xsdm+iaG5esPi5z18zDjUHVaV3SW/j8OB3Xdp6G/MMzeHIeQFvf8UIsEojrBjK8lJSVL/6Nwy0FMi40qYO3u1QXxgIT3o5KNozM+ZV0d46uuPVfzyP5gzuMq9JpN5Ne5CIVyXirRPplnaXbjc84zv63N1uirmoTgM+6IrWcTKlcvVGxztykAcYcWI7PBFUeFZQf94v90lgb988gvVD/B24oJ5GGE6HAzxKojAMgjCgSTBOknA8SrMRTobZRtwIaUmgfwOkDDgGuFDDqYYg4W7jqtt7twZ1AqiGure5tD8OBonxLCrghdegOo67bkRpnguG5VYnegTkf02rO2jN8/jiutGH+MdW8sftSjvT3lq/10Ol5P9K/qtklT7GLBiMQ0quxkmYXA0zOrqaUBxf4UkaJxFlZJid8+3x4z/JrhFQ4hYAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -646,13 +658,14 @@
         <sys_updated_by>avaranasi</sys_updated_by>
         <sys_updated_on>2025-05-09 17:46:56</sys_updated_on>
         <ui_id>4771a3ae-348a-42cf-9ceb-a00cb2a2dd89</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GegZuQQELfVq0qVdrdStvevQ97V5ZjO2CtsbOx0y/Ef7/jOAEEFIgulVrto8dj+8zMOWMnPxY+p/6FTyfBJJ9MRmkSBFEUBONxRHCYZdGYZEGGY7/nSzxn4GlwJhgMH7Co7PgJhfE4jSI0ZRJzolCAHrHRSj5hzmVRGfClXBcCP39vlvzj5j/d3Nj5L0xrPLVbkhkXtGTSv/jxs+cXuIQTDSv9i8XW1KmQBc6YANf7BvNWCOa5WA1RPedsnzeXeV/dhCqphRL0fPZkmKQMMORYaNbz51hSbFT5vLKUDNNbKdaGGZcGdvSt85PmL3BuGli/nEFUhLm51RA1GXPm/AobfGfKipiqbFzJTHHCtMsHZTmuhLnctDmH28JwJd0SF7ZbrUQ1l19dOvzVBm2BwFJpAMEKG6hF3oSR383U47cW5TWXdU6aSaEIFqsRNqbkWWUsnoXPBJvDRmiOi4LLKSpK9cDrxYBlPpgKGAxyoR7hUM2ncoCJBT6AvOLBNdivavN3XHIbxRfYBhYDIC6AIciVUKuqrFP5gIiodD1RYqndXv6y5+tnfSmw1uvIIeXod2Vxuzw0ESOXNLuElLwwn2CLB9YEt+y1qhkdpOBkTTmiJOUWhd6QDqBBnP5bwWK6WLA0JjFNwv5olE76cTIJ+lmcsn4SkjgeRsOM5HRQMgJEHLiVy+Wuts6yZ0chHs9CK8TLzTTsS00jyR3b530bNJIMzybJOAg+kijh8Penye4qcyk4IrWQHiQZXfNJq9Igl8sNre0qpTPPT4DQ8vzWMtPLnl9D1dA850zQfTfPtZ3YunmGf+bN8y5JDoAoctXjUnBZPyMA6Fuxf3SQelm4xbOaXhv3jLVhTXY1gD2jvJfOSjgBTquEOzjbu3d49kBs+31Nme1e3xobAURnE0A0PI8AFqswV4nck/P25Wir2fq/WH+87Q8U3FgQLvcJrNOZYdczh8tdAUedFLxJNjdz9QrnzvzEfEWRvbdsATNY2pyHnH7RI6dTZtant15UmUcsfu2bbxiH2kLV4b3BczU8+MWUbTxXeY7mUDlewKvaPQ81wiVDuaokRc17ek0kW8mcl9o0zruN5hsD/UhPgTA9M2Ne7e2tvDtexMfjaFN5k3ttIM1p2oNAvDoQbxVIt7C7NK34jI/Tczeta8xFXQ34VCo2ysnKUpWvNK4jhTzAiBO72omgwrOC+v9tb58E9ra/I1g/xHf3+VsTYTiLh3icRGEYBGFAkyBNkjAdZ/kYJ3G+1ihCWhLoprBzDlSB7VFLjbbOwW7/cS21a6M5AVVLwSsl7Uf3MDGehQX19VpYx4E3DSVTSjAstzrKPdwTf103+Bu+jt5dV/kQf6Eqfr+daWfam+u3ejdU/G/Jf1fsxlIsZcEwDSnpp0mY9OOcjvsTikd9PMlGSUQZifNzPgV+/gdOgIKP8RUAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=422293db83156210b0abcfc0deaad3a8"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=422293db83156210b0abcfc0deaad3a8^sys_idNOT IN562293db83156210b0abcfc0deaad3e8,922293db83156210b0abcfc0deaad3e9"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">054fc35783156210b0abcfc0deaad3f4</block>
+        <block display_value="">f33e9c0083ce6e10fbe1c2dfeeaad352</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -668,17 +681,18 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:46:56</sys_created_on>
         <sys_id>562293db83156210b0abcfc0deaad3e8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:49</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:44</sys_updated_on>
         <ui_id>4dbb297a-995c-405f-be29-a08400e557e6</ui_id>
+        <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">414fc35783156210b0abcfc0deaad3f6</block>
+        <block display_value="">f33e9c0083ce6e10fbe1c2dfeeaad358</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -694,17 +708,17 @@
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:46:56</sys_created_on>
         <sys_id>922293db83156210b0abcfc0deaad3e9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="GENAIConnector">a8694c9897c146105f703dafe153af3c</sys_scope>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:49</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:44</sys_updated_on>
         <ui_id>4e0895f2-d1a0-471a-94b6-c39c5758a56f</ui_id>
-        <values>H4sIAAAAAAAA/+1Z30/jOBD+V04Rj6WXtimFviG4SpwWKl27+3JFkWM7xbuuk42dAov432/8I27SltXCFh0PkVCUzIwnM998M47pU5CVKi+VnGfnUrKlCMb/3nYCJrQM7p8CgVY0GAdxLBVSpYzjoBOsES+18GkRrGkhWSYWwXgR9LrhIugsApytck4fpslXitUM39EVAj0YT3h2f0n1a2gxnlyeX8yvpjez+fn888wa4IxQ4+pKKLqkhXNHaPcoZZSTOEWYKmmNZ0y/5hrlEy00y54Wi0VQsvljTj+hhHL9ONaXyt9Ce4RLQRGJM8EfvUWKuKRef8eE8iovtZ69nG05JTRFJVexgWd3NW9EdKFTrVQIKwAxpkWRFbGtiDdURbkxXCFBkMqKl+LOCmIDMrpebd1DzKlYqjuvjEJ9fYY/wHhFpURLi/1MFUwsDfRO/LvoO48HBV82fb4K+2uX7TvD3/85/KEvgK7AT3qje6Qg819C/1UwnJu0/5iZxj48GCX7LNj3kl4RbzA6ixI8iPrHZ/iMHEdRlByjQdo/JiRKTtAQhb3RYKvgTSbZmeJNcBYbaPSQ8jZbg6WypZyuqFDxCuU5MCfOi2zN6uWCsdVdchB1U6hFTEwxuhaOLmSKupsafUEFQ4mpQP6WsSJKzvexOmvm94p2PhluEaoxhRvjFe6O8Lq6MeT5itaoy5FYdmvdf7Q2OudvMyLesF47kBQw4+wH0oBOsmKFLHH/nk1vwAb2FcJkztHjl3Z70Zd2e2m3l3Z7abeXdns50PaC7xgnBRX1c42OGVQ5KuBZ0QLeGphpZJgP+GtBjSqwxA17WLWHy6DXLIap509JuxsbSCQuWK50i6xBYspYCeGNzx0z/QuB+CcmvtkltfDhiFayS+tUhwYGzEdlKMt3gmXEuqk0FzbzJg5qn7PdxA1xgnGvE9AHRQWhxOfg29ZLNGunQFov0DS1sQDRJPsBb4xCbZdSSA87hPxj7NCz4vQSWgVYUGJVFrRCJmOYSguMfZjmujRWrXQrOcuMlytxY3PWhbEDrVYYJ7ncqVgpIRKa62x1+C6XdHaX3f9ThTphwgDjlDzDiPsnpIC7Sal0oLrC8lFecCTlJhpIOf5e6iU2Evey2CbyvJc1zx3PZddCr6Sz7agPxmZZBdUgsw91m8vXPvMdKNQehzupOz73D8jnsGX0Wxl9u0Xgxtxuh3M7nD8kldtB2w7aD8vOW1fKMB314SDUHya9QT/shclJjyK4GYxOe3gUndVK/Zempzu9berd+B3AldyeKrZKPq2E1TjSdTpQ0U8PWXRXtYsDEuGw9XZjpA50c7B4qOvnVZA3T6qgf+mMaraYt55Og/f4lKVCv4DUfmvq7c5DMzG3B9xLXw5VBxAyCnunI4wHJ1R3wHA4HCSjKEQkCgkhuNYBmyB2onLMT7KMUyS2qD+HuP6c6Izeh/4H3I8PTf7UZb1/FFba/38evvjhuXbc9vhgpv8BPdeyq+pXUa14BE4wXBfdZ8U33Twb2fN/qUJS418dAAA=</values>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1ZUW/iOBD+K6eoj5QLFArlrWoPqadtkQ52Xy5VZGyHetc4Wduh7SL++41jxyRAV9su1fUhUoWSGduZme/zN3GzDtJcZ7lWs/RSKbYQwejf+1bAhLHB9ToQaEmDURDHSiOdqzgOWsEK8dwY11GwolKxVETBKAo67TAKWlGA02XG6dNk/pViDZ61MRFqr07wqrwoJn1FK9TmSCzaUy2ZWBQrnKwKXxRsNnC3pEqhxRvnb3YDmuIHukR2jTFPH6+pyZvK0fj68mp2M7mbzi5nn6e1uKPgRmi6oNLlR2j7JGGUkzhBmGplB0+ZecwtysbGWExbR1EU5Gz2nNFPaE65uR2Zn3K9yKwIP5IiEqeCP/sRCeKKev8DE9q7vNWu7O1sZ1FCE5RzHRd47c/mtYiuTKqlC2ENqMZUylTGliJ+oJb5duASCYJ0Kl+KO5XEBlT4OpV5TzGnYqEfvLMXmt8N/NUwh7pugXXm362+W/GoxVf1NV9V+1uX7TuXv/vz8oceAIPAT/ZG+0RD5r9U/VeV4bJI+49poTTHL0bOPgv2Pac3ZJs0Isl8MMenF+R8cNq7GJLT4ZCEp0Nyjs9If9hLKNkBvM4kJ3LlEJzGRWmMavoxO8JSjqWcLqnQ8RJlGTAnzmS6YlW4QLbaCw6mdgJYxKQAo23L0YZMUXuL0RckGZoXCGRvkRWRc36I1Wk9v1ds5/P+DqEUhRA5+4FM/ONULpHlyd/TyR0Mgb5CmMo4ev7StJemvTTtpWkvTXtp2ssR2wt+YJxIKqrnGiO24MqQhHtNJbAtKDZ/QTRI1xgqyMAUp60w6wB1wG9IAyLjT0n7jQ0sCkuWacPIFViKqpVGeOKmVYitFIh/YuKbnVIJH45oObu2i5rQYADzURUM4XvBMmKXKT1XNvN6HfShxfYTL3AKRp1WQJ80FYQSn4PfJd5iSDIBjniDYYWNBXBV7Ac8sReacQmF9LCrkL+NXfWsObkGZoLA5ljnkpaVSRmmyhbG3kwyA411a8NcNzLl+VLc2ZwNMFY/KsA4y/UeYrmCSGhmsjXhu1yS6UP6+E8Z6piJojDOyVOMuL9DGiR8nmsTqEFYPasrjpTaRgMpx99zM8VG4h4W20Q2B1mzaXkuu+71SjrbZvXB2KzKoGpk9qHucvnWZ75XCn1gwb3UHZ+7R+Rz2DD6rYy+3yFwTbcbcW7E+UNSuRHaRmg/LDvvHZRhMuiiPur2552zbtgJ5+cdiuDibDDs4EHvogL1X4ae7rC0xbv2HcBBbl/idyCflMZSjgxORwJ9eEzQHWpXRyTCcfF2MlItdF1YfKmrx0Ow1w+G4H/pSFi0mLceBoP3eJWlwjyAVL41dfb1sFDMXYF76c2h3AGEDMLOcIDx2Tk1O6Df75/NB70QkV5ICMGVHbANYi8qx/x5mnKKxA71ZxDXn2OT0fvQ/4j9+NjkT1zWh6Ww9P7/evjii+fKcdvXBzPzD+iZsd2UX0WN4xk4wXDV9JjKb2bzbG2b/wAB0VttXx0AAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=422293db83156210b0abcfc0deaad3a8"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=422293db83156210b0abcfc0deaad3a8"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_422293db83156210b0abcfc0deaad3a8^sys_idNOT IN1e2293db83156210b0abcfc0deaad3e0"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>task</element>
         <help/>
@@ -729,7 +743,6 @@
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_422293db83156210b0abcfc0deaad3a8"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_422293db83156210b0abcfc0deaad3a8"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_422293db83156210b0abcfc0deaad3a8"/>
     <sys_hub_flow action="UPDATE">
         <sys_id>b84fc35783156210b0abcfc0deaad39e</sys_id>
@@ -739,18 +752,18 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b84fc35783156210b0abcfc0deaad39e"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b84fc35783156210b0abcfc0deaad39e^sys_idNOT IN2a22d3db83156210b0abcfc0deaad31e"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"2a22d3db83156210b0abcfc0deaad31e","name":"plan","plan_signature":null}}</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@366b3cfd</plan>
         <plan_id display_value="GENAI Task Summarizer">b84fc35783156210b0abcfc0deaad39e</plan_id>
-        <snapshot>65531f5f83156210b0abcfc0deaad31b</snapshot>
+        <snapshot>422293db83156210b0abcfc0deaad3a8</snapshot>
         <sys_created_by>avaranasi</sys_created_by>
         <sys_created_on>2025-05-09 17:46:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2a22d3db83156210b0abcfc0deaad31e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>avaranasi</sys_updated_by>
-        <sys_updated_on>2025-05-09 17:51:50</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-05 09:07:45</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
